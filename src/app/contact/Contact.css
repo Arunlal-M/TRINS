@@ -1,0 +1,9 @@
+ @media screen and (max-width: 991px) {
+    .mapContainer{
+        width: 90%;
+    }
+    .listContainer{
+        width: 100%;
+
+    }
+}

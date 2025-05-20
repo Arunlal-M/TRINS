@@ -1,0 +1,120 @@
+.stepContainer {
+    position: relative;
+}
+
+.stepContainer:before {
+    content: '';
+    background: #075037;
+    width: 2px;
+    height: 98%;
+    position: absolute;
+    top: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.contentWidthAdjust {
+    flex-flow: wrap;
+    align-items: center;
+    display: flex;
+}
+
+.contentContainer {
+    padding: 2em;
+    width: 45%;
+}
+
+.leading-title {
+    font-size: 62px;
+}
+
+.subTitle {
+    font-size: 36px;
+}
+
+.bannerSectionContainer {
+    /* background-image: url('/image/admission-process/admissionProcessMain.png'); */
+}
+
+.imgContainer {
+    width: 55%;
+}
+
+.imgContainer img {
+    /* height: 58vh; */
+    width: 100%;
+}
+
+@media screen and (max-width: 778px) {
+
+    .imgContainer {
+        width: 100%;
+    }
+
+    .contentContainer {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .admissionContainer {
+        display: inline-block;
+    }
+
+    .leading-title {
+        font-size: 1.8rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+    }
+
+    .stepContentContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        padding: 1em
+    }
+
+    .stepImage {
+        width: 100%;
+        order: 1;
+    }
+
+    .stepImage img {
+        width: 100% !important;
+        transform: none !important;
+        left: 0;
+        right: 0 !important;
+    }
+
+    .stepContent {
+        padding: 0;
+        width: 100%;
+        order: 2;
+    }
+
+    .stepContent h3 {
+        margin: auto;
+        padding: 1em 0 0.5em;
+    }
+
+    .stepContent p {
+        text-align: center;
+    }
+
+    .connectorLine {
+        display: none;
+    }
+
+    .stepContainer:before {
+        display: none;
+    }
+
+    .bottomButtonContainer{
+        margin-top: 1em;
+    }
+
+}
