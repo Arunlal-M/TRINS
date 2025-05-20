@@ -1,0 +1,11 @@
+@media screen and (max-width: 778px) {
+    .listSectionContainer {
+        padding-top: 1em !important;
+    }
+    .calendarContainer{
+        padding-top: 10em !important;
+    }
+    .calendarWithEventsMainContainer{
+        padding: 1em !important;
+    }
+}

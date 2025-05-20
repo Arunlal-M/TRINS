@@ -1,0 +1,5 @@
+@media screen and (max-width: 991px) {
+    .jobCardContainer {
+        padding: 2em 1em !important;
+    }
+}

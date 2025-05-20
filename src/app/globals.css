@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #074D36;
+  --foreground: #171717;
+  --color-primary: #A78747;
+  /* previously --gold-primary */
+  --color-secondary: #BC9C5A;
+  /* previously --gold-secondary */
+  --color-accent: #074D36;
+  /* previously --green-dark */
+  --color-accent-medium: #377358;
+  /* previously --green-medium */
+  --color-accent-dark: #16513F;
+  /* previously --green-darker */
+  --color-accent-deep: #084F37;
+  /* previously --green-deep */
+  --color-accent-very-dark: #043426;
+  /* previously --green-very-dark */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--background);
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: "Gideon Roman", serif;
+}
+
+p {
+  font-size: 22px;
+}
+
+footer {
+  padding-bottom: 10em;
+  height: 100%;
+}
+
+/* .container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  max-width: 100%;
+  scroll-snap-type: y mandatory;
+}
+
+.panel {
+  scroll-snap-align: start;
+  height: 100vh;
+} */
+
+@media screen and (max-width: 1024px) {
+  .footer-badge {
+    min-width: 176px;
+    height: 176px;
+    margin: auto 1em 1em 0;
+  }
+
+  footer {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  footer .footer-badge-container {
+    display: grid;
+    text-align: center;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo-container img {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  footer .footer-logo-container {
+    display: grid;
+    text-align: center;
+  }
+
+  footer {
+    padding-bottom: 6em;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .h-screen {
+    height: 40vh;
+  }
+
+  .principalMessageImg {
+    position: relative !important;
+  }
+
+  .PrincipalsNote {
+    transform-origin: right;
+  }
+
+  .displayMobNone {
+    display: none;
+  }
+
+  .displayMob {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .absoluteSectionCardContainer {
+    display: grid;
+  }
+
+  .absoluteSectionCard {
+    position: relative;
+    order: 1;
+    padding: 4em 0em 0em 1em;
+  }
+}
+
+.displayMob {
+  display: none;
+}
+
+.footer-logo-container img {
+  width: 160px;
+}
+
+footer ul li a {
+  font-size: 22px;
+}
+
+footer h3 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .mainContainer {
+    margin-top: 5em;
+  }
+}
