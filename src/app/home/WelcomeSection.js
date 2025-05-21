@@ -70,7 +70,7 @@ const WelcomeSection = () => {
           ref={headingRef}
           className="text-[#F5DE9C] text-5xl md:text-6xl font-serif font-normal text-center mb-6 font-cormorant"
         >
-          WESTERN
+          TRIVANDRUM
           <br />
           INTERNATIONAL SCHOOL
         </h2>
@@ -78,11 +78,7 @@ const WelcomeSection = () => {
           ref={descRef}
           className="text-white text-center font-[400] text-[27.33px] leading-[52.85px] font-[Gideon_Roman] max-w-7xl mb-2 px-4 tracking-normal"
         >
-          Nestled on a sprawling 20-acre eco-friendly campus on the outskirts of
-          Kerala’s capital, Western International School blends natural beauty
-          with cutting-edge infrastructure. Designed to inspire holistic
-          development, the campus provides an enriching environment where
-          students excel academically, creatively, and personally.
+          TRINS aims to empower young learners to become leaders with a lifelong passion for learning and caring.
         </p>
         <div className="flex flex-col mb-24 items-center">
           {" "}

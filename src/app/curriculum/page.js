@@ -18,11 +18,11 @@ export default function Curriculum() {
 
   // Banner image selection based on active program
   const bannerImages = {
-    'Early Year Program': '/image/curriculum/earlyYearProgram.png',
-    'Primary Year Program': '/image/curriculum/PrimaryYearProgram.png',
-    'Middle School': '/image/curriculum/MiddleSchool.png',
-    'Secondary School': '/image/curriculum/MiddleSchool.png',
-    'Senior Secondary School': '/image/curriculum/MiddleSchool.png',
+    'Early Year Program': '/image/curriculum/DSC08444.jpg',
+    'Primary Year Program': '/image/curriculum/DSC06956.jpg',
+    'Middle School': '/image/curriculum/DSC06980.jpg',
+    'Secondary School': '/image/curriculum/trins-020.jpg',
+    'Senior Secondary School': '/image/curriculum/DSC06228.jpg',
   };
 
   const handleProgramClick = (programName) => {
@@ -108,7 +108,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/contentImg.png" // Path is already correct
+                  src="/image/curriculum/DSC08431.JPG" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -226,7 +226,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/contentImg.png" // Path is already correct
+                  src="/image/curriculum/DSC06877.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -344,7 +344,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/contentImg.png" // Path is already correct
+                  src="/image/curriculum/DSC07007.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -462,7 +462,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/contentImg.png" // Path is already correct
+                  src="/image/curriculum/trins-001.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -580,7 +580,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/contentImg.png" // Path is already correct
+                  src="/image/curriculum/DSC07138.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
