@@ -67,14 +67,24 @@ const Home = () => {
     <div className="bg-[#074D36] w-screen">
       {/* landing section*/}
       <div className="relative w-full h-screen magnet-section">
-        <Image
-          src="/image/home/landing.png"
-          alt="Classroom background"
-          fill
-          style={{ objectFit: "cover" }}
-          quality={100}
-          priority
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/video/home/landing.mp4" type="video/mp4" />
+          {/* Fallback image in case video doesn't load */}
+          <Image
+            src="/image/home/landing.png"
+            alt="Classroom background"
+            fill
+            style={{ objectFit: "cover" }}
+            quality={100}
+            priority
+          />
+        </video><br/>
       </div>
       {/* Welcome section (modularized) */}
       <WelcomeSection />
@@ -82,7 +92,7 @@ const Home = () => {
       <PrincipalMessageSection />
       {/* Our Campus Section (modularized) */}
       <OurCampusSection />
-      {/* Beyond the Classroom Section */} 
+      {/* Beyond the Classroom Section */}
       <BeyondTheClassroomSection />
       {/* Curriculum Section */}
       <CurriculumSection />
