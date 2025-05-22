@@ -9,18 +9,22 @@ export default function AdmissionProcess() {
         <AdmissionCard
           image={"/image/admission-process/admission-process.png"}
           text="Admission Process"
+           active
         />
         <AdmissionCard
           image="/image/admission-process/eligibility.png"
           text="Eligibility"
+          href="/eligibility"
         />
         <AdmissionCard
           image="/image/admission-process/admission-form.png"
           text="Admission Form"
+          href="/admission-form"
         />
         <AdmissionCard
           image="/image/admission-process/admission-contact.png"
           text="Admission Contact"
+          href="/admission-contact"
         />
       </div>
       {/* Title SubSection */}

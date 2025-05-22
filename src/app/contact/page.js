@@ -21,7 +21,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className="w-full flex flex-col items-center py-12 bg-white">
-        <iframe className="mapContainer w-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4438465040907!2d76.8412774!3d8.6492673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05c0337358f711%3A0x2ec0e4e2188421be!2sRashaj%20Royale%20Convention%20Centre!5e0!3m2!1sen!2sin!4v1747510286593!5m2!1sen!2sin" style={{ height: "450px" }}></iframe>
+        <iframe className="mapContainer w-1/2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.0913877454773!2d76.83861901504574!3d8.656740632880148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05c1ce092f96d5%3A0xe1e7f056442c2ca1!2sTrivandrum%20International%20School!5e0!3m2!1sen!2sin!4v1747817837129!5m2!1sen!2sin" style={{ height: "450px" }}></iframe>
         <div className="w-full max-w-5xl flex flex-row justify-between items-start mt-8 px-4">
           <div>
             <div
