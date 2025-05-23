@@ -132,7 +132,7 @@ const Footer = () => {
                   />{" "}
                 </div>
                 <h2 className="text-2xl font-bold md:text-left">
-                  WESTERN
+                  TRIVANDRUM
                   <br />
                   INTERNATIONAL
                   <br />
@@ -140,12 +140,18 @@ const Footer = () => {
                 </h2>{" "}
               </div>
               <p className="text-sm mb-1">
-                Western International School, Kollam, Kerala,
+                Trivandrum International School,
+Edackode P O, Korani, Trivandrum-695 104,
+Kerala,
+
                 <br />
                 INDIA
               </p>{" "}
-              <p className="text-sm mb-1">Mobile No: +91 9495154836</p>
-              <p className="text-sm">Phone No: +91 471 26780251 Ext: 236</p>
+              <p className="text-sm mb-1">Mobile No: +919947066646
+</p>
+              <p className="text-sm">Phone No: +914712619051 ext 236</p>
+              <p className="text-sm">Fax No: +91 471 2619510</p>
+
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6">

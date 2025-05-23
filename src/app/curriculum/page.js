@@ -245,7 +245,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  A secure and nurturing environment
+                  
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -257,10 +257,12 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  The curriculum, inspired by the Primary Years Programme (IB),
-                  is an enriched play-based trans-disciplinary course designed
-                  to empower children. It also aims at giving the child a chance
-                  to develop emotionally and socially as they grow.
+                  An inquiry based teaching and learning methodology that aims to develop an independent, confident and committed student.
+
+The whole school community, including parents, are viewed as partners in learning who can actively contribute to a holistic educational experience. This empowers the student to take control of their learning and boost their confidence and self-motivation.
+
+The programme is designed to equip the student for a successful life, focusing on five essential elements:
+
                 </p>
                 <h3
                   className="mb-3 text-left"
@@ -273,7 +275,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  PLAY BASED TEACHING AND LEARNING METHODOLOGY
+                  
                 </h3>
                 <p
                   className="ml-5"
@@ -285,22 +287,25 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  The curriculum design focuses on students’ emotional, physical
-                  and social needs that provide a safe and secure environment to
-                  learn and grow. The programme highlights a balance of
-                  co-curricular and extra-curricular activities. The early year
-                  stage of our programme delivers the following:
+                 
                 </p>
                 <ul className="list-disc ml-5 mt-2">
                   <li>
-                    Child’s inquiry-led through play based teaching and
-                    learning methodology
+                    Knowledge
+
                   </li>
-                  <li>Physical and emotional health of the child</li>
+                  <li>Concepts
+</li>
                   <li>
-                    Developing communication, thinking, reasoning and social
-                    skills
-                  </li>
+              Skills
+               </li>
+               <li>
+           Attitudes
+
+               </li>
+               <li>
+             Action
+               </li>
                 </ul>
                 <p
                   className="ml-5"
@@ -312,13 +317,9 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  For details check out&nbsp;
-                  <a
-                    href="https://www.trinsearlylearningcentre.com"
-                    target="_blank"
-                  >
-                    www.trinsearlylearningcentre.com
-                  </a>
+                  At TRINS, the students are guided by six trans-disciplinary themes of global significance. This helps them to deepen their learning by developing their conceptual understanding, strengthening their knowledge and skills across and beyond their subject areas.
+
+                
                 </p>
               </div>
             </div>
@@ -363,7 +364,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  A secure and nurturing environment
+                
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -375,10 +376,8 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  The curriculum, inspired by the Primary Years Programme (IB),
-                  is an enriched play-based trans-disciplinary course designed
-                  to empower children. It also aims at giving the child a chance
-                  to develop emotionally and socially as they grow.
+                 From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (ICSE ) and the International (IGCSE) boards that are offered at TRINS.
+
                 </p>
                 <h3
                   className="mb-3 text-left"
@@ -391,7 +390,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  PLAY BASED TEACHING AND LEARNING METHODOLOGY
+                  SUBJECTS
                 </h3>
                 <p
                   className="ml-5"
@@ -403,22 +402,28 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  The curriculum design focuses on students’ emotional, physical
-                  and social needs that provide a safe and secure environment to
-                  learn and grow. The programme highlights a balance of
-                  co-curricular and extra-curricular activities. The early year
-                  stage of our programme delivers the following:
+                  
+The curriculum in Middle School comprises a wider range of subjects reflecting those required for the Grade 10 Board Examinations.
+
                 </p>
                 <ul className="list-disc ml-5 mt-2">
                   <li>
-                    Child’s inquiry-led through play based teaching and
-                    learning methodology
+                    Sciences – Physics, Chemistry & Biology
+
                   </li>
-                  <li>Physical and emotional health of the child</li>
+                  <li>Mathematics
+</li>
                   <li>
-                    Developing communication, thinking, reasoning and social
-                    skills
+                    Humanities – History & Geography
+
                   </li>
+                  <li>ICT</li>
+                 <li>English
+</li>
+                 <li>Second Language – French, Hindi, German
+</li>
+                  <li>Practical Sessions – Physics, Chemistry and Biology laboratories where students learn through experiments.
+</li>
                 </ul>
                 <p
                   className="ml-5"
@@ -430,13 +435,8 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  For details check out&nbsp;
-                  <a
-                    href="https://www.trinsearlylearningcentre.com"
-                    target="_blank"
-                  >
-                    www.trinsearlylearningcentre.com
-                  </a>
+                 The Middle School timetable accommodates a whole range of co-curricular activities in both athletics, art, music, swimming and several clubs.
+
                 </p>
               </div>
             </div>
