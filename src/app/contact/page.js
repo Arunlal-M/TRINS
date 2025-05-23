@@ -34,7 +34,7 @@ export default function Contact() {
                 textTransform: 'uppercase',
               }}
             >
-              WESTERN INTERNATIONAL SCHOOL
+              TRINS INTERNATIONAL SCHOOL
             </div>
             <div
               style={{
@@ -68,23 +68,23 @@ export default function Contact() {
         <div className="w-full max-w-5xl grid md:grid-cols-2 gap-12 px-4">
           <div className="listContainer" style={{ fontFamily: 'Gideon Roman, serif', fontWeight: 400, fontSize: '18px', lineHeight: '32px', letterSpacing: 0 }}>
             FOR ALL QUERIES RELATED TO ADMISSION<br />
-            <b>WRITE TO: ADMISSIONS@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: ADMISSIONS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO CAREERS<br />
-            <b>WRITE TO: CAREERS@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: CAREERS@TRINS.ORG</b><br /><br />
             TO CONTACT PRINCIPAL<br />
-            <b>WRITE TO: PRINCIPAL@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: PRINCIPAL@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO JUNIOR SCHOOL<br />
-            <b>WRITE TO: JS@WESTERN.ORG</b>
+            <b>WRITE TO: JS@TRINS.ORG</b>
           </div>
           <div className="listContainer" style={{ fontFamily: 'Gideon Roman, serif', fontWeight: 400, fontSize: '18px', lineHeight: '32px', letterSpacing: 0 }}>
             FOR ALL QUERIES RELATED TO MIDDLE SCHOOL,<br />
-            <b>WRITE TO: MS@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: MS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO HIGH SCHOOL,<br />
-            <b>WRITE TO: HS@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: HS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO SENIOR SECONDARY SCHOOL,<br />
-            <b>WRITE TO: SS@WESTERN.ORG</b><br /><br />
+            <b>WRITE TO: SS@TRINS.ORG</b><br /><br />
             FOR ALL GENERAL QUERIES<br />
-            <b>WRITE TO: TIS@WESTERN.ORG</b>
+            <b>WRITE TO: TIS@TRINS.ORG</b>
           </div>
         </div>
       </div>

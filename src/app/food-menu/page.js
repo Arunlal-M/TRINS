@@ -27,20 +27,20 @@ export default function FoodMenu() {
             letterSpacing: 1,
           }}
         >
-          FOOD MENU Western 7th April to 13th April
+          FOOD MENU TRINS 7th April to 13th April
         </h2>
         <div className="overflow-x-auto w-full flex">
-          <table className="min-w-[1100px] border-separate border-spacing-2" style={{width: "max-content", margin: "auto"}}>
+          <table className="min-w-[1100px] border-separate border-spacing-2" style={{ width: "max-content", margin: "auto" }}>
             <thead>
               <tr>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>DAY & DATE</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Monday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Tuesday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Wednesday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Thursday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Friday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Saturday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Sunday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>DAY & DATE</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Monday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Tuesday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Wednesday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Thursday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Friday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Saturday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Sunday</th>
               </tr>
             </thead>
             <tbody>
@@ -53,9 +53,9 @@ export default function FoodMenu() {
                 'Post-Dinner',
               ].map((meal, idx) => (
                 <tr key={meal}>
-                  <td className="bg-[#E4E4E4] text-lg font-medium px-8 py-4 text-center shadow-md" style={{fontFamily: 'Gideon Roman'}}>{meal}</td>
+                  <td className="bg-[#E4E4E4] text-lg font-medium px-8 py-4 text-center shadow-md" style={{ fontFamily: 'Gideon Roman' }}>{meal}</td>
                   {[...Array(7)].map((_, i) => (
-                    <td key={i} className="bg-[#E4E4E4] text-lg font-medium px-8 py-4 text-center shadow-md" style={{fontFamily: 'Gideon Roman'}}>{meal}</td>
+                    <td key={i} className="bg-[#E4E4E4] text-lg font-medium px-8 py-4 text-center shadow-md" style={{ fontFamily: 'Gideon Roman' }}>{meal}</td>
                   ))}
                 </tr>
               ))}
