@@ -125,14 +125,14 @@ const Footer = () => {
                   {" "}
                   <Image
                     src="/image/tis-logo.webp"
-                    alt="Western International School Logo"
+                    alt="TRINS International School Logo"
                     width={100}
                     height={100}
                     className="filter brightness-0 invert"
                   />{" "}
                 </div>
                 <h2 className="text-2xl font-bold md:text-left">
-                  WESTERN
+                  TRINS
                   <br />
                   INTERNATIONAL
                   <br />
@@ -140,7 +140,7 @@ const Footer = () => {
                 </h2>{" "}
               </div>
               <p className="text-sm mb-1">
-                Western International School, Kollam, Kerala,
+                TRINS International School, Kollam, Kerala,
                 <br />
                 INDIA
               </p>{" "}

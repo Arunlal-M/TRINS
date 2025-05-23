@@ -32,7 +32,7 @@ export default function Careers() {
             letterSpacing: "1.46px",
           }}
         >
-          Opportunities at Western
+          Opportunities at TRINS
         </h2>
         <p
           className="max-w-6xl mb-8 text-[#222]"
@@ -46,7 +46,7 @@ export default function Careers() {
           }}
         >
           If you are innovative and committed, a good team player, continuous
-          learner looking for great job opportunities, Western welcomes you to
+          learner looking for great job opportunities, TRINS welcomes you to
           our family of highly skilled and professional teaching faculty.
         </p>
         <div className="w-full flex justify-center mb-10">
@@ -88,7 +88,7 @@ export default function Careers() {
               "Participate in school events, performances, and co-curricular activities.",
               "Participate in school events, performances, and co-curricular activities.",
             ]}
-            email="careers@westerninternationalschool.com"
+            email="careers@TRINSinternationalschool.com"
           />
 
           <div
@@ -119,7 +119,7 @@ export default function Careers() {
               "Encourage musical creativity, performance, and appreciation on a solo and ensemble level.",
               "Participate in school events, performances, and co-curricular activities.",
             ]}
-            email="careers@westerninternationalschool.com"
+            email="careers@TRINSinternationalschool.com"
           />
 
           <div
@@ -150,7 +150,7 @@ export default function Careers() {
               "Encourage musical creativity, performance, and appreciation on a solo and ensemble level.",
               "Participate in school events, performances, and co-curricular activities.",
             ]}
-            email="careers@westerninternationalschool.com"
+            email="careers@TRINSinternationalschool.com"
           />
         </div>
       </div>
