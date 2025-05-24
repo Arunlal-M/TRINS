@@ -19,21 +19,21 @@ export default function Blogs() {
         "Emotional resilience is a vital skill for children to develop as they navigate the ups and downs of growing up. Learn how to foster resilience in your child for a brighter, more confident future...",
     },
     {
-      image: "/image/blogs/building.png",
+      image: "/image/blogs/fostering.jpg",
       title: "Fostering Creativity in Young Minds",
       date: "March 26, 2025",
       excerpt:
         "Creativity is not just about art—it's about problem-solving, innovation, and thinking outside the box. Discover ways to nurture creativity in your child every day...",
     },
     {
-      image: "/image/blogs/building.png",
-      title: "The Importance of Play in Learning",
+      image: "/image/blogs/DSC07325.jpg",
+      title: "The Role of Outdoor Play in a Child’s Development",
       date: "March 26, 2025",
       excerpt:
-        "Play is a child’s natural way of learning. Explore how play-based activities can enhance your child’s development and love for learning...",
+        "Outdoor play holds a unique place in a child’s development. In today’s fast-changing world, where screen time often dominates leisure hours, encouraging children to step outside and engage with nature becomes all the more significant. Outdoor play is not merely a leisure activity but a powerful medium that nurtures physical, cognitive, social, and emotional growth.",
     },
     {
-      image: "/image/blogs/building.png",
+      image: "/image/blogs/Nurturing Social Skills in Early Childhood.jpg",
       title: "Nurturing Social Skills in Early Childhood",
       date: "March 26, 2025",
       excerpt:
