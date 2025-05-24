@@ -120,6 +120,13 @@ const Navbar = () => {
               CAREERS
             </Link>
             <Link
+              href="/contact"
+              className="text-white text-lg font-gideon uppercase"
+              onClick={() => setMobileOpen(false)}
+            >
+              Contact
+            </Link>
+            <Link
               href="#"
               aria-label="Search"
               className="flex items-center justify-center"
@@ -176,6 +183,7 @@ const Navbar = () => {
             >
               BLOGS
             </Link>
+
             <Link
               key="CAREERS"
               href="/careers"
@@ -187,6 +195,18 @@ const Navbar = () => {
             >
               CAREERS
             </Link>
+            <Link
+              key="CONTACT US"
+              href="/contact"
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
+                isHomePage
+                  ? "text-gray-100 hover:text-[#fff]"
+                  : "text-black hover:text-gray-600"
+              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+            >
+              &nbsp;&nbsp;CONTACT&nbsp;US
+            </Link>
+
             <Link
               href="#"
               aria-label="Search"

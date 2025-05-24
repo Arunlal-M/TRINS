@@ -9,18 +9,22 @@ export default function AdmissionProcess() {
         <AdmissionCard
           image={"/image/admission-process/admission-process.png"}
           text="Admission Process"
+           active
         />
         <AdmissionCard
           image="/image/admission-process/eligibility.png"
           text="Eligibility"
+          href="/eligibility"
         />
         <AdmissionCard
           image="/image/admission-process/admission-form.png"
           text="Admission Form"
+          href="/admission-form"
         />
         <AdmissionCard
           image="/image/admission-process/admission-contact.png"
           text="Admission Contact"
+          href="/admission-contact"
         />
       </div>
       {/* Title SubSection */}
@@ -29,7 +33,7 @@ export default function AdmissionProcess() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/admission-process/admissionProcessMain.png"
+                src="/image/admission-process/Copy of 13.jpg"
                 alt="Admission Process Main"
               />
             </div>
@@ -54,7 +58,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-1.png"
+                src="/image/admission-process/step-1.jpg"
                 alt="Step One"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -71,14 +75,15 @@ export default function AdmissionProcess() {
                 className="text-[#075037] text-5xl font-normal mb-4"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                Step One
+                Step 1: Inquiry & School Visit
+
               </h3>
               <p
                 className="text-[#222] text-xl"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                To begin the application process, click here to Enrol Online and
-                register.
+                Connect with our Admissions Team to begin your journey with TRINS. We encourage families to visit the campus while school is in session to get a real sense of our environment. If you're unable to visit in person, we’re happy to arrange a virtual interaction for you and your child.
+
               </p>
             </div>
           </div>
@@ -92,23 +97,28 @@ export default function AdmissionProcess() {
                 className="text-[#075037] text-5xl font-normal mb-4 text-right"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                Step Two
+                Step 2: Submit Application & Documents
+
               </h3>
               <p
                 className="text-[#222] text-xl text-right"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                Once the online application is completed, an acknowledgement email
-                will be sent to the email address you provided, containing a link
-                The only documents required to move on to Step 3 are recent school
-                reports (not needed for FS1, FS2), copies of Emirates ID's and/or
-                copies of passport copies. Please upload any of the other
-                documents that you have immediately to speed up the process.
+                Complete the application form and submit the required documents:
+
+Past two years’ academic and co-curricular records.
+
+Copy of birth certificate or passport.
+
+Any other relevant documentation.
+
+Please ensure the application meets the age eligibility criteria.
+
               </p>
             </div>
             <div className="w-1/2 flex justify-start items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-2.png"
+                src="/image/admission-process/step-2.jpg"
                 alt="Step Two"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -125,7 +135,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative stepImage">
               <img
-                src="/image/admission-process/step-3.png"
+                src="/image/admission-process/step-3.jpg"
                 alt="Step Three"
                 className="rounded-lg shadow-lg object-cover"
                 style={{ width: "600px", height: "auto", position: "relative" }}
@@ -136,14 +146,20 @@ export default function AdmissionProcess() {
                 className="text-[#075037] text-5xl font-normal mb-4"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                Step Three
+                Step 3: Assessment & Interaction
+
               </h3>
               <p
                 className="text-[#222] text-xl"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                You will be contacted by the school to arrange an interview and/or
-                admissions assessment for your child.
+                Your child will take a Proficiency Assessment and participate in a Personal Interview. The assessment includes English, Math, and Science (duration varies by grade). Early Years applicants will have a more informal interaction with the curriculum coordinator.
+
+Grade	Duration
+Grades 1 – 3	30 minutes
+Grades 4 – 5	45 – 60 minutes
+Grades 6 – 12	2 hours
+
               </p>
             </div>
           </div>
@@ -156,22 +172,23 @@ export default function AdmissionProcess() {
                 className="text-[#075037] text-5xl font-normal mb-4 text-right"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                Step Four
+                Step 4: Review & Admission Decision
+
               </h3>
               <p
                 className="text-[#222] text-xl text-right"
                 style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
               >
-                If we are able to offer your child a place in our school, we will contact you to make the non-refundable registration fee payment that will secure your child's seat. GEMS Royal Dubai School welcomes all families to apply and we thank you for considering our school. To start your application, please
-                <a href="https://www.royaldubaischool.com/en/Admissions/Enrol-Online"
+                Our academic team will review the assessment results, interview, and submitted records. Based on the outcome, admission decisions will be communicated by the Coordinator and Principal. Upon confirmation, further steps will be shared for enrollment.
+                {/* <a href="https://www.royaldubaischool.com/en/Admissions/Enrol-Online"
                   target="_blank"
                   underline="none"
-                > Click here </a> or contact the admissions office directly by emailing <a href="mailto:registrar_rds@gemsedu.com"> registrar_rds@gemsedu.com </a>
+                > Click here </a> or contact the admissions office directly by emailing <a href="mailto:registrar_rds@gemsedu.com"> registrar_rds@gemsedu.com </a> */}
               </p>
             </div>
             <div className="w-1/2 flex justify-start items-center relative stepImage">
               <img
-                src="/image/admission-process/step-4.png"
+                src="/image/admission-process/step-4.jpg"
                 alt="Step Four"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
