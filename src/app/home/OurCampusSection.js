@@ -412,7 +412,7 @@
 //             background: "transparent",
 //           }}
 //         >
-//           At Western, Our Campus Provides A Nurturing Environment With Modern
+//           At TRINS, Our Campus Provides A Nurturing Environment With Modern
 //           Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
 //           Outdoor Areas Encourage Physical Activity, While The Safe,
 //           Well-Maintained Surroundings Ensure Students Thrive Academically And

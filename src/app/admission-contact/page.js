@@ -6,22 +6,22 @@ export default function AdmissionContact() {
     <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.png"}
+          image={"/image/admission-process/admission-process.jpg"}
           text="Admission Process"
           href="/admission-process"
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.png"
+          image="/image/admission-process/eligibility.jpg"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.png"
+          image="/image/admission-process/admission-form.jpg"
           text="Admission Form"
           href="/admission-form"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.png"
+          image="/image/admission-process/admission-contact.jpg"
           text="Admission Contact"
           active
         />
@@ -33,7 +33,7 @@ export default function AdmissionContact() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/admission-process/admission-contact.png"
+                src="/image/admission-process/admission-contact2.jpg"
                 alt="Admission Contact Main"
               />
             </div>
@@ -59,21 +59,22 @@ export default function AdmissionContact() {
                 <span className="mr-4 text-xl">📞</span>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p>+971 4 123 4567</p>
+                  <p>9961336565 / 9847416464</p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="mr-4 text-xl">✉️</span>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p>registrar_rds@gemsedu.com</p>
+                  <p>admissions@trins.org </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <span className="mr-4 text-xl">🏫</span>
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p>GEMS Royal Dubai School<br />P.O. Box 12345<br />Dubai, UAE</p>
+                  <p>Trivandrum International School,
+<br />Edackode P O, Korani, Trivandrum-695 104,<br />Kerala, INDIA</p>
                 </div>
               </div>
             </div>

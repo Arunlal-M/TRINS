@@ -27,7 +27,7 @@ export default function FoodMenu() {
             letterSpacing: 1,
           }}
         >
-          FOOD MENU Western 7th April to 13th April
+          FOOD MENU TRINS 7th April to 13th April
         </h2>
         <div className="overflow-x-auto w-full flex">
           <table className="min-w-[1100px] border-separate border-spacing-2" style={{width: "max-content", margin: "auto"}}>

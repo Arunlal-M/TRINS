@@ -68,7 +68,7 @@ const   CurriculumSection = () => {
                     padding: '0 1rem',
                 }}
             ><p>
-                    I am fortunate to have been part of the creation of Western International
+                    I am fortunate to have been part of the creation of TRINS International
                     School in 2003. From its inception, Mr George M
                 </p>
             </div>
