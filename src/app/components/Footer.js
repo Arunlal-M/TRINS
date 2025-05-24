@@ -126,7 +126,6 @@ const Footer = () => {
                   <Image
                     src="/image/tis-logo.webp"
                     alt="TRINS International School Logo"
-                    alt="TRINS International School Logo"
                     width={100}
                     height={100}
                     className="filter brightness-0 invert"

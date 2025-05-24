@@ -95,7 +95,6 @@ export default function Careers() {
               "Participate in school events, performances, and co-curricular activities.",
             ]}
             email="careers@TRINSinternationalschool.com"
-            email="careers@TRINSinternationalschool.com"
           />
           
 
@@ -128,7 +127,6 @@ export default function Careers() {
               "Participate in school events, performances, and co-curricular activities.",
             ]}
             email="careers@TRINSinternationalschool.com"
-            email="careers@TRINSinternationalschool.com"
           />
 
           <div
@@ -159,8 +157,6 @@ export default function Careers() {
               "Encourage musical creativity, performance, and appreciation on a solo and ensemble level.",
               "Participate in school events, performances, and co-curricular activities.",
             ]}
-            email="careers@TRINSinternationalschool.com"
-          />
             email="careers@TRINSinternationalschool.com"
           />
 
