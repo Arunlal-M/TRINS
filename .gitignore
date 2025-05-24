@@ -3,4 +3,4 @@ node_modules
 .env*
 *.log
 out/
-public\video\ourCampus.mp4
+public/video/ourCampus.mp4
