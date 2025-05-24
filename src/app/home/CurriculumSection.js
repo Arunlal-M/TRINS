@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DiamondButton from './DiamondButton';
 
-const   CurriculumSection = () => {
+const CurriculumSection = () => {
     const [activeStage, setActiveStage] = useState(1);
     const [imageVisible, setImageVisible] = useState(true);
     const [isAnimatingOut, setIsAnimatingOut] = useState(false);

@@ -26,7 +26,7 @@
 //       minH = video.parentElement
 //         ? Math.max(video.parentElement.offsetHeight * 0.7, window.innerHeight * 0.55)
 //         : window.innerHeight * 0.55;
-      
+
 
 //       video.setAttribute("data-original-width", minW);
 //       video.setAttribute("data-original-height", minH);
@@ -413,6 +413,7 @@
 //           }}
 //         >
 //           At TRINS, Our Campus Provides A Nurturing Environment With Modern
+//           At TRINS, Our Campus Provides A Nurturing Environment With Modern
 //           Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
 //           Outdoor Areas Encourage Physical Activity, While The Safe,
 //           Well-Maintained Surroundings Ensure Students Thrive Academically And
@@ -453,7 +454,7 @@ const OurCampusSection = () => {
       // Get container dimensions
       const containerWidth = videoContainer.offsetWidth;
       const containerHeight = videoContainer.offsetHeight;
-      
+
       // Set video dimensions relative to container
       minW = containerWidth * 0.65;
       minH = Math.min(containerHeight * 0.7, window.innerHeight * 0.7);
@@ -570,8 +571,8 @@ const OurCampusSection = () => {
           anticipatePin: 1,
           onUpdate: (self) => {
             if (self.progress > 0 && video.style.position !== "fixed") {
-              gsap.set(video, { 
-                position: "fixed", 
+              gsap.set(video, {
+                position: "fixed",
                 zIndex: 90,
                 top: "50%",
                 left: "50%",
@@ -691,8 +692,8 @@ const OurCampusSection = () => {
         end: "bottom top",
         onEnter: () => {
           gsap.set(video, { visibility: "visible" });
-          gsap.to(video, { 
-            opacity: 1, 
+          gsap.to(video, {
+            opacity: 1,
             duration: 0.3,
             ease: "power2.out"
           });
@@ -712,8 +713,8 @@ const OurCampusSection = () => {
         },
         onEnterBack: () => {
           gsap.set(video, { visibility: "visible" });
-          gsap.to(video, { 
-            opacity: 1, 
+          gsap.to(video, {
+            opacity: 1,
             duration: 0.4,
             ease: "power2.out"
           });
@@ -767,7 +768,7 @@ const OurCampusSection = () => {
           />
         </div>
 
-        <div 
+        <div
           ref={videoContainerRef}
           className="w-full flex flex-col items-center justify-center relative mt-0 md:mt-0 displayMobNone"
           style={{

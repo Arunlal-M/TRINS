@@ -98,17 +98,17 @@ export default function FoodMenu() {
           FOOD MENU TRINS 
         </h2>
         <div className="overflow-x-auto w-full flex">
-          <table className="min-w-[1100px] border-separate border-spacing-2" style={{width: "max-content", margin: "auto"}}>
+          <table className="min-w-[1100px] border-separate border-spacing-2" style={{ width: "max-content", margin: "auto" }}>
             <thead>
               <tr>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>DAY & DATE</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Monday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Tuesday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Wednesday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Thursday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Friday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Saturday</th>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{fontFamily: 'Gideon Roman'}}>Sunday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>DAY & DATE</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Monday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Tuesday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Wednesday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Thursday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Friday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Saturday</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Sunday</th>
               </tr>
             </thead>
             <tbody>

@@ -34,7 +34,7 @@ export default function Contact() {
                 textTransform: 'uppercase',
               }}
             >
-              TRIVANDRUM INTERNATIONAL SCHOOL
+              TRINS INTERNATIONAL SCHOOL
             </div>
             <div
               style={{
@@ -69,27 +69,23 @@ Kerala, INDIA
         <div className="w-full max-w-5xl grid md:grid-cols-2 gap-12 px-4">
           <div className="listContainer" style={{ fontFamily: 'Gideon Roman, serif', fontWeight: 400, fontSize: '18px', lineHeight: '32px', letterSpacing: 0 }}>
             FOR ALL QUERIES RELATED TO ADMISSION<br />
-            <b>WRITE TO: admissions@trins.org</b><br /><br />
+            <b>WRITE TO: ADMISSIONS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO CAREERS<br />
-            <b>WRITE TO: careers@trins.org
-</b><br /><br />
+            <b>WRITE TO: CAREERS@TRINS.ORG</b><br /><br />
             TO CONTACT PRINCIPAL<br />
-            <b>WRITE TO:  principal@trins.org</b><br /><br />
+            <b>WRITE TO: PRINCIPAL@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO JUNIOR SCHOOL<br />
-            <b>WRITE TO: js@trins.org</b>
+            <b>WRITE TO: JS@TRINS.ORG</b>
           </div>
           <div className="listContainer" style={{ fontFamily: 'Gideon Roman, serif', fontWeight: 400, fontSize: '18px', lineHeight: '32px', letterSpacing: 0 }}>
             FOR ALL QUERIES RELATED TO MIDDLE SCHOOL,<br />
-            <b>WRITE TO: ms@trins.org</b><br /><br />
+            <b>WRITE TO: MS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO HIGH SCHOOL,<br />
-            <b>WRITE TO: hs@trins.org
-</b><br /><br />
+            <b>WRITE TO: HS@TRINS.ORG</b><br /><br />
             FOR ALL QUERIES RELATED TO SENIOR SECONDARY SCHOOL,<br />
-            <b>WRITE TO: ss@trins.org
-</b><br /><br />
+            <b>WRITE TO: SS@TRINS.ORG</b><br /><br />
             FOR ALL GENERAL QUERIES<br />
-            <b>WRITE TO: tis@trins.org
-</b>
+            <b>WRITE TO: TIS@TRINS.ORG</b>
           </div>
         </div>
       </div>

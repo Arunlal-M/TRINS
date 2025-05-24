@@ -33,6 +33,7 @@ export default function Careers() {
           }}
         >
           Opportunities at TRINS
+          Opportunities at TRINS
         </h2>
         <p
           className="max-w-6xl mb-8 text-[#222]"
@@ -45,6 +46,9 @@ export default function Careers() {
             textAlign: "center",
           }}
         >
+          If you are innovative and committed, a good team player, continuous
+          learner looking for great job opportunities, TRINS welcomes you to
+          our family of highly skilled and professional teaching faculty.
           If you are innovative and committed, a good team player, continuous learner looking for great job opportunities, TRINS welcomes you to our family of highly skilled and professional teaching faculty.
         </p>
         <div className="w-full flex justify-center mb-10">
@@ -91,6 +95,7 @@ export default function Careers() {
               "Participate in school events, performances, and co-curricular activities.",
             ]}
             email="careers@TRINSinternationalschool.com"
+            email="careers@TRINSinternationalschool.com"
           />
           
 
@@ -123,6 +128,7 @@ export default function Careers() {
               "Participate in school events, performances, and co-curricular activities.",
             ]}
             email="careers@TRINSinternationalschool.com"
+            email="careers@TRINSinternationalschool.com"
           />
 
           <div
@@ -153,6 +159,8 @@ export default function Careers() {
               "Encourage musical creativity, performance, and appreciation on a solo and ensemble level.",
               "Participate in school events, performances, and co-curricular activities.",
             ]}
+            email="careers@TRINSinternationalschool.com"
+          />
             email="careers@TRINSinternationalschool.com"
           />
 
