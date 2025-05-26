@@ -13,12 +13,12 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
 
   // Gallery images data
   const galleryImages = [
-    { id: 1, src: "/image/home/gallery_1.jpg", alt: "School campus view" },
-    { id: 2, src: "/image/home/gallery_2.jpg", alt: "School activities" },
-    { id: 3, src: "/image/home/gallery_3.jpg", alt: "Students in classroom" },
-    { id: 4, src: "/image/home/gallery_4.jpg", alt: "School facilities" },
-    { id: 5, src: "/image/home/gallery_5.jpg", alt: "Outdoor activities" },
-    { id: 6, src: "/image/home/gallery_6.jpg", alt: "School event" },
+    { id: 1, src: "/image/home/gallery-1.jpg", alt: "School campus view" },
+    { id: 2, src: "/image/home/gallery-2.jpg", alt: "School activities" },
+    { id: 3, src: "/image/home/gallery-3.jpg", alt: "Students in classroom" },
+    { id: 4, src: "/image/home/gallery-4.jpg", alt: "School facilities" },
+    { id: 5, src: "/image/home/gallery-5.jpg", alt: "Outdoor activities" },
+    { id: 6, src: "/image/home/gallery-6.jpg", alt: "School event" },
   ];
 
   useEffect(() => {

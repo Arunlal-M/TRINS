@@ -4,7 +4,7 @@ export default function Contact() {
     <div className="mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/contact/cover.png"
+          src="/image/contact/cover.jpg"
           alt="Contact Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -46,7 +46,8 @@ export default function Contact() {
                 textTransform: 'uppercase',
               }}
             >
-              Kollam, Kerala, India
+              Edackode P O, Korani, Trivandrum-695 104,
+Kerala, INDIA
             </div>
           </div>
           <div
@@ -60,7 +61,7 @@ export default function Contact() {
               textAlign: 'right',
             }}
           >
-            <span style={{ fontWeight: 400 }}>Mobile No :</span> +91 9495154836
+            <span style={{ fontWeight: 400 }}>Mobile No :</span> +919947066646
           </div>
         </div>
       </div>

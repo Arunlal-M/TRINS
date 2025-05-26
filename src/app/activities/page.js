@@ -5,7 +5,7 @@ export default function Activities() {
     <div className="mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/activities/cover.png"
+          src="/image/activities/cover.jpg"
           alt="Activities Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
