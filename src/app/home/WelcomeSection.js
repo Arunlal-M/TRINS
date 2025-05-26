@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ReadMoreButton from "../components/ReadMoreButton";
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import ReadMoreButton from '../components/ReadMoreButton';
+import './WelcomeSection.css';
 
 const WelcomeSection = () => {
   const childrenRef = useRef(null);
@@ -20,11 +21,11 @@ const WelcomeSection = () => {
         y: 0,
         scale: 1,
         duration: 2.2,
-        ease: "power3.out",
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: slateRef.current,
-          start: "top 80%",
-          toggleActions: "play reverse play reverse",
+          start: 'top 80%',
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
@@ -35,11 +36,11 @@ const WelcomeSection = () => {
         opacity: 1,
         y: 0,
         duration: 1.8,
-        ease: "power3.out",
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: groupRef.current,
-          start: "top 90%",
-          toggleActions: "play reverse play reverse",
+          start: 'top 90%',
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
@@ -51,16 +52,12 @@ const WelcomeSection = () => {
         className="absolute left-0 w-full pointer-events-none z-0 overflow-hidden flex justify-center -top-2"
       >
         <img src="/image/home/WelcomeChildren.svg" alt="Welcome Children" />
-      </div>{" "}
+      </div>{' '}
       <div
         ref={slateRef}
-        className="relative flex flex-col items-center justify-center z-20 -mt-48"
+        className="relative flex flex-col items-center justify-center z-20 -mt-48 welcomeSlateImgContainer"
       >
-        <img
-          src="/image/home/Slate-edited.svg"
-          alt="Slate"
-          className="w-[950px] h-[600px]"
-        />
+        <img src="/image/home/Slate-edited.svg" alt="Slate" className="w-[950px] h-[600px]" />
       </div>
       <div
         ref={groupRef}

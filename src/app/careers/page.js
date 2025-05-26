@@ -96,7 +96,7 @@ export default function Careers() {
             ]}
             email="careers@TRINSinternationalschool.com"
           />
-          
+
 
           <div
             style={{
@@ -160,882 +160,882 @@ export default function Careers() {
             email="careers@TRINSinternationalschool.com"
           />
 
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  Facilities Supervisor Job Type: Part time Start Date:June 2025
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="Facilities Supervisor"
-  jobType="Full time"
-  startDate="June 2025"
-  curriculum="We seek a proactive and experienced facility supervisor to oversee our school facilities' maintenance, safety, and operational efficiency. "
-  qualifications={[
-    // Add qualifications as strings
-    "Manage the day-to-day operations of school facilities.",
-    "Oversee maintenance, repairs, and safety inspections.",
-    "Ensure compliance with health, safety, and environmental regulations.",
-    "Develop and manage facility budgets and procurement processes.",
-    "Coordinate with contractors, vendors, and service providers.",
-    "Implement sustainability initiatives and energy efficiency programs.",
-    "Collaborate with school administration to support events and activities.",
-    "Bachelor's degree in facility management, engineering, or a related field.",
-    "Diploma in Civil, electrical, or mechanical engineering",
-    "Proven experience in facility management, preferably in an educational setting.",
-    "Familiarity with building systems, maintenance practices, and safety standards.",
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            Facilities Supervisor Job Type: Part time Start Date:June 2025
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="Facilities Supervisor"
+            jobType="Full time"
+            startDate="June 2025"
+            curriculum="We seek a proactive and experienced facility supervisor to oversee our school facilities' maintenance, safety, and operational efficiency. "
+            qualifications={[
+              // Add qualifications as strings
+              "Manage the day-to-day operations of school facilities.",
+              "Oversee maintenance, repairs, and safety inspections.",
+              "Ensure compliance with health, safety, and environmental regulations.",
+              "Develop and manage facility budgets and procurement processes.",
+              "Coordinate with contractors, vendors, and service providers.",
+              "Implement sustainability initiatives and energy efficiency programs.",
+              "Collaborate with school administration to support events and activities.",
+              "Bachelor's degree in facility management, engineering, or a related field.",
+              "Diploma in Civil, electrical, or mechanical engineering",
+              "Proven experience in facility management, preferably in an educational setting.",
+              "Familiarity with building systems, maintenance practices, and safety standards.",
 
 
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  Psychology Teacher Job Type: Part time Start Date:June 2025
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="Psychology Teacher"
-  jobType="Part time"
-  startDate="June 2025"
-  curriculum="We are seeking a dedicated and passionate Psychology Teacher with expertise in the IBDP and A/AS Level curriculum to join our dynamic team. "
-  qualifications={[
-    // Add qualifications as strings
-    "Develop and deliver an engaging psychology curriculum for IBDP.",
-    "Create a supportive and inclusive classroom environment.",
-    "Assess and evaluate student progress through various methods.",
-    "Collaborate with faculty to integrate interdisciplinary teaching approaches.",
-    "Foster students' interest in psychology by organizing workshops, seminars, and extracurricular activities.",
-    "Maintain communication with parents regarding student performance and well-being.",
-    "Stay updated on the latest developments in psychology and education.",
-    "Master’s degree in Psychology",
-    "Teaching certification or equivalent qualification.",
-    "Strong communication and interpersonal skills.",
-    "Ability to inspire and motivate students.",
-    "Familiarity with international education standards and curricula (IB, IGCSE, etc.) is a plus.",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            Psychology Teacher Job Type: Part time Start Date:June 2025
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="Psychology Teacher"
+            jobType="Part time"
+            startDate="June 2025"
+            curriculum="We are seeking a dedicated and passionate Psychology Teacher with expertise in the IBDP and A/AS Level curriculum to join our dynamic team. "
+            qualifications={[
+              // Add qualifications as strings
+              "Develop and deliver an engaging psychology curriculum for IBDP.",
+              "Create a supportive and inclusive classroom environment.",
+              "Assess and evaluate student progress through various methods.",
+              "Collaborate with faculty to integrate interdisciplinary teaching approaches.",
+              "Foster students' interest in psychology by organizing workshops, seminars, and extracurricular activities.",
+              "Maintain communication with parents regarding student performance and well-being.",
+              "Stay updated on the latest developments in psychology and education.",
+              "Master’s degree in Psychology",
+              "Teaching certification or equivalent qualification.",
+              "Strong communication and interpersonal skills.",
+              "Ability to inspire and motivate students.",
+              "Familiarity with international education standards and curricula (IB, IGCSE, etc.) is a plus.",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  Advancement Officer Job Type: Part time Start Date:June 2025
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="Advancement Officer"
-  jobType="Part time"
-  startDate="June 2025"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    " Creative skills (graphic design, video production).",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
-
-
-// Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  PR Officer Job Type: Part time Start Date:June 2025
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="PR Officer"
-  jobType="Part time"
-  startDate="June 2025"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
-
-// Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
-
-// Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            Advancement Officer Job Type: Part time Start Date:June 2025
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="Advancement Officer"
+            jobType="Part time"
+            startDate="June 2025"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              " Creative skills (graphic design, video production).",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            PR Officer Job Type: Part time Start Date:June 2025
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="PR Officer"
+            jobType="Part time"
+            startDate="June 2025"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
+
+// Template for adding a new job card
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
+
+// Template for adding a new job card
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
 
 // Template for adding a new job card
-<div
-  style={{
-    fontFamily: "Gideon Roman, serif",
-    fontWeight: 400,
-    fontSize: "33.43px",
-    lineHeight: "42.98px",
-    letterSpacing: "1.08px",
-    textAlign: "center",
-  }}
-  className="mb-4"
->
-  {/* Replace with your job title, type, and start date */}
-  [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
-</div>
-<JobCard
-  className="jobCardContainer"
-  title="[Job Title]"
-  jobType="[Full time/Part time]"
-  startDate="[Month Year]"
-  curriculum="[Curriculum: Job description here]"
-  qualifications={[
-    // Add qualifications as strings
-    "Qualification 1",
-    "Qualification 2",
-    "Qualification 3",
-    // ...
-  ]}
-  email="careers@westerninternationalschool.com"
-/>
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
+
+
+// Template for adding a new job card
+          <div
+            style={{
+              fontFamily: "Gideon Roman, serif",
+              fontWeight: 400,
+              fontSize: "33.43px",
+              lineHeight: "42.98px",
+              letterSpacing: "1.08px",
+              textAlign: "center",
+            }}
+            className="mb-4"
+          >
+            {/* Replace with your job title, type, and start date */}
+            [Job Title] Job Type: [Full time/Part time] Start Date: [Month Year]
+          </div>
+          <JobCard
+            className="jobCardContainer"
+            title="[Job Title]"
+            jobType="[Full time/Part time]"
+            startDate="[Month Year]"
+            curriculum="[Curriculum: Job description here]"
+            qualifications={[
+              // Add qualifications as strings
+              "Qualification 1",
+              "Qualification 2",
+              "Qualification 3",
+              // ...
+            ]}
+            email="careers@Trivandruminternationalschool.com"
+          />
 
         </div>
       </div>
