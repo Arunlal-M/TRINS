@@ -1519,11 +1519,11 @@ export default function Curriculum() {
     'Primary Year Program': '/image/curriculum/DSC06956.jpg',
     'Middle School': '/image/curriculum/DSC06980.jpg',
     'Secondary School': '/image/curriculum/trins-020.jpg',
-    'ICSE': '/image/curriculum/icse-demo.jpg',
-    'IGCSE': '/image/curriculum/igcse-demo.jpg',
-    'Senior Secondary School': '/image/curriculum/DSC06228.jpg',
-    'IBDP': '/image/curriculum/ibdp-demo.jpg',
-    'A LEVELS': '/image/curriculum/alevels-demo.jpg',
+    'ICSE': '/image/curriculum/ICSEBAN.jpg',
+    'IGCSE': '/image/curriculum/IGCSEBAN.jpg',
+    'Senior Secondary School': '/image/curriculum/senior.jpg',
+    'IBDP': '/image/curriculum/IBDPBAN.jpg',
+    'A LEVELS': '/image/curriculum/ALEVELSBAN.jpg',
   };
 
   const handleProgramClick = (programName) => {
@@ -1751,7 +1751,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/elc-demo.jpg"
+                  src="/image/curriculum/DSC08431.JPG"
                   alt="Early Learning Center students"
                   width={700}
                   height={450}
@@ -1770,7 +1770,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  Nurturing Our Youngest Learners
+                  A secure and nurturing environment
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -1782,10 +1782,7 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  Our Early Learning Center provides a warm, welcoming environment 
-                  for children ages 2-4. Inspired by Reggio Emilia and Montessori 
-                  approaches, we focus on sensory exploration, early socialization, 
-                  and foundational skill development.
+                  The curriculum, inspired by the Primary Years Programme (IB), is an enriched play-based trans-disciplinary course designed to empower children. It also aims at giving the child a chance to develop emotionally and socially as they grow.
                 </p>
                 <h3
                   className="mb-3 text-left"
@@ -1798,8 +1795,24 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  PROGRAM HIGHLIGHTS
+                  PLAY BASED TEACHING AND LEARNING METHODOLOGY
                 </h3>
+                <p
+                  className="ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  The curriculum design focuses on students' emotional, physical
+                  and social needs that provide a safe and secure environment to
+                  learn and grow. The programme highlights a balance of
+                  co-curricular and extra-curricular activities. The early year
+                  stage of our programme delivers the following:
+                </p>
                 <ul className="list-disc ml-5 mt-2" style={{
                     fontFamily: "Gideon Roman, serif",
                     fontWeight: 400,
@@ -1807,11 +1820,11 @@ export default function Curriculum() {
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}>
-                  <li>Small class sizes with individualized attention</li>
-                  <li>Daily outdoor exploration and play</li>
-                  <li>Music, movement, and art integration</li>
-                  <li>Early literacy and numeracy through play</li>
-                  <li>Focus on self-help and independence skills</li>
+                  <li>Child's inquiry-led through play based teaching and
+                    learning methodology</li>
+                  <li>Physical and emotional health of the child</li>
+                  <li>Developing communication, thinking, reasoning and social
+                    skills</li>
                 </ul>
                 <p
                   className="ml-5 mt-6"
@@ -1849,12 +1862,12 @@ export default function Curriculum() {
                 textAlign: "left",
               }}
             >
-              KINDERGARTEN
+              KINDERGARTEN PROGRAMME
             </h2>
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/kindergarten-demo.jpg"
+                  src="/image/curriculum/KINDERGARTEN.jpg"
                   alt="Kindergarten students learning"
                   width={700}
                   height={450}
@@ -1873,7 +1886,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  Preparing for Academic Success
+                  
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -1885,11 +1898,49 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  Our Kindergarten program for ages 4-6 provides a bridge between 
-                  early childhood and formal schooling. We maintain a play-based 
-                  approach while introducing more structured learning experiences 
-                  to prepare children for Primary Year Program.
-                </p>
+                 At the main campus, there is ample room for the wonderful world of play to develop. This forms effective leadership qualities in students, and sows the seeds towards establishing early patterns of goal setting, problem solving, making informed choices and taking on challenges.
+               </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+
+Children have an innate sense of wonderment that encompass all that they see around them. Their natural curiosity makes them excellent learners and this is beautifully integrated into the scheme of the Kindergarten curriculum. The co-curricular and academic goals at TRINS are enveloped in a mantle of unconditional love and support provided by a team of dedicated and talented teaching and supporting staff with many years of international teaching experience. All measures are taken to ensure that your child is provided with a safe and comfortable environment that is conducive to happy learning.
+               </p>
+               <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+
+The wide spectrum of learning experiences provided through dance, music ,art craft, sports and computer classes apart from Language, Mathematics , Science and Social Studies ensure that a multi-pronged platform is created to include all types of learners.
+
+               </p>
+               <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+
+The motto of the school ‘Learning is for Life’ creates an atmosphere of enthusiasm and encouragement and provides opportunities that nurture each and every student’s talent and interest and allows them to bloom unrestrained. The philosophy of the school is founded on the belief that each child is unique and is a winner!
+
+               </p>
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -1901,9 +1952,9 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  CURRICULUM FOCUS AREAS
+               
                 </h3>
-                <ul className="list-disc ml-5 mt-2" style={{
+                {/* <ul className="list-disc ml-5 mt-2" style={{
                     fontFamily: "Gideon Roman, serif",
                     fontWeight: 400,
                     fontSize: "23.07px",
@@ -1916,8 +1967,8 @@ export default function Curriculum() {
                   <li>Social studies and community awareness</li>
                   <li>Creative arts and self-expression</li>
                   <li>Physical education and healthy habits</li>
-                </ul>
-                <p
+                </ul> */}
+                {/* <p
                   className="ml-5 mt-6"
                   style={{
                     fontFamily: "Gideon Roman, serif",
@@ -1935,7 +1986,7 @@ export default function Curriculum() {
                   > 
                     www.trins.org/kindergarten
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -2281,7 +2332,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/icse-demo.jpg"
+                  src="/image/curriculum/ICSE.jpg"
                   alt="ICSE students learning"
                   width={700}
                   height={450}
@@ -2300,7 +2351,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  Comprehensive Indian Curriculum
+          
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -2312,9 +2363,31 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     letterSpacing: 0,
                   }}
                 >
-                  The ICSE program at Trivandrum International School offers a
-                  rigorous curriculum that emphasizes in-depth knowledge across
-                  subjects while developing analytical and problem-solving skills.
+                  ICSE is affiliated to the Council for Indian School Certificate Examinations (www.cisce.org)
+                </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  The faculty helps the students and their parents make an informed choice of subjects taking into account the interests of the students and their plans for University education.
+                </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  The subjects offered in ICSE are:
                 </p>
                 <h3
                   className="mb-3 text-left"
@@ -2327,7 +2400,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  PROGRAM HIGHLIGHTS
+                 
                 </h3>
                 <ul className="list-disc ml-5 mt-2" style={{
                     fontFamily: "Gideon Roman, serif",
@@ -2336,12 +2409,24 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}>
-                  <li>Comprehensive syllabus with emphasis on English proficiency</li>
-                  <li>Wide range of subject choices including Indian languages</li>
-                  <li>Internal assessments contributing to final grades</li>
-                  <li>Strong foundation for competitive exams in India</li>
-                  <li>Emphasis on practical knowledge and application</li>
+                  <li>GROUP 1: English, History & Geography and Second Languages (Hindi, Malayalam & French)</li>
+                  <li>GROUP 2: Sciences & Mathematics</li>
+                  <li>GROUP 3: Economics/Computer Applications</li>
                 </ul>
+              .
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  The final board exams are scheduled in March. The assessment in this curriculum includes an internal assessment component as well.
+Meaningful and rich assignments for accentuating learning experience are an integral part of the curriculum.
+                </p>
               </div>
             </div>
           </div>
@@ -2366,7 +2451,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/igcse-demo.jpg"
+                  src="/image/curriculum/IGCSE.jpg"
                   alt="IGCSE students learning"
                   width={700}
                   height={450}
@@ -2385,7 +2470,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  Globally Recognized Curriculum
+                 
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -2397,10 +2482,21 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     letterSpacing: 0,
                   }}
                 >
-                  The IGCSE program offers an international curriculum that
-                  develops students' knowledge, understanding and skills in
-                  subject content and intellectual inquiry.
+                  Education forms the cornerstone of a child’s development. Long gone are the days when access to knowledge came from four-walled classrooms, with students clad in uniforms and using mechanisms like slates.
                 </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  Modern-day problems need a modern-day solution. That is exactly where we step in. With our focus on holistic education, we aim to curate an environment of learning for life in all spheres.
+                </p>
+                
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -2412,9 +2508,70 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  PROGRAM HIGHLIGHTS
+                  WE ARE THE FUTURE OF IGCSE SCHOOLS IN KERALA
                 </h3>
-                <ul className="list-disc ml-5 mt-2" style={{
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  Our general pedagogy allows children to explore individual characteristics while focusing on overall character development. Our flexible subject combinations are the first step in that direction. At the end of Class 8, students choose whether to follow:
+                </p>
+                <h3
+                  className="mb-3 text-left"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "34px",
+                    lineHeight: "44px",
+                    letterSpacing: 0,
+                    textAlign: "left",
+                  }}
+                >
+                 ICSE or Cambridge International Examination’s IGCSE curriculum for the next two years.
+                </h3>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  Both the curriculum empowers the students to progress to either the CIE A-levels or the IBDP at any IGCSE school in Kerala.
+                </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                 This curriculum is Affiliated with the Cambridge Assessment International Education (www.cambridgeinternational.org)
+                </p>
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  The faculty helps the students and their parents make an informed choice of subjects, taking into account the interests of the students and their plans for future.
+                </p>
+                {/* <ul className="list-disc ml-5 mt-2" style={{
                     fontFamily: "Gideon Roman, serif",
                     fontWeight: 400,
                     fontSize: "23.07px",
@@ -2426,7 +2583,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                   <li>Emphasis on application of knowledge</li>
                   <li>Development of creative thinking and problem-solving</li>
                   <li>Preparation for international higher education</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -2451,7 +2608,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC06228.jpg"
+                  src="/image/curriculum/trins-001.jpg"
                   alt="Senior Secondary School students"
                   width={700}
                   height={450}
@@ -2536,7 +2693,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/ibdp-demo.jpg"
+                  src="/image/curriculum/IBDP.jpg"
                   alt="IBDP students learning"
                   width={700}
                   height={450}
@@ -2555,7 +2712,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  Holistic International Education
+              
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -2567,10 +2724,36 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     letterSpacing: 0,
                   }}
                 >
-                  The IBDP is a rigorous two-year program that prepares students
-                  for success in higher education and life in a global society.
-                  It emphasizes intellectual, personal, emotional and social growth.
+                  The Diploma Programme (DP) curriculum is made up of six subject groups and a DP core comprising of three elements.
                 </p>
+
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                The DP core aims for the students to reflect on the nature of knowledge, complete independent research and undertake a project that often involves community service.
+                </p>
+                 <p>The three elements of the DP core are:</p>
+                 <p>Theory of Knowledge (TOK): Reflection on the nature of knowledge and on how we know what we claim to know.</p>
+                 <p>The Extended Essay(EE): An independent, self-directed piece of research, finishing with a 4,000-word paper.</p>
+                 <p>Creativity, Activity, Service (CAS): A project focusing those three concepts.</p>
+                 <p
+                 className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                  >
+                    The six subject groups are:</p>
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -2591,12 +2774,25 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}>
-                  <li>Six subject groups including languages, sciences, and arts</li>
-                  <li>Theory of Knowledge (TOK) course</li>
-                  <li>Extended Essay (4,000-word research paper)</li>
-                  <li>Creativity, Activity, Service (CAS) requirements</li>
-                  <li>Internationally mobile curriculum recognized by top universities</li>
+                  <li>Studies in Language and Literature</li>
+                  <li>Language Acquisition</li>
+                  <li>Individuals and Societies</li>
+                  <li>Sciences</li>
+                  <li>Mathematics</li>
+                  <li>Arts</li>
                 </ul>
+                .
+                <p
+                 className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                  >
+                    The DP is open to any student aged between 16 and 19.</p>
               </div>
             </div>
           </div>
@@ -2621,7 +2817,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/alevels-demo.jpg"
+                  src="/image/curriculum/Alevels.jpg"
                   alt="A LEVELS students learning"
                   width={700}
                   height={450}
@@ -2640,7 +2836,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                  Specialized Subject Focus
+                
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -2652,11 +2848,22 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     letterSpacing: 0,
                   }}
                 >
-                  The Cambridge A Levels program offers in-depth study of selected
-                  subjects, developing deep understanding and independent learning
-                  skills valued by universities worldwide.
+                  The A Level programme consists of AS qualification (studied in Class 11) and A2 qualification (studied in class 12). A student may choose to study four subjects in Class 11, but this will often be reduced to 3 subjects in Class 12 (students obtaining three A-Levels and one AS-Level)
                 </p>
-                <h3
+                .
+                <p
+                  className="mb-6 ml-5"
+                  style={{
+                    fontFamily: "Gideon Roman, serif",
+                    fontWeight: 400,
+                    fontSize: "23.07px",
+                    lineHeight: "27.81px",
+                    letterSpacing: 0,
+                  }}
+                >
+                  Subjects may be chosen in any combination that suits their requirements for their University education. Accordingly, there are no fixed subject groups. However, choices will be also influenced by schedules set for the school year:
+                </p>
+                {/* <h3
                   className="mb-3 text-left"
                   style={{
                     fontFamily: "Gideon Roman, serif",
@@ -2681,7 +2888,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                   <li>Internationally benchmarked assessments</li>
                   <li>Development of analytical and critical thinking skills</li>
                   <li>Excellent preparation for UK and Commonwealth universities</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
