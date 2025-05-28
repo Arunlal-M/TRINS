@@ -38,12 +38,12 @@ const Navbar = () => {
       >
 
         {/* Left side with logo and school name */}
-        <div
+        {/* <div
           className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
           style={{ backdropFilter: "blur(1px)" }}
         >
           <Image
-            src="/image/logo.png" // Update with your actual logo path
+            src="/image/Logo.png" // Update with your actual logo path
             alt="Trivandrum International School Logo"
             width={300}
             height={300}
@@ -55,7 +55,21 @@ const Navbar = () => {
                 } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}>
             Trivandrum International School
           </h1>
+        </div> */}
+
+        <div
+          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
+          style={{ backdropFilter: "blur(1px)" }}
+        >
+          <Image
+            src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
+            alt="Trivandrum International School Logo"
+            width={400}
+            height={400}
+            className={`object-contain ml-[20px] mt-[20px]`}
+          />
         </div>
+
 
         {/* Hamburger icon for <=950px */}
         <div
