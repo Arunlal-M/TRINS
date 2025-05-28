@@ -56,7 +56,7 @@ export default function Curriculum() {
   };
 
   return (
-    <div className="w-screen mt-64 mainContainer">
+    <div className="w-screen mt-38 mainContainer">
       {/* Banner Section */}
       <div className="relative w-full h-[70svh] magnet-section">
         <Image
