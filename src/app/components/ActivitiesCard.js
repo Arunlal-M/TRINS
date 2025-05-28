@@ -4,7 +4,7 @@ export default function ActivitiesCard({ title }) {
   return (
     <div className="relative w-full aspect-[4/5] rounded-t-full overflow-hidden shadow-2xl flex items-end group">
       <img
-        src="/image/activities/activitiesCardImage.png"
+        src="/image/activities/ARTS.jpg"
         alt="Activity"
         className="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-300 group-hover:scale-105"
         draggable={false}

@@ -3,7 +3,7 @@ export default function Events() {
     <div className="flex flex-col items-center justify-center mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/events/cover.png"
+          src="/image/events/cover.jpg"
           alt="Events Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />

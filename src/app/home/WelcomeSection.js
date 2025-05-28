@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ReadMoreButton from "../components/ReadMoreButton";
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import ReadMoreButton from '../components/ReadMoreButton';
+import './WelcomeSection.css';
 
 const WelcomeSection = () => {
   const childrenRef = useRef(null);
@@ -20,11 +21,11 @@ const WelcomeSection = () => {
         y: 0,
         scale: 1,
         duration: 2.2,
-        ease: "power3.out",
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: slateRef.current,
-          start: "top 80%",
-          toggleActions: "play reverse play reverse",
+          start: 'top 80%',
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
@@ -35,11 +36,11 @@ const WelcomeSection = () => {
         opacity: 1,
         y: 0,
         duration: 1.8,
-        ease: "power3.out",
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: groupRef.current,
-          start: "top 90%",
-          toggleActions: "play reverse play reverse",
+          start: 'top 90%',
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
@@ -51,16 +52,12 @@ const WelcomeSection = () => {
         className="absolute left-0 w-full pointer-events-none z-0 overflow-hidden flex justify-center -top-2"
       >
         <img src="/image/home/WelcomeChildren.svg" alt="Welcome Children" />
-      </div>{" "}
+      </div>{' '}
       <div
         ref={slateRef}
-        className="relative flex flex-col items-center justify-center z-20 -mt-48"
+        className="relative flex flex-col items-center justify-center z-20 -mt-48 welcomeSlateImgContainer"
       >
-        <img
-          src="/image/home/Slate-edited.svg"
-          alt="Slate"
-          className="w-[950px] h-[600px]"
-        />
+        <img src="/image/home/Slate-edited.svg" alt="Slate" className="w-[950px] h-[600px]" />
       </div>
       <div
         ref={groupRef}
@@ -70,7 +67,7 @@ const WelcomeSection = () => {
           ref={headingRef}
           className="text-[#F5DE9C] text-5xl md:text-6xl font-serif font-normal text-center mb-6 font-cormorant"
         >
-          WESTERN
+          TRIVANDRUM
           <br />
           INTERNATIONAL SCHOOL
         </h2>
@@ -78,11 +75,7 @@ const WelcomeSection = () => {
           ref={descRef}
           className="text-white text-center font-[400] text-[27.33px] leading-[52.85px] font-[Gideon_Roman] max-w-7xl mb-2 px-4 tracking-normal"
         >
-          Nestled on a sprawling 20-acre eco-friendly campus on the outskirts of
-          Kerala’s capital, Western International School blends natural beauty
-          with cutting-edge infrastructure. Designed to inspire holistic
-          development, the campus provides an enriching environment where
-          students excel academically, creatively, and personally.
+          TRINS aims to empower young learners to become leaders with a lifelong passion for learning and caring.
         </p>
         <div className="flex flex-col mb-24 items-center">
           {" "}

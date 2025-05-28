@@ -2,3 +2,5 @@ node_modules
 .next/
 .env*
 *.log
+out/
+public/video/ourCampus.mp4

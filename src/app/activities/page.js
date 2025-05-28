@@ -5,7 +5,7 @@ export default function Activities() {
     <div className="mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/activities/cover.png"
+          src="/image/activities/cover.jpg"
           alt="Activities Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -18,7 +18,7 @@ export default function Activities() {
           className="relative z-20 text-white text-7xl font-normal"
           style={{ fontFamily: "Gideon Roman, serif", letterSpacing: 2 }}
         >
-          School Activities | Western
+          School Activities | TRINS
         </h1>
       </div>
       <div className="w-full bg-white flex flex-col items-center py-20 px-4">
@@ -40,7 +40,7 @@ export default function Activities() {
             lineHeight: "1.6",
           }}
         >
-          Western constantly strives to ensure the best possible teaching and
+          TRINS constantly strives to ensure the best possible teaching and
           learning environment for its students, integrating educational
           philosophy and practice, while also attending to their co-curricular
           needs and well-being.
