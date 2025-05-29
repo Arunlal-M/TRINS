@@ -1,10 +1,8 @@
 /* Diamond Button Component Styles */
 .diamond-container {
   width: 290px;
-  /* Increased from 160px */
   margin: 0;
   padding: 0 30px;
-  /* Increased from 0 25px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +10,7 @@
 
 .diamond-button {
   width: 160px;
-  /* Increased from 80px */
   height: 160px;
-  /* Increased from 80px */
   transform: rotate(45deg);
   background-color: #cbaa68;
   border: 1px solid #000;
@@ -73,19 +69,16 @@
   background-color: black;
   position: absolute;
   width: 90px;
-  /* Increased from 70px */
   top: 50%;
   transform: translateY(-50%);
 }
 
 .connecting-line.left {
   left: -75px;
-  /* Adjusted from -60px */
 }
 
 .connecting-line.right {
   right: -75px;
-  /* Adjusted from -60px */
 }
 
 .diamond-text {
@@ -94,9 +87,6 @@
   height: 120px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
-  display: flex;
-  justify-content: space-between;
 }
 
 .diamond-title {
@@ -105,6 +95,13 @@
   font-weight: lighter;
   line-height: 1.2;
   margin-top: 1em;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.diamond-title:hover {
+  color: #085038;
+  text-decoration: underline;
 }
 
 .diamond-age {
@@ -122,52 +119,40 @@
 @media (max-width: 1200px) {
   .diamond-container {
     width: 175px;
-    /* Increased from 140px */
     padding: 0 25px;
-    /* Increased from 0 20px */
   }
 
   .diamond-button {
     width: 90px;
-    /* Increased from 75px */
     height: 90px;
-    /* Increased from 75px */
   }
 
   .diamond-number {
     font-size: 1.7rem;
-    /* Increased from 1.5rem */
   }
 
   .connecting-line {
     width: 75px;
-    /* Increased from 60px */
   }
 
   .connecting-line.left {
     left: -65px;
-    /* Adjusted from -50px */
   }
 
   .connecting-line.right {
     right: -65px;
-    /* Adjusted from -50px */
   }
 }
 
 @media (max-width: 992px) {
   .diamond-container {
     width: 160px;
-    /* Increased from 130px */
     padding: 0 20px;
-    /* Increased from 0 15px */
   }
 
   .diamond-button {
     width: 80px;
-    /* Increased from 70px */
     height: 80px;
-    /* Increased from 70px */
   }
 
   .stageContainer {
@@ -186,37 +171,29 @@
 @media (max-width: 768px) {
   .diamond-container {
     width: 130px;
-    /* Increased from 110px */
     padding: 0 12px;
-    /* Increased from 0 10px */
   }
 
   .diamond-button {
     width: 70px;
-    /* Increased from 60px */
     height: 70px;
-    /* Increased from 60px */
   }
 
   .diamond-number {
     font-size: 1.4rem;
-    /* Increased from 1.3rem */
   }
 
   .connecting-line {
     width: 55px;
-    /* Increased from 45px */
     height: 1px;
   }
 
   .connecting-line.left {
     left: -45px;
-    /* Adjusted from -35px */
   }
 
   .connecting-line.right {
     right: -45px;
-    /* Adjusted from -35px */
   }
 
   .diamond-title {
@@ -231,36 +208,28 @@
 @media (max-width: 480px) {
   .diamond-container {
     width: 110px;
-    /* Increased from 90px */
     padding: 0 8px;
-    /* Increased from 0 5px */
   }
 
   .diamond-button {
     width: 60px;
-    /* Increased from 50px */
     height: 60px;
-    /* Increased from 50px */
   }
 
   .diamond-number {
     font-size: 1.2rem;
-    /* Increased from 1rem */
   }
 
   .connecting-line {
     width: 40px;
-    /* Increased from 30px */
   }
 
   .connecting-line.left {
     left: -35px;
-    /* Adjusted from -25px */
   }
 
   .connecting-line.right {
     right: -35px;
-    /* Adjusted from -25px */
   }
 
   .diamond-title {
