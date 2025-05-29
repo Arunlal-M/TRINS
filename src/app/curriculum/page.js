@@ -145,7 +145,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.JPG" // Path is already correct
+                  src="/image/curriculum/DSC08431.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -262,7 +262,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.JPG"
+                  src="/image/curriculum/DSC08431.jpg"
                   alt="Early Learning Center students"
                   width={700}
                   height={450}
