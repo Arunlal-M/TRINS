@@ -133,13 +133,13 @@ const Navbar = () => {
             >
               EVENTS
             </Link>
-            <Link
+            {/* <Link
               href="/food-menu"
               className="text-white text-lg font-gideon uppercase"
               onClick={() => setMobileOpen(false)}
             >
               FOOD MENU
-            </Link>
+            </Link> */}
             <Link
               href="/blogs"
               className="text-white text-lg font-gideon uppercase"
@@ -195,7 +195,7 @@ const Navbar = () => {
             >
               Events
             </Link>
-            <Link
+            {/* <Link
               key="FOOD MENU"
               href="/food-menu"
               className={`h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
@@ -204,7 +204,7 @@ const Navbar = () => {
                 } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
               Food Menu
-            </Link>
+            </Link> */}
             <Link
               key="BLOGS"
               href="/blogs"
