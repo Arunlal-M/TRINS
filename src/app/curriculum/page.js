@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ProgramButton from "../components/curriculum/ProgramButton";
 import "./Curriculum.css";
 
@@ -9,6 +9,25 @@ export default function Curriculum() {
   const [activeSubProgram, setActiveSubProgram] = useState(null);
   const [bannerFade, setBannerFade] = useState(false);
   const prevProgram = useRef(activeProgram);
+
+  // Add this useEffect to handle URL parameters
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const programParam = urlParams.get('program');
+      
+      if (programParam && [
+        'Early Year Program',
+        'Primary Year Program',
+        'Middle School',
+        'Secondary School',
+        'Senior Secondary School'
+      ].includes(programParam)) {
+        setActiveProgram(programParam);
+      }
+    }
+  }, []);
+
   const programs = [
     "Early Year Program",
     "Primary Year Program",
