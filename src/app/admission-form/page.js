@@ -50,10 +50,10 @@ export default function AdmissionForm() {
 
       {/* Form Container */}
       <div className="w-full max-w-4xl mx-auto my-16 p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-[#075037] mb-6 ">Online Admission Form</h2>
+        <h2 className="text-4xl text-center font-bold text-[#075037] mb-6 ">Online Admission Form</h2>
         
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 mt-8">
+        <div className="grid grid-cols-2 gap-50 mt-50 mt-8">
           {/* Admission Form Card */}
           <AdmissionCard
             image="/image/admission-process/Admission3.jpg"
