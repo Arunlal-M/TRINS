@@ -2,7 +2,10 @@ import ActivitiesCard from "../components/ActivitiesCard";
 
 export default function Activities() {
   return (
-    <div className="mt-64 mainContainer">
+    <div
+      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      style={{ minHeight: 320 }}
+    >
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
           src="/image/activities/cover.jpg"

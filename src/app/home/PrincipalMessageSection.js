@@ -102,18 +102,19 @@ const PrincipalMessageSection = () => {
                 distinct international school.
               </p>
               <p className="noteSignature">- Richard Hillebrand</p>
+              <ReadMoreButton className="angle" href="/PrincipalMessage" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col mb-24 items-center">
+      {/* <div className="flex flex-col mb-24 items-center"> */}
         {' '}
         {/* Added items-center */}
-        <ReadMoreButton href="#" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '}
+        {/* <ReadMoreButton href="#" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '} */}
         {/* Use the new component */}
         {/* This invisible spacer ensures additional space at the bottom of the section */}
-        <div className="invisible"></div>
-      </div>
+        {/* <div className="invisible"></div> */}
+      {/* </div> */}
     </div>
   );
 };

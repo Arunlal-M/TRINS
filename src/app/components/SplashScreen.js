@@ -148,23 +148,23 @@ const SplashScreen = () => {
         }}
       >
         Trivandrum International School
-      </p>
+      </p><br/>
       <p
         className="splash-subtitle opacity-0"
         style={{
           fontFamily: 'Glass Antiqua',
-          fontWeight: 400,
-          fontSize: '36.53px',
+          // fontWeight: 100,
+          fontSize: '28.53px',
           lineHeight: '40.76px',
           letterSpacing: '20%',
           textAlign: 'center',
-          textTransform: 'uppercase',
+          // textTransform: 'uppercase',
           color: '#FFFFFF',
         }}
       >
         Molding a new generation Of Leaders
       </p>
-      <div className="splash-down-arrow absolute mt-4 stick bottom-0 left-1/2 transform -translate-x-1/2 opacity-0">
+      {/* <div className="splash-down-arrow absolute mt-4 stick bottom-0 left-1/2 transform -translate-x-1/2 opacity-0">
         <Image
           src="/gif/Arrow.gif"
           alt="Downward arrow"
@@ -173,7 +173,7 @@ const SplashScreen = () => {
           className="rotate-[270deg]"
           unoptimized
         />
-      </div>
+      </div> */}
     </div>
   );
 };

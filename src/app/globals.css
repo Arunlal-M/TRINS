@@ -227,6 +227,10 @@ footer h3 {
   padding-top: 10px;
   transform: rotate(356deg) !important;
 }
+.principalNoteContainer .angle {
+  margin-top: 10px;
+  transform: rotate(356deg) !important;
+}
 
 .h-screen {
   height: 104vh;

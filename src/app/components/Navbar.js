@@ -61,13 +61,18 @@ const Navbar = () => {
           className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
           style={{ backdropFilter: "blur(1px)" }}
         >
-          <Image
-            src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
-            alt="Trivandrum International School Logo"
-            width={400}
-            height={400}
-            className={`object-contain ml-[20px] mt-[20px]`}
-          />
+
+          <Link
+            href="/"
+          >
+            <Image
+              src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
+              alt="Trivandrum International School Logo"
+              width={400}
+              height={400}
+              className={`object-contain ml-[20px] mt-[20px]`}
+            />
+          </Link>
         </div>
 
 
