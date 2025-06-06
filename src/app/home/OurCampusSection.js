@@ -412,7 +412,6 @@
 //           }}
 //         >
 //           At TRINS, Our Campus Provides A Nurturing Environment With Modern
-//           At TRINS, Our Campus Provides A Nurturing Environment With Modern
 //           Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
 //           Outdoor Areas Encourage Physical Activity, While The Safe,
 //           Well-Maintained Surroundings Ensure Students Thrive Academically And
@@ -810,7 +809,11 @@ const OurCampusSection = () => {
             background: "transparent",
           }}
         >
-          Trivandrum International School (TRINS) is set in a serene, 20-acre eco-friendly campus atop a hill on the outskirts of Trivandrum, the capital city of the State of Kerala, India. 
+          At TRINS, Our Campus Provides A Nurturing Environment With Modern
+          Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
+          Outdoor Areas Encourage Physical Activity, While The Safe,
+          Well-Maintained Surroundings Ensure Students Thrive Academically And
+          Socially.
         </p>
       </div>
     </div>

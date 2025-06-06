@@ -35,7 +35,7 @@ const CurriculumSection = () => {
                     }}
                 >
                     <p>
-                        I am fortunate to have been part of the creation of TRINS International 
+                        I am fortunate to have been part of the creation of Trivandrum International
                         School in 2003. From its inception, Mr George M
                     </p>
                 </div>

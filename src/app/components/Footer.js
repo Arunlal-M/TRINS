@@ -125,7 +125,7 @@ const Footer = () => {
                   {" "}
                   <Image
                     src="/image/tis-logo.webp"
-                    alt="TRINS International School Logo"
+                    alt="Trivandrum International School Logo"
                     width={100}
                     height={100}
                     className="filter brightness-0 invert"
@@ -140,10 +140,7 @@ const Footer = () => {
                 </h2>{" "}
               </div>
               <p className="text-sm mb-1">
-                Trivandrum International School,
-Edackode P O, Korani, Trivandrum-695 104,
-Kerala,
-
+                Trivandrum International School, Kollam, Kerala,
                 <br />
                 INDIA
               </p>{" "}

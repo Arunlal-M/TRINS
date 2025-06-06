@@ -33,7 +33,6 @@ export default function Careers() {
           }}
         >
           Opportunities at TRINS
-          Opportunities at TRINS
         </h2>
         <p
           className="max-w-6xl mb-8 text-[#222]"
