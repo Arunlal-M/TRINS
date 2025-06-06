@@ -1,13 +1,13 @@
 import React from 'react';
 
-const CurriculumSection = () => {    
+const CurriculumSection = () => {
     return (
         <div className="w-full min-h-screen relative overflow-hidden bg-[#EAC985] py-16 md:py-24 flex flex-col justify-start">
             {/* Main content - Title and description at the top */}
             <div className="container mx-auto px-4 relative z-20 flex flex-col items-center pt-8 md:pt-12">
                 <h2
                     className="text-6xl md:text-7xl lg:text-8xl font-black text-center relative"
-                    style={{ 
+                    style={{
                         fontFamily: 'Gideon Roman, serif',
                         color: 'black',
                         letterSpacing: '0.1em',
@@ -18,9 +18,9 @@ const CurriculumSection = () => {
                 >
                     CURRICULUM
                 </h2>
-                
+
                 {/* Description text with specified styling */}
-                <div 
+                <div
                     className="mx-auto mt-4 mb-8"
                     style={{
                         width: '992px',
@@ -35,16 +35,16 @@ const CurriculumSection = () => {
                     }}
                 >
                     <p>
-                        I am fortunate to have been part of the creation of Western International 
+                        I am fortunate to have been part of the creation of TRINS International 
                         School in 2003. From its inception, Mr George M
                     </p>
                 </div>
             </div>
-            
+
             {/* Content container with CURRICULUM background */}
             <div className="w-full relative mt-8 md:mt-12 flex-grow min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
                 {/* Background CURRICULUM text */}
-                <div 
+                <div
                     className="absolute inset-0 pointer-events-none select-none overflow-hidden"
                     style={{
                         zIndex: 1,
@@ -71,43 +71,41 @@ const CurriculumSection = () => {
                         CURRICULUM
                     </div>
                 </div>
-                
                 {/* Container for content that will go on top of the background text */}
                 <div className="container mx-auto px-4 relative z-10 py-8 md:py-16 h-full flex flex-col">
                     {/* Image of children on sofa */}
                     <div className="flex justify-center w-full mt-8">
-                        <img 
-                            src="/image/home/children-sofa.jpg" 
-                            alt="Children sitting on a sofa" 
-                            className="rounded-lg shadow-lg max-w-full md:max-w-3xl lg:max-w-4xl" 
+                        <img
+                            src="/image/home/children-sofa.jpg"
+                            alt="Children sitting on a sofa"
+                            className="rounded-lg shadow-lg max-w-full md:max-w-3xl lg:max-w-4xl"
                         />
                     </div>
                 </div>
             </div>
-            
             {/* Diamond buttons with connecting lines */}
             <div className="w-full mt-8 md:mt-16">
                 <div className="container mx-auto">
                     <div className="w-full overflow-x-auto py-8">
                         <div className="flex justify-center items-center min-w-max px-4 relative">                            {/* Single continuous line connecting all diamonds */}
-                            <div className="absolute h-[1px] bg-black top-[40px] md:top-[50px] z-0" 
-                                style={{ 
-                                    width: 'calc(100% - 200px)', 
+                            <div className="absolute h-[1px] bg-black top-[40px] md:top-[50px] z-0"
+                                style={{
+                                    width: 'calc(100% - 200px)',
                                     left: '100px',
                                     right: '100px'
                                 }}></div>
-                            
+
                             {/* Diamond 01 - Active by default */}
                             <div className="flex flex-col items-center mx-4 md:mx-8">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rotate-45 flex items-center justify-center cursor-pointer group transition-all duration-300 z-10 relative"
                                         style={{
                                             backgroundColor: '#085038',
                                             border: '1px solid #000',
                                         }}
                                     >
-                                        <span 
+                                        <span
                                             className="text-white text-2xl md:text-3xl font-bold -rotate-45"
                                         >
                                             01
@@ -119,18 +117,18 @@ const CurriculumSection = () => {
                                     <p className="text-sm">3 to 5 Years</p>
                                 </div>
                             </div>
-                            
+
                             {/* Diamond 02 */}
                             <div className="flex flex-col items-center mx-4 md:mx-8">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rotate-45 flex items-center justify-center cursor-pointer group hover:bg-[#085038] transition-all duration-300 z-10 relative"
                                         style={{
                                             border: '1px solid #000',
                                             backgroundColor: '#EAC985',
                                         }}
                                     >
-                                        <span 
+                                        <span
                                             className="text-black text-2xl md:text-3xl font-bold -rotate-45 group-hover:text-white transition-colors duration-300"
                                         >
                                             02
@@ -142,18 +140,18 @@ const CurriculumSection = () => {
                                     <p className="text-sm">6 to 10 Years</p>
                                 </div>
                             </div>
-                            
+
                             {/* Diamond 03 */}
                             <div className="flex flex-col items-center mx-4 md:mx-8">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rotate-45 flex items-center justify-center cursor-pointer group hover:bg-[#085038] transition-all duration-300 z-10 relative"
                                         style={{
                                             border: '1px solid #000',
                                             backgroundColor: '#EAC985',
                                         }}
                                     >
-                                        <span 
+                                        <span
                                             className="text-black text-2xl md:text-3xl font-bold -rotate-45 group-hover:text-white transition-colors duration-300"
                                         >
                                             03
@@ -165,18 +163,18 @@ const CurriculumSection = () => {
                                     <p className="text-sm">11 to 13 Years</p>
                                 </div>
                             </div>
-                            
+
                             {/* Diamond 04 */}
                             <div className="flex flex-col items-center mx-4 md:mx-8">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rotate-45 flex items-center justify-center cursor-pointer group hover:bg-[#085038] transition-all duration-300 z-10 relative"
                                         style={{
                                             border: '1px solid #000',
                                             backgroundColor: '#EAC985',
                                         }}
                                     >
-                                        <span 
+                                        <span
                                             className="text-black text-2xl md:text-3xl font-bold -rotate-45 group-hover:text-white transition-colors duration-300"
                                         >
                                             04
@@ -188,18 +186,18 @@ const CurriculumSection = () => {
                                     <p className="text-sm">14 to 16 Years</p>
                                 </div>
                             </div>
-                            
+
                             {/* Diamond 05 - Last */}
                             <div className="flex flex-col items-center mx-4 md:mx-8">
                                 <div className="relative">
-                                    <div 
+                                    <div
                                         className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rotate-45 flex items-center justify-center cursor-pointer group hover:bg-[#085038] transition-all duration-300 z-10 relative"
                                         style={{
                                             border: '1px solid #000',
                                             backgroundColor: '#EAC985',
                                         }}
                                     >
-                                        <span 
+                                        <span
                                             className="text-black text-2xl md:text-3xl font-bold -rotate-45 group-hover:text-white transition-colors duration-300"
                                         >
                                             05

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DiamondButton from './DiamondButton';
 
-const   CurriculumSection = () => {
+const CurriculumSection = () => {
     const [activeStage, setActiveStage] = useState(1);
     const [imageVisible, setImageVisible] = useState(true);
     const [isAnimatingOut, setIsAnimatingOut] = useState(false);
@@ -68,7 +68,7 @@ const   CurriculumSection = () => {
                     padding: '0 1rem',
                 }}
             ><p>
-                    I am fortunate to have been part of the creation of Western International
+                    I am fortunate to have been part of the creation of TRINS International
                     School in 2003. From its inception, Mr George M
                 </p>
             </div>

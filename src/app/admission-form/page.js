@@ -5,22 +5,22 @@ export default function AdmissionForm() {
     <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.png"}
+          image={"/image/admission-process/admission-process.jpg"}
           text="Admission Process"
           href="/admission-process"
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.png"
+          image="/image/admission-process/eligibility.jpg"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.png"
+          image="/image/admission-process/admission-form.jpg"
           text="Admission Form"
           active
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.png"
+          image="/image/admission-process/admission-contact.jpg"
           text="Admission Contact"
           href="/admission-contact"
         />
@@ -32,7 +32,7 @@ export default function AdmissionForm() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/admission-process/admissionProcessMain.png"
+                src="/image/admission-process/admission-form2.jpg"
                 alt="Admission Form Main"
               />
             </div>
@@ -56,7 +56,7 @@ export default function AdmissionForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 mt-8">
           {/* Admission Form Card */}
           <AdmissionCard
-            image="/image/admission-process/admission-form.png"
+            image="/image/admission-process/Admission3.jpg"
             text="Admission Form"
             href="/application-form"
             active
@@ -64,28 +64,28 @@ export default function AdmissionForm() {
           
           {/* Transport Form Card */}
           <AdmissionCard
-            image="/image/admission-process/transport.png"
+            image="/image/admission-process/Bus Form.jpg"
             text="Transport Form"
             href="/admission-form/transport-form"
           />
           
           {/* Route Form Card */}
           <AdmissionCard
-            image="/image/admission-process/route.png"
+            image="/image/admission-process/rout file.jpg"
             text="Route File"
             href="/admission-form/route-pdf"
           />
           
           {/* Health Form Card */}
           <AdmissionCard
-            image="/image/admission-process/health.png"
+            image="/image/admission-process/Healthform.jpg"
             text="Health Form"
             href="/admission-form/health-form"
           />
           
           {/* Boarders Form Card */}
           <AdmissionCard
-            image="/image/admission-process/boarders.png"
+            image="/image/admission-process/Health.jpg"
             text="Health Boarders"
             href="/admission-form/health-boarders"
           />
