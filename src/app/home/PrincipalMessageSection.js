@@ -102,7 +102,7 @@ const PrincipalMessageSection = () => {
                 distinct international school.
               </p>
               <p className="noteSignature">- Richard Hillebrand</p>
-              <ReadMoreButton className="angle" href="/PrincipalMessage" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '}
+              <ReadMoreButton className="angle" href="/PrincipalMessage" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
             </div>
           </div>
         </div>

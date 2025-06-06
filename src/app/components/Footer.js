@@ -24,13 +24,15 @@ const ApplyIcon = () => (
 );
 
 const FeesIcon = () => (
-  <Image
-    src="/image/footer/fee.svg"
-    alt="Fees"
-    width={48}
-    height={48}
-    className="group-hover:filter group-hover:brightness-0 group-hover:invert"
-  />
+  <Link href="/fees-structure">
+    <Image
+      src="/image/footer/fee.svg"
+      alt="Fees"
+      width={48}
+      height={48}
+      className="group-hover:filter group-hover:brightness-0 group-hover:invert"
+    />
+  </Link>
 );
 
 const Footer = () => {
@@ -115,7 +117,7 @@ const Footer = () => {
         </div>
 
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-25 items-start max-w-6xl mx-auto">
           <div className="flex flex-row justify-center">
             {" "}
             <div className="flex flex-col">
@@ -140,16 +142,14 @@ const Footer = () => {
                 </h2>{" "}
               </div>
               <p className="text-sm mb-1">
-                Trivandrum International School,
-Edackode P O, Korani, Trivandrum-695 104,
-Kerala,
-
-                <br />
+                Trivandrum International School,<br />
+                Edackode P.O, Korani,<br /> Trivandrum - 695 104,
+                <br />Kerala,
                 INDIA
-              </p>{" "}
-              <p className="text-sm mb-1">Mobile No: +919947066646
-</p>
-              <p className="text-sm">Phone No: +914712619051 ext 236</p>
+              </p>{" "}<br />
+              <p className="text-sm mb-1">Mobile No: +91 9947066646
+              </p>
+              <p className="text-sm">Phone No: +91 471 2619051 ext 236</p>
               <p className="text-sm">Fax No: +91 471 2619510</p>
 
             </div>

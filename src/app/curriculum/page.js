@@ -77,7 +77,7 @@ export default function Curriculum() {
   return (
     <div className="w-screen mt-38 mainContainer">
       {/* Banner Section */}
-      <div className="relative w-full h-[70svh] magnet-section">
+      <div className="relative w-full h-[40svh] magnet-section">
         <Image
           src={bannerImages[activeSubProgram || activeProgram]}
           alt="Students in a classroom with CURRICULUM text overlay"
