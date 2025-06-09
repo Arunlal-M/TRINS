@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
 
-@import "tailwindcss";
+@font-face {
+  font-family: 'Phaley';
+  src:
+    url('../../public/fonts/Phaley.woff2') format('woff2'),
+    url('../../public/fonts/Phaley.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import 'tailwindcss';
 
 :root {
-  --background: #074D36;
+  --background: #074d36;
   --foreground: #171717;
-  --color-primary: #A78747;
+  --color-primary: #a78747;
   /* previously --gold-primary */
-  --color-secondary: #BC9C5A;
+  --color-secondary: #bc9c5a;
   /* previously --gold-secondary */
-  --color-accent: #074D36;
+  --color-accent: #074d36;
   /* previously --green-dark */
   --color-accent-medium: #377358;
   /* previously --green-medium */
-  --color-accent-dark: #16513F;
+  --color-accent-dark: #16513f;
   /* previously --green-darker */
-  --color-accent-deep: #084F37;
+  --color-accent-deep: #084f37;
   /* previously --green-deep */
   --color-accent-very-dark: #043426;
   /* previously --green-very-dark */
@@ -39,9 +49,8 @@ body {
   overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background-color: var(--background);
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -60,7 +69,7 @@ h6,
 p,
 a,
 li {
-  font-family: "Gideon Roman", serif;
+  font-family: 'Gideon Roman', serif;
 }
 
 p {
@@ -96,7 +105,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 720px) {
   footer .footer-badge-container {
     display: grid;
     text-align: center;
@@ -129,6 +138,18 @@ footer {
 
   .principalMessageImg {
     position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .mob-height-adjust {
+    min-height: 100%;
+    height: 100%;
+    padding-bottom: 2em;
+  }
+
+  h2 {
+    font-size: 38px !important;
   }
 
   .PrincipalsNote {
@@ -141,6 +162,11 @@ footer {
 
   .displayMob {
     display: block !important;
+  }
+
+  .ourCampusContent {
+    margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -175,5 +201,93 @@ footer h3 {
 @media screen and (max-width: 991px) {
   .mainContainer {
     margin-top: 5em;
+  }
+}
+
+.noteContentContainer {
+  width: 52%;
+  position: absolute;
+  top: 30%;
+  left: 24%;
+}
+
+.principalNoteContainer {
+  position: relative;
+}
+
+.principalNoteContainer .noteContentContainer .note {
+  font-size: 24px;
+  transform: rotate(356deg) !important;
+}
+
+.principalNoteContainer .noteSignature {
+  font-family: 'Phaley';
+  font-weight: normal;
+  font-size: 54px;
+  padding-top: 10px;
+  transform: rotate(356deg) !important;
+}
+.principalNoteContainer .angle {
+  margin-top: 10px;
+  transform: rotate(356deg) !important;
+}
+
+.h-screen {
+  height: 104vh;
+}
+
+@media screen and (max-width: 1279px) {
+  .principalNoteContainer .noteContentContainer .note {
+    font-size: 20px;
+  }
+
+  .principalNoteContainer .noteSignature {
+    font-size: 52px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .principalNoteContainer .noteContentContainer .note {
+    font-size: 18px;
+  }
+
+  .principalNoteContainer .noteSignature {
+    font-size: 52px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .principalNoteContainer .noteContentContainer .note {
+    font-size: 14px;
+  }
+
+  .principalNoteContainer .noteSignature {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .principalNoteContainer .noteContentContainer .note {
+    font-size: 13px;
+  }
+
+  .splash-title {
+    font-size: 32px !important;
+    width: 100% !important;
+    line-height: inherit !important;
+    height: auto !important;
+  }
+
+  .splash-subtitle {
+    font-size: 32px !important;
+    width: 100% !important;
+    line-height: inherit !important;
+    height: auto !important;
+  }
+
+  .principalNoteContainer .noteSignature {
+    font-size: 30px;
   }
 }

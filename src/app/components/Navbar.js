@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname(); // Get the current pathname
@@ -32,10 +33,49 @@ const Navbar = () => {
         }
       `}</style>
       <nav
-        className={`absolute top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${
-          isHomePage ? "bg-transparent" : "bg-transparent"
-        }`}
+        className={`absolute top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${isHomePage ? "bg-transparent" : "bg-transparent"
+          }`}
       >
+
+        {/* Left side with logo and school name */}
+        {/* <div
+          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
+          style={{ backdropFilter: "blur(1px)" }}
+        >
+          <Image
+            src="/image/Logo.png" // Update with your actual logo path
+            alt="Trivandrum International School Logo"
+            width={300}
+            height={300}
+            className="object-contain ml-[-90px] mt-[20px]"
+          />
+          <h1 className={` font-gideon text-xl md:text-4xl font-normal ml-[-50px] mt-[-20px] ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}>
+            Trivandrum International School
+          </h1>
+        </div> */}
+
+        <div
+          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
+          style={{ backdropFilter: "blur(1px)" }}
+        >
+
+          <Link
+            href="/"
+          >
+            <Image
+              src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
+              alt="Trivandrum International School Logo"
+              width={400}
+              height={400}
+              className={`object-contain ml-[20px] mt-[20px]`}
+            />
+          </Link>
+        </div>
+
+
         {/* Hamburger icon for <=950px */}
         <div
           className="navbar-mobile absolute top-6 right-6 z-[1020]"
@@ -98,13 +138,13 @@ const Navbar = () => {
             >
               EVENTS
             </Link>
-            <Link
+            {/* <Link
               href="/food-menu"
               className="text-white text-lg font-gideon uppercase"
               onClick={() => setMobileOpen(false)}
             >
               FOOD MENU
-            </Link>
+            </Link> */}
             <Link
               href="/blogs"
               className="text-white text-lg font-gideon uppercase"
@@ -149,62 +189,57 @@ const Navbar = () => {
           {isHomePage && (
             <div className="absolute w-screen h-[220px] bg-gradient-to-b from-black/80 via-black/50 to-transparent pointer-events-none z-0 top-0 left-0" />
           )}
-          <div className="absolute z-10 flex items-center justify-end gap-8 pr-8 w-full max-w-[600px] top-[125px] right-10">
+          <div className="absolute z-10 flex items-center justify-end gap-8 pr-8 w-full max-w-[600px] top-[35px] right-8">
             <Link
               key="EVENTS"
               href="/events"
-              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              EVENTS
+              Events
             </Link>
-            <Link
+            {/* <Link
               key="FOOD MENU"
               href="/food-menu"
-              className={`h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              FOOD MENU
-            </Link>
+              Food Menu
+            </Link> */}
             <Link
               key="BLOGS"
               href="/blogs"
-              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              BLOGS
+              Blogs&nbsp;&nbsp;
             </Link>
 
             <Link
               key="CAREERS"
               href="/careers"
-              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              CAREERS
+              Careers&nbsp;&nbsp;
             </Link>
             <Link
               key="CONTACT US"
               href="/contact"
-              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[15.88px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              &nbsp;&nbsp;CONTACT&nbsp;US
+              &nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;Us&nbsp;&nbsp;
             </Link>
 
             <Link
@@ -223,50 +258,46 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="absolute w-[803px] h-[26px] top-[188px] right-10 flex justify-between items-center pr-[34.39px] pl-[34.39px] z-20 whitespace-nowrap overflow-hidden">
+          <div className="absolute w-[800px] h-[18px] top-[110px] right-[-80] flex  items-center pr-[34.39px] pl-[34.39px] z-20 whitespace-nowrap overflow-hidden">
             <Link
               key="OUR SCHOOL"
               href="/"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[21.48px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              OUR SCHOOL
+              Our School
             </Link>
             <Link
               key="ADMISSION"
               href="/admission-process"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[21.48px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              ADMISSION
+              Admission
             </Link>
             <Link
               key="ACADEMICS"
               href="/curriculum"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[21.48px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              ACADEMICS
+              Academics
             </Link>
             <Link
               key="STUDENT LIFE"
               href="/activities"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[21.48px] leading-none uppercase ${
-                isHomePage
-                  ? "text-gray-100 hover:text-[#fff]"
-                  : "text-black hover:text-gray-600"
-              } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              STUDENT LIFE
+              Student Life
             </Link>
           </div>
         </div>

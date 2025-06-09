@@ -355,7 +355,7 @@
 
 //         <div className="displayMob my-16">
 //           <video
-//                 src="video/ourCampus.mp4"
+//                 src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -387,7 +387,7 @@
 //           >
 //             {isClient && (
 //               <video
-//                 src="video/ourCampus.mp4"
+//                 src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -412,6 +412,7 @@
 //           }}
 //         >
 //           At TRINS, Our Campus Provides A Nurturing Environment With Modern
+//           At TRINS, Our Campus Provides A Nurturing Environment With Modern
 //           Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
 //           Outdoor Areas Encourage Physical Activity, While The Safe,
 //           Well-Maintained Surroundings Ensure Students Thrive Academically And
@@ -426,6 +427,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 const OurCampusSection = () => {
   const [isClient, setIsClient] = useState(false);
@@ -745,17 +747,19 @@ const OurCampusSection = () => {
       className="relative w-full flex flex-col items-center justify-center min-h-screen h-screen overflow-hidden magnet-section bg-gradient-to-br from-[#085038] to-[#02BA89]"
     >
       <div className="relative flex flex-col items-center justify-center w-full max-w-[1920px] z-10 px-4 mt-0 pt-4 gap-0 md:gap-0 h-full">
-        <h2
-          ref={campusTitleRef}
-          className="text-[#F5DE9C] font-serif font-[400] text-[3.5vw] md:text-[56px] lg:text-[64px] leading-tight md:leading-[88px] uppercase tracking-normal text-center mb-[-24px] mt-10 md:mt-8 z-50"
-          style={{ fontFamily: "Gideon Roman, serif" }}
-        >
-          OUR CAMPUS
-        </h2>
+        <Link href={"/campus"} >
+          <h2
+            ref={campusTitleRef}
+            className="text-[#F5DE9C] font-serif font-[400] text-[3.5vw] md:text-[56px] lg:text-[64px] leading-tight md:leading-[88px] uppercase tracking-normal text-center mb-[-24px] mt-10 md:mt-8 z-50"
+            style={{ fontFamily: "Gideon Roman, serif" }}
+          >
+            OUR CAMPUS
+          </h2>
+        </Link>
 
         <div className="displayMob my-16">
           <video
-            src="video/ourCampus.mp4"
+            src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
             autoPlay
             loop
             muted
@@ -785,7 +789,7 @@ const OurCampusSection = () => {
           >
             {isClient && (
               <video
-                src="video/ourCampus.mp4"
+                src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
                 autoPlay
                 loop
                 muted
@@ -809,11 +813,7 @@ const OurCampusSection = () => {
             background: "transparent",
           }}
         >
-          At TRINS, Our Campus Provides A Nurturing Environment With Modern
-          Classrooms, Fully Equipped Labs, And A Resource-Rich Library. Spacious
-          Outdoor Areas Encourage Physical Activity, While The Safe,
-          Well-Maintained Surroundings Ensure Students Thrive Academically And
-          Socially.
+          Trivandrum International School (TRINS) is set in a serene, 20-acre eco-friendly campus atop a hill on the outskirts of Trivandrum, the capital city of the State of Kerala, India.
         </p>
       </div>
     </div>
