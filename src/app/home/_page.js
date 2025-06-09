@@ -13,6 +13,8 @@ import BeyondTheClassroomSection from "./BeyondTheClassroomSection";
 import CurriculumSection from "./CurriculumSection";
 import GallerySection from "./GallerySection";
 import AccreditationSection from "./AccreditationSection"; // Import the new component
+import SplashScreen from '../components/SplashScreen'; // Import the new component
+
 
 const Home = () => {
   useEffect(() => {
@@ -64,6 +66,8 @@ const Home = () => {
   }, []);
 
   return (
+    <>
+      <SplashScreen />
     <div className="bg-[#074D36] w-screen">
       {/* landing section*/}
       <div className="relative w-full h-screen magnet-section">
@@ -101,7 +105,7 @@ const Home = () => {
       {/* Accreditation Section */}
       <AccreditationSection />
     </div>
-  );
+    </>  );
 };
 
 export default Home;
