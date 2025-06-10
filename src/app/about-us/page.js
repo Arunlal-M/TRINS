@@ -55,11 +55,7 @@ export default function AboutUs() {
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold mb-6 text-[#085038]">Our Story</h2>
           <p className="text-lg mb-6">
-            Founded in 1995, Greenfield Academy has been dedicated to providing 
-            exceptional education that nurtures young minds and prepares students 
-            for a rapidly changing world. Our journey began with a simple vision: 
-            to create a learning environment where curiosity is celebrated and 
-            individual potential is unlocked.
+            Nestled in the midst of pristine hills and commanding a panoramic view of the Ghats in all its splendor, this 20-year-old school stands proud and prominent – a trailblazer in God’s Own Country, the scenic state of Kerala. TRINS is the first school in the State to offer an international curriculum, the International Baccalaureate Diploma Programme and the Primary Year Programme, as well as the Cambridge International Examinations A level and IGCSE. The school also offers the ICSE. The verdant settings surrounded by the serenity of endless miles of plantations provide the perfect ambiance for the teaching-learning experience. The school’s stately architecture is undoubtedly the best that the state has to offer. The teacher-student ratio of 1:20 or less ensures ample personal attention to every child. The school's most valued resource is the ninety-plus hand-picked, committed, and versatile faculty members with international experience and visiting expatriate staff with rich professional experience.
           </p>
           
           <div className="flex flex-col md:flex-row gap-8 my-12">

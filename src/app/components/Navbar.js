@@ -241,6 +241,16 @@ const Navbar = () => {
             >
               &nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;Us&nbsp;&nbsp;
             </Link>
+            <Link
+              key="ABOUT US"
+              href="/about-us"
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-black hover:text-gray-600"
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
+            >
+              &nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;Us&nbsp;&nbsp;
+            </Link>
 
             <Link
               href="#"

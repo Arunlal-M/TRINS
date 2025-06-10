@@ -4,29 +4,60 @@ import Image from "next/image";
 export default function Accreditations() {
   const accreditations = [
     {
-      organization: "International Baccalaureate",
-      logo: "/image/accreditations/ib-logo.png",
-      description: "Fully authorized IB World School offering Primary Years, Middle Years, and Diploma Programmes",
+      organization: "Cambridge Assessment International Education",
+      logo: "/image/accreditations/acc_cam.jpg",
+      description: "First Accredited Centre In Kerala for Cambridge Assessment International Education(IGCSE and A LEVELS)",
       year: "Since 2010"
     },
     {
-      organization: "New England Association of Schools and Colleges",
-      logo: "/image/accreditations/neasc-logo.png",
-      description: "Accredited with commendation for excellence in curriculum and student support services",
+      organization: "International Baccalaureate Organization",
+      logo: "/image/accreditations/acc_ib.png",
+      description: "First and only IB World School in the State authorized by the International Baccalaureate Organization (IBO) to implement the IB Diploma ProgrammeOne among 125 schools in India offering this programme",
       year: "Since 2005"
     },
     {
-      organization: "Council of International Schools",
-      logo: "/image/accreditations/cis-logo.png",
-      description: "Full membership in recognition of our global education standards",
+      organization: "Primary Years Programme",
+      logo: "/image/accreditations/acc_pyp.png",
+      description: "The 1st authorised IB PYP (Primary Years Programme) School in KeralaOne among 82 schools in India offering this programme",
       year: "Since 2018"
     },
     {
-      organization: "National STEM Foundation",
-      logo: "/image/accreditations/stem-logo.png",
-      description: "Certified STEM Excellence School with specialized programming",
+      organization: "Diploma Programme",
+      logo: "/image/accreditations/acc_dp.png",
+      description: "The only authorised IB DP school in Kerala",
       year: "2020-Present"
-    }
+    },
+    {
+      organization: "Council for the Indian School Certificate Examination",
+      logo: "/image/accreditations/acc_cisce.png",
+      description: "Accredited by the Council for the Indian School Certificate Examination",
+      year: "2020-Present"
+    },
+   
+    {
+      organization: "British Council’s International School Award",
+      logo: "/image/accreditations/acc_bcisa.png",
+      description: "Proud Recipient of the British Council’s International School Award",
+      year: "2020-Present"
+    },
+    {
+      organization: "Round Square ",
+      logo: "/image/accreditations/acc_rs.png",
+      description: "The first School from Kerala to be awarded Global Membership into the Round Square Association Of Schools",
+      year: "2020-Present"
+    },
+    {
+      organization: "College Board ",
+      logo: "/image/accreditations/acc_cb.png",
+      description: "The first School from Kerala to be awarded Global Membership into the Round Square Association Of Schools",
+      year: "2020-Present"
+    },
+    {
+      organization: "Cambridge Assessments Admissions Testing",
+      logo: "/image/accreditations/stem-logo.png",
+      description: "Trivandrum International School is an authorized Test Centre for Admissions Testing Services of Cambridge Assessments",
+      year: "2020-Present"
+    },
   ];
 
   return (
@@ -97,7 +128,7 @@ export default function Accreditations() {
                 key={index} 
                 className="flex flex-col md:flex-row items-start gap-6 border-b pb-12 last:border-0 last:pb-0"
               >
-                <div className="relative w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center p-4">
+                <div className="relative w-75 h-75  rounded-lg flex items-center justify-center p-4">
                   <Image
                     src={item.logo}
                     alt={item.organization}

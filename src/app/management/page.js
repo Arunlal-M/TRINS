@@ -4,29 +4,24 @@ import Image from "next/image";
 export default function Management() {
   const managementTeam = [
     {
-      name: "Dr. Sarah Johnson",
-      position: "Principal",
-      bio: "With over 20 years of educational leadership experience, Dr. Johnson holds a PhD in Educational Administration and has transformed three schools into nationally recognized institutions.",
-      image: "/image/management/principal.jpg"
+      name: "Mr. George M",
+      position: "Founder",
+      bio: "Envisioned by its founder Mr. George M. Thomas and dedicated to the memory of his parents; TRINS was the fruition of Mr. George Thomas’s burning ambition to create a glorious institution for the youth of today. A school that reflects a virtue that inevitably percolates down to the student community and changes their perspective on life forever, making them better citizens and more importantly good human beings with intrinsic values.",
+      image: "/image/management/George.jpg"
     },
     {
-      name: "Robert Chen",
+      name: " Mr. G. Vijaya Raghavan.",
       position: "Vice Principal",
-      bio: "Mr. Chen specializes in curriculum development and innovative teaching methodologies. He has received multiple awards for his contributions to STEM education.",
-      image: "/image/management/vice-principal.jpg"
+      bio: "Well known for his contribution to the IT industry of Kerala, this man has been the founder CEO of Technopark and has held key positions in several ventures.As for TRINS, the emergence of the school as an academic institution committed to the pursuit of excellence has been due, in no small measure, to the professional competence and dynamism of it’s Honorary Director, Mr. G. Vijaya Raghavan.",
+      image: "/image/management/vijaya.jpg"
     },
     {
-      name: "Amanda Rodriguez",
+      name: "Ms. Sapnu George",
       position: "Academic Dean",
-      bio: "Leading our academic programs since 2010, Ms. Rodriguez has developed our acclaimed literacy program that boosted reading proficiency by 45%.",
-      image: "/image/management/academic-dean.jpg"
+      bio: "For Ms. Sapnu George, daughter of Mr. George M Thomas, TRINS has always been a venture close to her heart and she has been involved with TRINS since its inception in 2003. She took up the role of Executive Director, 10 years later after completing her higher education. She is an architect who has worked in Bangalore and New York, and she holds a Masters Degree from the New York School of Design. Her presence is deeply reassuring to everyone at TRINS, because of her innate sense of service, a keen eye for detail, and all the innovative ideas that she brings to the table.",
+      image: "/image/management/sapnu.jpg"
     },
-    {
-      name: "David Thompson",
-      position: "Board Chair",
-      bio: "As founder of Thompson Education Foundation, Mr. Thompson brings extensive governance experience and strategic vision to our institution.",
-      image: "/image/management/board-chair.jpg"
-    }
+   
   ];
 
   return (

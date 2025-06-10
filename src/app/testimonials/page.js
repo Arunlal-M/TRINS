@@ -5,39 +5,82 @@ import { useState } from "react";
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "The teachers at this school genuinely care about each student's growth. My child has flourished both academically and socially.",
-      author: "Jennifer K., Parent",
-      role: "Grade 5 Parent",
+      quote: "The two years of my life spent at this school has been one of the most amazing times of my life. I have met many people, students and teachers, whom Ill never forget in my years to come. My hostel has been the best and we had great fun being together like a family. I will miss this place and everyone whom lye met here.",
+      author: "Panchimma Cherian",
+      role: "Student",
       image: "/image/testimonials/parent1.jpg"
     },
     {
-      quote: "The challenging curriculum prepared me perfectly for college. I entered university a full year ahead in math and science!",
-      author: "Michael T.",
-      role: "Alumni, Class of 2022",
+      quote: "Heartiest congratulations to you all for successfully mentoring and guiding the class of 2018 that graduated from junior school yesterday.Please accept our sincere thanks and heartfelt gratitude for the sincerity, dedication and hard work you put in to make this possible. You have groomed our children through their most formative years and it warmed our hearts not just seeing our child pass out, but all her peers whom we have seen metamorphosing from infants to confident, happy and determined young pre-teens.What you do is indeed noble and may you all be blessed in abundance for the marvellous effort that you all put in. The song that was so beautifully presented by the graduating children is indeed an small but true measure of the gratitude of the children and their proud parents towards each and every member of team junior school. May you be blessed with the opportunity to mould many more young minds and hearts.",
+      author: "Venu Nambisan",
+      role: "Parent",
       image: "/image/testimonials/alumni1.jpg"
     },
     {
-      quote: "As an educator, I'm impressed by the innovative teaching methods and the school's commitment to holistic development.",
-      author: "Dr. Sarah L.",
-      role: "Visiting Professor",
+      quote: "I was very impressed by the way students remembered their dialogues, did not stop even once and showed such confidence on stage. This does not happen in Germany, students over there are very shy.",
+      author: "Christine",
+      role: "Parent",
       image: "/image/testimonials/professor1.jpg"
     },
     {
-      quote: "The arts program helped me discover my passion. Now I'm studying at Juilliard thanks to my foundation here.",
-      author: "Emma R.",
-      role: "Alumni, Class of 2021",
+      quote: "TRINS has helped me to scale great heights in academics. Joining this institution was the best thing that has ever happened in my life.",
+      author: "Ruben Joseph",
+      role: "Student",
       image: "/image/testimonials/alumni2.jpg"
     },
     {
-      quote: "We moved from overseas, and the school made our transition seamless. The international perspective is truly valued here.",
-      author: "The Chen Family",
-      role: "Grade 7 Parents",
+      quote: "Thanks much for such a perfectly appropriate and indeed relevant initiative carried out in an equally seamless way. Interacting with our  inquisitive kids, listening to the parents and the doctor, and watching the commendable dedication of the energetic Junior School team was a truly great experience. Kudos to Junior School and I hope to see similar activities frequently.",
+      author: "Guest",
+      role: "Guest",
       image: "/image/testimonials/parent2.jpg"
     },
     {
-      quote: "The leadership opportunities I had in high school gave me confidence to start my own nonprofit at college.",
-      author: "David P.",
-      role: "Alumni, Class of 2020",
+      quote: "I don't know whether I am ready to face the world but I am sure not ready to leave this school, its safe harbour with some of my strongest anchors - my beloved teachers and friends...",
+      author: "Susan John Muthoot",
+      role: "Student",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "First let me congratulate all those behind this initiative of arranging a lively panel discussion on a highly relevant topic. The great thing about the program was that the kids always felt like they were part of the conversation as they were encouraged to express their ideas, opinions and lifestyle choices. This definitely might have helped them to cement the concepts they familiarized in the classroom on the topic of healthy lifestyles. Your team has done a brilliant job in sensitising the children about the importance of healthy food, exercise and hygiene. Hats off to the doctor, PE teacher, parents, grandparents and the moderator for sharing their experience. Keep up the good work",
+      author: "Rajesh K R",
+      role: "Guest",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "First of all congratulations on successfully completing PYP Broadway on a high note.It was wonderful to see your team taking on such a huge task. The mammoth exercise it turned out to be was very evident in the way the sets were done and the children were prepared.I was initially sceptical of being able to put up a good show with the small kids. But you guys planned and executed it very well. I am really happy that children are getting these wonderful opportunities to showcase their talent. The children also put up a very good show .          Keep going!!!",
+      author: "Manoj Kumar",
+      role: "Parent",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "TRINS is a unique school which provides all kinds of 'extreme' experiences to make one confident to face the practical world... . I strongly believe that as a student of TRINS I can successfully face the world....",
+      author: "Vyshak",
+      role: "Student",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "Thanks a lot for PYP team for all the efforts in making sure our kids are happily learning in a fun filled, safe environment. Your team did an exemplary job all throughout the year.           Wishing a great vacation to you too.. Enjoy !",
+      author: "Kavitha Valsala",
+      role: "Parent",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "Thank you madam. You are a true teacher and you have observed him very closely. It is not easy for any parent to stay away from their child at this little age. I am thankful to you, dear teacher and the school for easing my worries and making my child comfortable. He seems to be very happy and wants to continue in the same school. I noticed a lot of developments in him. Once again, thank you dear madam for caring and teaching my child. God bless you.",
+      author: "Veena",
+      role: "Parent",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    {
+      quote: "I am writing this email to express our sincere gratitude and to share our satisfaction towards the efforts of TRINS teaching team for moulding the personality of our beloved son and for the consistent development in his reading and writing skills since the KG1 days. It is so fulfilling to see Aarush writing and reading many words without any assistance. I want to thank sincerely the KG1 teachers for the strong foundation provided and the KG2 teachers for expediting the skills to the next level.          I would meet the TRINS team in person when I visit Trivandrum next time.                        Currently I am in Dubai.I am preparing myself to see much more developments in   the upcoming days!           Well done!",
+      author: "Arun",
+      role: "Guest",
+      image: "/image/testimonials/alumni3.jpg"
+    },
+    
+    {
+      quote: "I write with regard to my son Sanjay Jacob who is in Grade 11, IDBP. We have high regard for the school's initiative in creating an encouraging environment for the students. The opportunity Sanjay got to partake in the theatre play TRINS BROADWAY at Tagore theatre has boosted his confidence tremendously. Such ongoing efforts from your side are greatly appreciated.",
+      author: "Shanthi Jacob",
+      role: "Parent",
       image: "/image/testimonials/alumni3.jpg"
     }
   ];
