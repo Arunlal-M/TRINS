@@ -74,14 +74,13 @@ export default function Management() {
 
       {/* Management Team Section */}
       <div className="w-full max-w-6xl mt-16 mb-24 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="space-y-12">
           {managementTeam.map((member, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-lg overflow-hidden"
+                className="flex flex-col md:flex-row items-start gap-6 border-b pb-12  last:pb-0"
             >
-              <div className="flex flex-col md:flex-row">
-                <div className="relative h-64 md:h-auto md:w-1/3">
+                <div className="relative w-75 h-75  rounded-lg flex items-center justify-center p-4">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -89,12 +88,16 @@ export default function Management() {
                     style={{ objectFit: "cover" }}
                   />
                 </div>
-                <div className="p-6 md:w-2/3">
-                  <h3 className="text-2xl font-bold text-[#085038]">{member.name}</h3>
-                  <p className="text-lg font-semibold text-gray-600 mb-3">{member.position}</p>
-                  <p className="text-gray-700">{member.bio}</p>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-[#085038]">
+                    {member.name}
+                  </h3>
+                  <div className="flex items-center justify-between mt-2">
+                    <span className="text-gray-500 font-medium">{member.position}</span>
+                  </div>
+                  <p className="mt-4 text-gray-700">{member.bio}</p>
                 </div>
-              </div>
+              
             </div>
           ))}
         </div>

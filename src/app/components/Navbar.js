@@ -1,6 +1,6 @@
 "use client"; // Add this line to make it a client component
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Link from "next/link";
 import Image from "next/image";
@@ -8,9 +8,36 @@ import Image from "next/image";
 const Navbar = () => {
   const pathname = usePathname(); // Get the current pathname
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  // Check if the current path is the home page or root
+  const [showOurSchoolDropdown, setShowOurSchoolDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+  const [closing, setClosing] = useState(false);
   const isHomePage = pathname === "/" || pathname === "/home";
+
+  // Our School dropdown links
+  const ourSchoolLinks = [
+    { name: "About Us", href: "/about-us" },
+    { name: "Campus", href: "/campus" },
+    { name: "Management", href: "/management" },
+    { name: "Alumni", href: "/alumni" },
+    { name: "Accreditations", href: "/accreditations" },
+    { name: "Achievements", href: "/achievements" },
+    { name: "Testimonials", href: "/testimonials" },
+    { name: "Events", href: "/events" },
+  ];
+
+  // Close dropdown after delay if mouse leaves
+  useEffect(() => {
+    if (closing) {
+      const timer = setTimeout(() => {
+        if (showOurSchoolDropdown) {
+          setShowOurSchoolDropdown(false);
+          setClosing(false);
+        }
+      }, 300); // 300ms delay before closing
+      return () => clearTimeout(timer);
+    }
+  }, [closing, showOurSchoolDropdown]);
+
 
   return (
     <>
@@ -93,6 +120,8 @@ const Navbar = () => {
             />
           </button>
         </div>
+
+
         {/* Mobile menu overlay */}
         {mobileOpen && (
           <div className="fixed inset-0 bg-black/80 z-[1015] flex flex-col items-center justify-center gap-8 animate-fade-in">
@@ -184,21 +213,24 @@ const Navbar = () => {
             </Link>
           </div>
         )}
+
+
         {/* Desktop nav (hidden below 950px) */}
         <div className="navbar-desktop">
           {isHomePage && (
             <div className="absolute w-screen h-[220px] bg-gradient-to-b from-black/80 via-black/50 to-transparent pointer-events-none z-0 top-0 left-0" />
           )}
+
           <div className="absolute z-10 flex items-center justify-end gap-8 pr-8 w-full max-w-[600px] top-[35px] right-8">
             <Link
-              key="EVENTS"
-              href="/events"
+              key="BOARDING"
+              href="/boarding"
               className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
                 ? "text-gray-100 hover:text-[#fff]"
                 : "text-black hover:text-gray-600"
                 } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              Events
+              Boarding
             </Link>
             {/* <Link
               key="FOOD MENU"
@@ -268,17 +300,61 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="absolute w-[800px] h-[18px] top-[110px] right-[-80] flex  items-center pr-[34.39px] pl-[34.39px] z-20 whitespace-nowrap overflow-hidden">
-            <Link
-              key="OUR SCHOOL"
-              href="/"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-black hover:text-gray-600"
-                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+
+          <div className="absolute top-[90px] right-[60px] flex flex-row items-center gap-x-3 pr-2 pl-2 z-20 whitespace-nowrap">
+            {/* Our School dropdown */}
+            <div
+              onMouseEnter={() => {
+                setShowOurSchoolDropdown(true);
+                setClosing(false);
+              }}
+              onMouseLeave={() => setClosing(true)}
+              ref={dropdownRef}
             >
-              Our School
-            </Link>
+              <button
+                className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+                ? "text-gray-100 hover:text-[#fff]"
+                : "text-gray-700 hover:text-gray-600"
+                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+                onClick={() => setShowOurSchoolDropdown(!showOurSchoolDropdown)}
+              >
+                Our School
+              </button>
+
+              {/* Dropdown menu */}
+              {showOurSchoolDropdown && (
+                <div
+                  className={`absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg z-50 ${isHomePage
+                      ? "bg-black/80 backdrop-blur-sm"
+                      : "bg-white/80 backdrop-blur-sm"
+                    } transition-opacity duration-300 ease-in-out ${closing ? "opacity-0" : "opacity-100"
+                    }`}
+                  onMouseEnter={() => {
+                    setShowOurSchoolDropdown(true);
+                    setClosing(false);
+                  }}
+                  onMouseLeave={() => setClosing(true)}
+                >
+                  <div className="py-1">
+                    {ourSchoolLinks.map((link) => (
+                      <Link
+                        key={link.name}
+                        href={link.href}
+                        className={`block px-4 py-2 text-sm ${isHomePage
+                          ? "text-gray-200 hover:bg-black/60 hover:text-white"
+                          : "text-gray-700 hover:bg-gray-100"
+                          }`}
+                        onClick={() => setShowOurSchoolDropdown(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+
             <Link
               key="ADMISSION"
               href="/admission-process"

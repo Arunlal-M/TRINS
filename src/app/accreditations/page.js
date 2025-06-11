@@ -54,7 +54,7 @@ export default function Accreditations() {
     },
     {
       organization: "Cambridge Assessments Admissions Testing",
-      logo: "/image/accreditations/stem-logo.png",
+      logo: "/image/accreditations/cambridge-assesment-logo.jpg",
       description: "Trivandrum International School is an authorized Test Centre for Admissions Testing Services of Cambridge Assessments",
       year: "2020-Present"
     },
@@ -115,7 +115,7 @@ export default function Accreditations() {
             Recognized Excellence
           </h2>
           
-          <p className="text-lg mb-12">
+          <p className="text-lg mb-12 border-b pb-12">
             Our commitment to educational excellence is validated by prestigious 
             accreditations from leading educational organizations worldwide. 
             These recognitions ensure we meet rigorous international standards 
@@ -126,7 +126,7 @@ export default function Accreditations() {
             {accreditations.map((item, index) => (
               <div 
                 key={index} 
-                className="flex flex-col md:flex-row items-start gap-6 border-b pb-12 last:border-0 last:pb-0"
+                className="flex flex-col md:flex-row items-start gap-6 border-b pb-12  last:pb-0"
               >
                 <div className="relative w-75 h-75  rounded-lg flex items-center justify-center p-4">
                   <Image
