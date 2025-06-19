@@ -111,7 +111,7 @@ export default function Testimonials() {
         }}
       >
         <Image
-          src="/image/testimonials/cover.jpg"
+          src="/image/testimonials/testimonials.webp"
           alt="Testimonials Cover"
           fill
           style={{

@@ -53,7 +53,7 @@ export default function Alumni() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/alumni/alumni-main.jpg"
+                src="/image/alumni/ALUMNI 2.webp"
                 alt="Alumni Main"
               />
             </div>
