@@ -8,7 +8,7 @@ export default function Activities() {
     >
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/activities/cover.jpg"
+          src="/image/activities/cover.webp"
           alt="Activities Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />

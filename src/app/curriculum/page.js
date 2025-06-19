@@ -43,17 +43,17 @@ export default function Curriculum() {
   };
 
   const bannerImages = {
-    'Early Year Program': '/image/curriculum/DSC08444.jpg',
-    'EARLY LEARNING CENTER': '/image/curriculum/DSC08444.jpg',
-    'KINDERGARTEN': '/image/curriculum/DSC08444.jpg',
-    'Primary Year Program': '/image/curriculum/DSC06956.jpg',
-    'Middle School': '/image/curriculum/DSC06980.jpg',
-    'Secondary School': '/image/curriculum/trins-020.jpg',
-    'ICSE': '/image/curriculum/ICSEBAN.jpg',
-    'IGCSE': '/image/curriculum/IGCSEBAN.jpg',
-    'Senior Secondary School': '/image/curriculum/senior.jpg',
-    'IBDP': '/image/curriculum/IBDPBAN.jpg',
-    'A LEVELS': '/image/curriculum/ALEVELSBAN.jpg',
+    'Early Year Program': '/image/curriculum/DSC08444.webp',
+    'EARLY LEARNING CENTER': '/image/curriculum/DSC08444.webp',
+    'KINDERGARTEN': '/image/curriculum/DSC08444.webp',
+    'Primary Year Program': '/image/curriculum/DSC06956.webp',
+    'Middle School': '/image/curriculum/DSC06980.webp',
+    'Secondary School': '/image/curriculum/trins-020.webp',
+    'ICSE': '/image/curriculum/ICSEBAN.webp',
+    'IGCSE': '/image/curriculum/IGCSEBAN.webp',
+    'Senior Secondary School': '/image/curriculum/senior.webp',
+    'IBDP': '/image/curriculum/IBDPBAN.webp',
+    'A LEVELS': '/image/curriculum/ALEVELSBAN.webp',
   };
 
   const handleProgramClick = (programName) => {
@@ -164,7 +164,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.jpg" // Path is already correct
+                  src="/image/curriculum/DSC08431.webp" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -281,7 +281,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.jpg"
+                  src="/image/curriculum/DSC08431.webp"
                   alt="Early Learning Center students"
                   width={700}
                   height={450}
@@ -397,7 +397,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/KINDERGARTEN.jpg"
+                  src="/image/curriculum/KINDERGARTEN.webp"
                   alt="Kindergarten students learning"
                   width={700}
                   height={450}
@@ -541,7 +541,7 @@ The motto of the school ‘Learning is for Life’ creates an atmosphere of enth
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC06877.jpg" // Path is already correct
+                  src="/image/curriculum/DSC06877.webp" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -660,7 +660,7 @@ The programme is designed to equip the student for a successful life, focusing o
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC07007.jpg" // Path is already correct
+                  src="/image/curriculum/DSC07007.webp" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -777,7 +777,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/trins-020.jpg"
+                  src="/image/curriculum/trins-020.webp"
                   alt="Secondary School students"
                   width={700}
                   height={450}
@@ -862,7 +862,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/ICSE.jpg"
+                  src="/image/curriculum/ICSE.webp"
                   alt="ICSE students learning"
                   width={700}
                   height={450}
@@ -981,7 +981,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/IGCSE.jpg"
+                  src="/image/curriculum/IGCSE.webp"
                   alt="IGCSE students learning"
                   width={700}
                   height={450}
@@ -1138,7 +1138,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/trins-001.jpg"
+                  src="/image/curriculum/trins-001.webp"
                   alt="Senior Secondary School students"
                   width={700}
                   height={450}
@@ -1223,7 +1223,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/IBDP.jpg"
+                  src="/image/curriculum/IBDP.webp"
                   alt="IBDP students learning"
                   width={700}
                   height={450}
@@ -1347,7 +1347,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/Alevels.jpg"
+                  src="/image/curriculum/Alevels.webp"
                   alt="A LEVELS students learning"
                   width={700}
                   height={450}

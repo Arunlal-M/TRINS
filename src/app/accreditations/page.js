@@ -5,7 +5,7 @@ export default function Accreditations() {
   const accreditations = [
     {
       organization: "Cambridge Assessment International Education",
-      logo: "/image/accreditations/acc_cam.jpg",
+      logo: "/image/accreditations/acc_cam.webp",
       description: "First Accredited Centre In Kerala for Cambridge Assessment International Education(IGCSE and A LEVELS)",
       year: "Since 2010"
     },
@@ -36,13 +36,13 @@ export default function Accreditations() {
    
     {
       organization: "British Council’s International School Award",
-      logo: "/image/accreditations/acc_bcisa.png",
+      logo: "/image/accreditations/acc_bcisa.webp",
       description: "Proud Recipient of the British Council’s International School Award",
       year: "2020-Present"
     },
     {
       organization: "Round Square ",
-      logo: "/image/accreditations/acc_rs.png",
+      logo: "/image/accreditations/roundsquare.webp",
       description: "The first School from Kerala to be awarded Global Membership into the Round Square Association Of Schools",
       year: "2020-Present"
     },
@@ -54,7 +54,7 @@ export default function Accreditations() {
     },
     {
       organization: "Cambridge Assessments Admissions Testing",
-      logo: "/image/accreditations/cambridge-assesment-logo.jpg",
+      logo: "/image/accreditations/cambridge-assesment-logo.webp",
       description: "Trivandrum International School is an authorized Test Centre for Admissions Testing Services of Cambridge Assessments",
       year: "2020-Present"
     },

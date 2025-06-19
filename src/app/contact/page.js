@@ -4,7 +4,7 @@ export default function Contact() {
     <div className="mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/contact/cover.jpg"
+          src="/image/contact/cover.webp"
           alt="Contact Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
