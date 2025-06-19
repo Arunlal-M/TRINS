@@ -72,8 +72,32 @@ li {
   font-family: 'Gideon Roman', serif;
 }
 
-p {
+/* p {
   font-size: 22px;
+  line-height: 1.6;
+  margin: 0.5em 0;
+  letter-spacing: normal;
+  white-space: normal;
+} */
+p.normal {
+  font-family: 'Gideon Roman', serif;
+  font-weight: 100;
+  font-size: clamp(14px, 2vw, 22px);
+  line-height: clamp(28px, 3vw, 36px);
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+p.normal-black {
+  font-family: 'Gideon Roman', serif;
+  font-weight: 100;
+  font-size: clamp(14px, 2vw, 22px);
+  line-height: clamp(28px, 3vw, 36px);
+  text-align: center;
+  color: #000000;
+  padding: 0 16px;
+  text-shadow: 2 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -126,10 +150,6 @@ footer {
 
   footer {
     padding-bottom: 6em;
-  }
-
-  h2 {
-    font-size: 30px;
   }
 
   .h-screen {
@@ -205,7 +225,7 @@ footer h3 {
 }
 
 .noteContentContainer {
-  width: 52%;
+  width: 58%;
   position: absolute;
   top: 30%;
   left: 24%;
@@ -220,15 +240,29 @@ footer h3 {
   transform: rotate(356deg) !important;
 }
 
-.principalNoteContainer .noteSignature {
+.principalNoteContainer {
   font-family: 'Phaley';
   font-weight: normal;
   font-size: 54px;
   padding-top: 10px;
   transform: rotate(356deg) !important;
 }
-.principalNoteContainer .angle {
+.noteSignature {
+  font-family: 'Phaley';
+  font-weight: normal;
+  font-size: 48px;
+  padding-top: 2px !important;
+  transform: rotate(356deg) !important;
+}
+.principalNoteContainer{
   margin-top: 10px;
+  transform: rotate(356deg) !important;
+}
+.principalLetter {
+  margin-left: -15px !important;
+}
+.angle {
+  margin-top: -6px;
   transform: rotate(356deg) !important;
 }
 
@@ -243,7 +277,7 @@ footer h3 {
 
   .principalNoteContainer .noteSignature {
     font-size: 52px;
-    margin-left: -20px;
+    margin-left: 5px;
   }
 }
 
@@ -281,7 +315,8 @@ footer h3 {
   }
 
   .splash-subtitle {
-    font-size: 32px !important;
+    margin-top: 0.5em !important;
+    font-size: 16px !important;
     width: 100% !important;
     line-height: inherit !important;
     height: auto !important;
@@ -290,4 +325,23 @@ footer h3 {
   .principalNoteContainer .noteSignature {
     font-size: 30px;
   }
+}
+
+.principal-message-section {
+  background-image: url('/image/home/PrincipalsMessage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh; /* or whatever height you want */
+  position: relative;
+  z-index: 0;
+}
+.curriculum-section {
+  background-color: #EAC985;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  min-height: 100vh;
+
 }

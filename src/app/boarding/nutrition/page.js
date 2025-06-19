@@ -29,22 +29,58 @@ export default function BoardingNutrition() {
       </div>
 
       {/* Title SubSection */}
-      <div className="relative w-full h-[350px] flex items-center justify-center">
+      <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+        style={{
+          position: "relative",
+          width: "100%",
+          height: 350,
+          margin: "0 auto",
+          overflow: "hidden",
+        }}>
         <img
-          src="/image/food-menu/cover.png"
+          src="/image/boarding/food.png"
           alt="Food Menu Cover"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{
+            width: "100%",
+            height: 350,
+            objectFit: "cover",
+            objectPosition: "center",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 1,
+            backgroundColor: "#074B35",
+          }}
         />
-        <img
-          src="/image/food-menu/coverOverGradient.png"
-          alt="Food Menu Gradient Overlay"
-          className="absolute inset-0 w-full h-full object-cover z-10"
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.2) 100%)"
+          }}
         />
         <h1
           className="relative z-20 text-white text-7xl font-normal"
-          style={{ fontFamily: "Gideon Roman, serif", letterSpacing: 2 }}
+          style={{
+            fontFamily: "Gideon Roman",
+            fontWeight: 400,
+            fontSize: "120px",
+            lineHeight: "1",
+            letterSpacing: "24px",
+            color: "#FFFFFF",
+            width: "100%",
+            height: 350,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+          }}
         >
-          TABULAR – FOOD
+          NUTRITION
         </h1>
       </div>
       <div className="w-full flex flex-col items-center py-20 px-4">
@@ -61,7 +97,7 @@ export default function BoardingNutrition() {
           <table className="min-w-[1100px] border-separate border-spacing-2" style={{ width: "max-content", margin: "auto" }}>
             <thead>
               <tr>
-                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>DAY & DATE</th>
+                <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>DAY<br />&amp;<br />DATE</th>
                 <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Monday</th>
                 <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Tuesday</th>
                 <th className="bg-[#085038] text-white text-xl font-semibold px-8 py-4 text-center" style={{ fontFamily: 'Gideon Roman' }}>Wednesday</th>

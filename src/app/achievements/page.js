@@ -4,29 +4,24 @@ import Image from "next/image";
 export default function Achievements() {
   const achievements = [
     {
-      title: "National Science Olympiad Champions",
+      title: "Mathew Mariel Joseph",
       year: "2024",
-      description: "Our team won first place among 250 competing schools in the national finals",
-      image: "/image/achievements/science-olympiad.jpg"
+      description: `Cambridge Outstanding Learner November 2023 "Top In India".`,
+      image: "/image/achievements/Mathew.webp"
     },
     {
-      title: "Excellence in Arts Education Award",
+      title: "Arati Nair",
       year: "2023",
-      description: "Recognized by the Arts Council for outstanding visual and performing arts program",
-      image: "/image/achievements/arts-award.jpg"
+      description: "Cambridge A-LEVEL Topper, 4A*, 1A 2023",
+      image: "/image/achievements/Arati.webp"
     },
     {
-      title: "Environmental Leadership Certification",
+      title: "Nitin Nandakumar",
       year: "2023",
-      description: "Gold certification for sustainable campus initiatives and environmental curriculum",
-      image: "/image/achievements/environmental.jpg"
+      description: "Cambridge A-LEVEL Topper, 3A*, 2a 2023",
+      image: "/image/achievements/Nitin.webp"
     },
-    {
-      title: "Technology Innovation Grant",
-      year: "2022",
-      description: "$500,000 grant awarded for developing our AI-assisted learning platform",
-      image: "/image/achievements/tech-grant.jpg"
-    }
+
   ];
 
   const stats = [

@@ -25,6 +25,19 @@ const Navbar = () => {
     { name: "Events", href: "/events" },
   ];
 
+  function useIsSmallScreen() {
+    const [isSmall, setIsSmall] = useState(false);
+    useEffect(() => {
+      const check = () => setIsSmall(window.innerWidth < 640);
+      check();
+      window.addEventListener("resize", check);
+      return () => window.removeEventListener("resize", check);
+    }, []);
+    return isSmall;
+  }
+
+  const isSmall = useIsSmallScreen();
+
   // Close dropdown after delay if mouse leaves
   useEffect(() => {
     if (closing) {
@@ -60,33 +73,14 @@ const Navbar = () => {
         }
       `}</style>
       <nav
-        className={`absolute top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${isHomePage ? "bg-transparent" : "bg-transparent"
+        className={`sticky  top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${isHomePage ? "bg-transparent" : "bg-transparent"
           }`}
       >
-
-        {/* Left side with logo and school name */}
-        {/* <div
-          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
-          style={{ backdropFilter: "blur(1px)" }}
-        >
-          <Image
-            src="/image/Logo.png" // Update with your actual logo path
-            alt="Trivandrum International School Logo"
-            width={300}
-            height={300}
-            className="object-contain ml-[-90px] mt-[20px]"
-          />
-          <h1 className={` font-gideon text-xl md:text-4xl font-normal ml-[-50px] mt-[-20px] ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-black hover:text-gray-600"
-                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}>
-            Trivandrum International School
-          </h1>
-        </div> */}
-
         <div
-          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
-          style={{ backdropFilter: "blur(1px)" }}
+          className="relative top-12 transform -translate-y-12 flex items-center z-10"
+          style={{
+            backgroundColor: isHomePage ? "rgba(7, 80, 55, 1)" : "rgba(255, 255, 255, 1)"
+          }}
         >
 
           <Link
@@ -95,9 +89,9 @@ const Navbar = () => {
             <Image
               src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
               alt="Trivandrum International School Logo"
-              width={400}
-              height={400}
-              className={`object-contain ml-[20px] mt-[20px]`}
+              width={isSmall ? 300 : 400}
+              height={isSmall ? 300 : 400}
+              className={`object-contain ml-[20px] my-[5px] pb-1`}
             />
           </Link>
         </div>
@@ -167,13 +161,7 @@ const Navbar = () => {
             >
               EVENTS
             </Link>
-            {/* <Link
-              href="/food-menu"
-              className="text-white text-lg font-gideon uppercase"
-              onClick={() => setMobileOpen(false)}
-            >
-              FOOD MENU
-            </Link> */}
+
             <Link
               href="/blogs"
               className="text-white text-lg font-gideon uppercase"
@@ -195,22 +183,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
-              href="#"
-              aria-label="Search"
-              className="flex items-center justify-center"
-              onClick={() => setMobileOpen(false)}
-            >
-              <img
-                src={
-                  isHomePage
-                    ? "/image/navbar/Magnifier-white.svg"
-                    : "/image/navbar/Magnifier-black.svg"
-                }
-                alt="Search"
-                className="w-8 h-8"
-              />
-            </Link>
           </div>
         )}
 
@@ -221,7 +193,7 @@ const Navbar = () => {
             <div className="absolute w-screen h-[220px] bg-gradient-to-b from-black/80 via-black/50 to-transparent pointer-events-none z-0 top-0 left-0" />
           )}
 
-          <div className="absolute z-10 flex items-center justify-end gap-8 pr-8 w-full max-w-[600px] top-[35px] right-8">
+          <div className="absolute z-10 flex items-center justify-end gap-9 pr-8 w-full max-w-[600px] top-[35px] right-16">
             <Link
               key="BOARDING"
               href="/boarding"
@@ -232,16 +204,7 @@ const Navbar = () => {
             >
               Boarding
             </Link>
-            {/* <Link
-              key="FOOD MENU"
-              href="/food-menu"
-              className={`h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-black hover:text-gray-600"
-                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
-            >
-              Food Menu
-            </Link> */}
+
             <Link
               key="BLOGS"
               href="/blogs"
@@ -284,24 +247,9 @@ const Navbar = () => {
               &nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;Us&nbsp;&nbsp;
             </Link>
 
-            <Link
-              href="#"
-              aria-label="Search"
-              className={`flex items-center justify-center`}
-            >
-              <img
-                src={
-                  isHomePage
-                    ? "/image/navbar/Magnifier-white.svg"
-                    : "/image/navbar/Magnifier-black.svg"
-                }
-                alt="Search"
-                className={`w-[27px] h-[27px] object-contain`}
-              />
-            </Link>
           </div>
 
-          <div className="absolute top-[90px] right-[60px] flex flex-row items-center gap-x-3 pr-2 pl-2 z-20 whitespace-nowrap">
+          <div className="absolute top-[90px] right-[60px] flex flex-row items-center gap-x-2 pr-2 pl-2 z-20 whitespace-nowrap">
             {/* Our School dropdown */}
             <div
               onMouseEnter={() => {
@@ -312,10 +260,10 @@ const Navbar = () => {
               ref={dropdownRef}
             >
               <button
-                className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-gray-700 hover:text-gray-600"
-                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+                className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-thin text-[19.00px] leading-none  ${isHomePage
+                  ? "text-gray-100 hover:text-[#fff]"
+                  : "text-gray-800 hover:text-gray-600"
+                  } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
                 onClick={() => setShowOurSchoolDropdown(!showOurSchoolDropdown)}
               >
                 Our School
@@ -325,8 +273,8 @@ const Navbar = () => {
               {showOurSchoolDropdown && (
                 <div
                   className={`absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg z-50 ${isHomePage
-                      ? "bg-black/80 backdrop-blur-sm"
-                      : "bg-white/80 backdrop-blur-sm"
+                    ? "bg-black/80 backdrop-blur-sm"
+                    : "bg-white/80 backdrop-blur-sm"
                     } transition-opacity duration-300 ease-in-out ${closing ? "opacity-0" : "opacity-100"
                     }`}
                   onMouseEnter={() => {

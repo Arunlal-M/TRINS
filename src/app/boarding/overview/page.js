@@ -29,22 +29,59 @@ export default function BoardingOverview() {
             </div>
 
             {/* Title SubSection */}
-            <div className="w-full flex flex-row items-stretch mt-8">
-                <div className="w-full bannerSectionContainer bg-[#075037]">
-                    <div className="contentWidthAdjust h-full w-full">
-                        <div className="imgContainer">
-                            <img src="/image/boarding/overview-main.jpg" alt="Boarding Overview" />
-                        </div>
-                        <div className="contentContainer">
-                            <h1 className="text-white leading-title font-normal mb-2">
-                                BOARDING <br /> OVERVIEW
-                            </h1>
-                            <p className="text-white mt-2 subTitle">
-                                Comprehensive care for holistic development
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+                style={{
+                    position: "relative",
+                    width: "100%",
+                    height: 350,
+                    margin: "0 auto",
+                    overflow: "hidden",
+                }}>
+                <img
+                    src="/image/food-menu/cover.png"
+                    alt="Food Menu Cover"
+                    style={{
+                        width: "100%",
+                        height: 350,
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        zIndex: 1,
+                        backgroundColor: "#074B35",
+                    }}
+                />
+                <div
+                    className="absolute inset-0 w-full h-full z-10"
+                    style={{
+                        background: "linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.2) 100%)"
+                    }}
+                />
+                <h1
+                    className="relative z-20 text-white text-7xl font-normal"
+                    style={{
+                        fontFamily: "Gideon Roman",
+                        fontWeight: 400,
+                        fontSize: "120px",
+                        lineHeight: "1",
+                        letterSpacing: "24px",
+                        color: "#FFFFFF",
+                        width: "100%",
+                        height: 350,
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        zIndex: 20,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        textAlign: "center",
+                        textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+                    }}
+                >
+                    OVERVIEW
+                </h1>
             </div>
 
             {/* Content Section */}

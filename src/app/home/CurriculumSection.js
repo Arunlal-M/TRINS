@@ -109,7 +109,7 @@ const CurriculumSection = () => {
             padding: '0 1rem',
           }}
         >
-          <p>
+          <p className='mt-5 normal-black capitalize tracking-normal'>
             I am fortunate to have been part of the creation of Trivandrum International School in
             2003. From its inception, Mr George M
           </p>
