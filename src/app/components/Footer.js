@@ -198,7 +198,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-4 border-t border-t-[#0a6d4d] text-center">
+        <div className="mt-8 -mb-35 pt-4 border-t border-t-[#0a6d4d] text-center">
           <p className="text-xs md:text-sm">
             © {currentYear} Trivandrum International School. All Rights Reserved.
           </p>

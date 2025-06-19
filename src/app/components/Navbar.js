@@ -79,7 +79,7 @@ const Navbar = () => {
         <div
           className="relative top-12 transform -translate-y-12 flex items-center z-10"
           style={{
-            backgroundColor: isHomePage ? "rgba(7, 80, 55, 1)" : "rgba(255, 255, 255, 1)"
+            backgroundColor: isHomePage ? "rgba(7, 80, 55, 0)" : "rgba(255, 255, 255, 1)"
           }}
         >
 

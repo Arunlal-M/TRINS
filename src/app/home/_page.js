@@ -68,7 +68,7 @@ const Home = () => {
   return (
     <>
       <SplashScreen />
-    <div className="bg-[#074D36] w-screen">
+    <div className="bg-[#074D36] w-screen -mt-25">
       {/* landing section*/}
       <div className="relative w-full h-screen magnet-section">
         <video

@@ -178,7 +178,7 @@ const SplashScreen = () => {
           Trivandrum International School
         </p>
         <p
-          className="splash-subtitle opacity-0"
+          className="splash-subtitle opacity-0 pt-5"
           style={{
             fontFamily: 'Gideon Roman',
             fontWeight: 100,
