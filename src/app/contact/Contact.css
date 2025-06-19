@@ -1,9 +1,77 @@
- @media screen and (max-width: 991px) {
-    .mapContainer{
-        width: 90%;
-    }
-    .listContainer{
-        width: 100%;
+.mapContainer {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.listContainer {
+  width: 100%;
+}
 
-    }
+@media screen and (min-width: 640px) {
+  .mapContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mapContainer {
+    width: 85%;
+    height: 400px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mapContainer {
+    width: 60%;
+    height: 450px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mapContainer {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mapContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mapContainer {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .contact-header {
+    font-size: 3rem !important;
+  }
+  
+  .contact-info-text {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .contact-email-text {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-header {
+    font-size: 2.5rem !important;
+    letter-spacing: 1px !important;
+  }
+  
+  .contact-info-text {
+    font-size: 16px !important;
+  }
+  
+  .contact-email-text {
+    font-size: 13px !important;
+  }
 }

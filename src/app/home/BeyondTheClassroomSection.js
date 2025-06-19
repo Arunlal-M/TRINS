@@ -28,7 +28,7 @@ const BeyondTheClassroomSection = () => {
                                 filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                             }}
                         >
-                            <Link href="/arts-culture">
+                            <Link href="/activities/arts-culture">
                                 <BeyondClassroomCard
                                     title="ARTS"
                                     subtitle="Built For Adventure"
@@ -76,7 +76,7 @@ const BeyondTheClassroomSection = () => {
                                     filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                                 }}
                             >
-                                <Link href="/sports">
+                                <Link href="/activities/sports">
                                     <BeyondClassroomCard
                                         title="SPORTS"
                                         subtitle="Built For Adventure"
@@ -93,7 +93,7 @@ const BeyondTheClassroomSection = () => {
                                 style={{
                                     filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                                 }}
-                            >    <Link href="/sports">
+                            >    <Link href="/activities/yoga">
                                     <BeyondClassroomCard
                                         title="YOGA"
                                         subtitle="Built For Adventure"

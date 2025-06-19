@@ -5,56 +5,56 @@ export default function Accreditations() {
   const accreditations = [
     {
       organization: "Cambridge Assessment International Education",
-      logo: "/image/accreditations/acc_cam.jpg",
+      logo: "/image/accreditations/acc_cam.webp",
       description: "First Accredited Centre In Kerala for Cambridge Assessment International Education(IGCSE and A LEVELS)",
       year: "Since 2010"
     },
     {
       organization: "International Baccalaureate Organization",
-      logo: "/image/accreditations/acc_ib.png",
+      logo: "/image/accreditations/acc_ib.webp",
       description: "First and only IB World School in the State authorized by the International Baccalaureate Organization (IBO) to implement the IB Diploma ProgrammeOne among 125 schools in India offering this programme",
       year: "Since 2005"
     },
     {
       organization: "Primary Years Programme",
-      logo: "/image/accreditations/acc_pyp.png",
+      logo: "/image/accreditations/acc_pyp.webp",
       description: "The 1st authorised IB PYP (Primary Years Programme) School in KeralaOne among 82 schools in India offering this programme",
       year: "Since 2018"
     },
     {
       organization: "Diploma Programme",
-      logo: "/image/accreditations/acc_dp.png",
+      logo: "/image/accreditations/acc_dp.webp",
       description: "The only authorised IB DP school in Kerala",
       year: "2020-Present"
     },
     {
       organization: "Council for the Indian School Certificate Examination",
-      logo: "/image/accreditations/acc_cisce.png",
+      logo: "/image/accreditations/acc_cisce.webp",
       description: "Accredited by the Council for the Indian School Certificate Examination",
       year: "2020-Present"
     },
-   
+
     {
       organization: "British Council’s International School Award",
-      logo: "/image/accreditations/acc_bcisa.png",
+      logo: "/image/accreditations/acc_bcisa.webp",
       description: "Proud Recipient of the British Council’s International School Award",
       year: "2020-Present"
     },
     {
       organization: "Round Square ",
-      logo: "/image/accreditations/acc_rs.png",
+      logo: "/image/accreditations/acc_rs.webp",
       description: "The first School from Kerala to be awarded Global Membership into the Round Square Association Of Schools",
       year: "2020-Present"
     },
     {
       organization: "College Board ",
-      logo: "/image/accreditations/acc_cb.png",
+      logo: "/image/accreditations/acc_cb.webp",
       description: "The first School from Kerala to be awarded Global Membership into the Round Square Association Of Schools",
       year: "2020-Present"
     },
     {
       organization: "Cambridge Assessments Admissions Testing",
-      logo: "/image/accreditations/cambridge-assesment-logo.jpg",
+      logo: "/image/accreditations/cambridge-assesment-logo.webp",
       description: "Trivandrum International School is an authorized Test Centre for Admissions Testing Services of Cambridge Assessments",
       year: "2020-Present"
     },
@@ -62,7 +62,7 @@ export default function Accreditations() {
 
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}
@@ -70,13 +70,13 @@ export default function Accreditations() {
         style={{
           position: "relative",
           width: "100%",
-          height: 300,
+          height: "clamp(200px, 50vw, 300px)",
           margin: "0 auto",
           overflow: "hidden",
         }}
       >
         <Image
-          src="/image/accreditations/cover.jpg"
+          src="/image/accreditations/Accredition.webp"
           alt="Accreditations Cover"
           fill
           style={{
@@ -84,24 +84,34 @@ export default function Accreditations() {
             objectPosition: "center",
             backgroundColor: "#074B35",
           }}
+          priority
+        />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
         />
         <h1
           style={{
             fontFamily: "Gideon Roman",
             fontWeight: 400,
-            fontSize: "120px",
+            fontSize: "clamp(32px, 8vw, 120px)",
             lineHeight: "1",
-            letterSpacing: "24px",
+            letterSpacing: "clamp(2px, 2vw, 4px)",
+            textTransform: "uppercase",
             color: "#FFFFFF",
-            height: 260,
             position: "absolute",
-            zIndex: 2,
+            zIndex: 20,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+            textShadow: "0 4px 32px rgba(0, 0, 0, 0.5)",
             inset: 0,
+            padding: "0 16px",
+            wordBreak: "break-word",
+            opacity: 0.7,
           }}
         >
           Accreditations
@@ -109,24 +119,24 @@ export default function Accreditations() {
       </div>
 
       {/* Accreditations Section */}
-      <div className="w-full max-w-4xl mt-16 mb-24 px-4">
+      <div className="w-full max-w-8xl mt-16 mb-24 px-4">
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold mb-8 text-[#085038]">
             Recognized Excellence
           </h2>
-          
-          <p className="text-lg mb-12 border-b pb-12">
-            Our commitment to educational excellence is validated by prestigious 
-            accreditations from leading educational organizations worldwide. 
-            These recognitions ensure we meet rigorous international standards 
+
+          <p className="text-lg mb-12 pb-12">
+            Our commitment to educational excellence is validated by prestigious
+            accreditations from leading educational organizations worldwide.
+            These recognitions ensure we meet rigorous international standards
             and continuously improve our programs.
           </p>
-          
-          <div className="space-y-12">
+
+          <div className="space-y-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             {accreditations.map((item, index) => (
-              <div 
-                key={index} 
-                className="flex flex-col md:flex-row items-start gap-6 border-b pb-12  last:pb-0"
+              <div
+                key={index}
+                className="flex flex-col md:flex-row items-start gap-6 border p-4 last:pb-0"
               >
                 <div className="relative w-75 h-75  rounded-lg flex items-center justify-center p-4">
                   <Image
@@ -148,13 +158,13 @@ export default function Accreditations() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 bg-[#f0f7f4] rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4 text-[#085038]">Quality Assurance</h3>
             <p>
-              Our accreditation process involves comprehensive evaluations every 
-              5 years, including self-studies, peer reviews, and improvement plans. 
-              This commitment to continuous improvement ensures we maintain the 
+              Our accreditation process involves comprehensive evaluations every
+              5 years, including self-studies, peer reviews, and improvement plans.
+              This commitment to continuous improvement ensures we maintain the
               highest educational standards.
             </p>
           </div>

@@ -1,27 +1,62 @@
 import ActivitiesCard from "../components/ActivitiesCard";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Activities() {
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
-      <div className="relative w-full h-[500px] flex items-center justify-center">
-        <img
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          height: 300,
+          margin: "0 auto",
+          overflow: "hidden",
+        }}
+      >
+        <Image
           src="/image/activities/cover.jpg"
-          alt="Activities Cover"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          alt="About Us Cover"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            backgroundColor: "#074B35",
+          }}
+          priority
         />
-        <img
-          src="/image/activities/coverOverGradient.png"
-          alt="Activities Gradient Overlay"
-          className="absolute inset-0 w-full h-full object-cover z-10"
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
         />
         <h1
-          className="relative z-20 text-white text-7xl font-normal"
-          style={{ fontFamily: "Gideon Roman, serif", letterSpacing: 2 }}
+          style={{
+            fontFamily: "Gideon Roman",
+            fontWeight: 400,
+            fontSize: "clamp(32px, 8vw, 120px)",
+            lineHeight: "1",
+            letterSpacing: "clamp(2px, 2vw, 4px)",
+            textTransform: "uppercase",
+            color: "#FFFFFF",
+            position: "absolute",
+            zIndex: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+            inset: 0,
+            padding: "0 16px",
+            wordBreak: "break-word",
+            opacity: 0.7,
+          }}
         >
-          School Activities | TRINS
+          School Activities
         </h1>
       </div>
       <div className="w-full bg-white flex flex-col items-center py-20 px-4">
@@ -59,14 +94,38 @@ export default function Activities() {
           showcase themselves.
         </div>
         <div
-          className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full my-16"
+          className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 last gap-10 w-full my-16"
         >
-          <ActivitiesCard title="ARTS & CULTURAL" />
-          <ActivitiesCard title="SPORTS" />
-          <ActivitiesCard title="OUTBOUND LEARNING" />
-          <ActivitiesCard title="SOCIAL SERVICE" />
-          <ActivitiesCard title="IN-HOUSE ACTIVITIES" />
-          <ActivitiesCard title="CELEBRATION" />
+          <Link href="/activities/arts-culture">
+            <ActivitiesCard title="ARTS & CULTURAL" />
+          </Link>
+
+          <Link href="/activities/sports">
+            <ActivitiesCard title="SPORTS" />
+          </Link>
+          <Link href="/activities/yoga">
+            <ActivitiesCard title="YOGA" />
+          </Link>
+
+          <Link href="/activities/outbound-learning">
+            <ActivitiesCard title="OUTBOUND LEARNING" />
+          </Link>
+
+          <Link href="/activities/wellbeing-social-service">
+            <ActivitiesCard title="SOCIAL SERVICE" />
+          </Link>
+
+          <Link href="/activities/clubs-activities">
+            <ActivitiesCard title="IN-HOUSE ACTIVITIES" />
+          </Link>
+
+          <Link
+            href="/activities/celebrations"
+            className="md:col-span-3 md:justify-self-center"
+          >
+            <ActivitiesCard title="CELEBRATION" />
+          </Link>
+
         </div>
       </div>
     </div>

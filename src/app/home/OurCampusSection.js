@@ -803,7 +803,7 @@ const OurCampusSection = () => {
 
         <p
           ref={campusDescRef}
-          className="font-[Gideon_Roman] font-normal text-[24px] leading-[44px] text-center text-white mt-[-20px] mb-0 px-4 max-w-7/10 mx-auto capitalize tracking-normal"
+          className="normal capitalize tracking-normal md:max-w-7/10 "
           style={{
             letterSpacing: 0,
             fontFamily: "Gideon Roman, serif",

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import gsap from 'gsap';
 import ReadMoreButton from '../components/ReadMoreButton';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -62,18 +62,18 @@ const PrincipalMessageSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full flex flex-col items-center justify-center min-h-screen h-screen bg-[#fefbff] overflow-hidden magnet-section mob-height-adjust">
-      <Image
+    <div className="principal-message-section relative w-full flex flex-col items-center justify-center min-h-screen h-screen bg-[#fefbff] overflow-hidden magnet-section mob-height-adjust">
+      {/* <Image
         src="/image/home/PrincipalsMessage.png"
         alt="Principal's Message background"
         fill
         style={{ objectFit: 'cover' }}
         quality={100}
         className="z-0 principalMessageImg"
-      />
+      /> */}
       <div className="relative flex flex-col md:flex-row items-start justify-center w-full max-w-[1920px] z-10 px-4 mt-12 md:mt-24 pt-0 gap-4 h-full">
         <div
-          className="flex flex-col items-start justify-start flex-shrink-0 w-full md:w-auto md:min-w-0 lg:min-w-0 xl:min-w-0 mt-8 md:mt-48 md:mr-0 lg:mr-0 xl:mr-0"
+          className="flex flex-col items-start justify-start flex-shrink-0 w-full md:w-auto md:min-w-0 lg:min-w-0 xl:min-w-0 max-sm:-mt-30 mt-8 md:mt-28 md:mr-0 lg:mr-0 xl:mr-0"
           style={{ maxWidth: 'min-content' }}
         >
           <h2
@@ -87,12 +87,12 @@ const PrincipalMessageSection = () => {
           </h2>
         </div>
         <div className="flex items-start justify-center w-full md:w-auto">
-          <div className="position-relative principalNoteContainer">
+          <div className="position-relative principalNoteContainer principalLetter">
             <img
               ref={principalNoteRef}
               src="/image/home/PsNote-bg.svg"
               alt="Principal's note"
-              className="w-full max-w-[90vw] md:max-w-[520px] lg:max-w-[700px] xl:max-w-[800px] h-auto drop-shadow-xl PrincipalsNote"
+              className="w-full min-w-[125%] sm:min-w-[90%] md:min-w-0 md:max-w-[520px] lg:max-w-[700px] xl:max-w-[800px] h-auto drop-shadow-xl PrincipalsNote"
             />
             <div className="noteContentContainer" ref={principalNoteRefContent}>
               <p className="note">
@@ -102,18 +102,18 @@ const PrincipalMessageSection = () => {
                 distinct international school.
               </p>
               <p className="noteSignature">- Richard Hillebrand</p>
-              <ReadMoreButton className="angle" href="/PrincipalMessage" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
+              <ReadMoreButton className="ml-2 angle" href="/PrincipalMessage" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
             </div>
           </div>
         </div>
       </div>
       {/* <div className="flex flex-col mb-24 items-center"> */}
-        {' '}
-        {/* Added items-center */}
-        {/* <ReadMoreButton href="#" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '} */}
-        {/* Use the new component */}
-        {/* This invisible spacer ensures additional space at the bottom of the section */}
-        {/* <div className="invisible"></div> */}
+      {' '}
+      {/* Added items-center */}
+      {/* <ReadMoreButton href="#" bgColor="bg-[#6cff97]" hoverColor="hover:bg-[#f5de9c]" />{' '} */}
+      {/* Use the new component */}
+      {/* This invisible spacer ensures additional space at the bottom of the section */}
+      {/* <div className="invisible"></div> */}
       {/* </div> */}
     </div>
   );
