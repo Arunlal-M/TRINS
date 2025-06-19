@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import BeyondClassroomCard from './BeyondClassroomCard';
+import Link from "next/link";
+
 
 // Beyond the Classroom section with transparent to full opacity green gradient background
 const BeyondTheClassroomSection = () => {
@@ -26,11 +28,13 @@ const BeyondTheClassroomSection = () => {
                                 filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                             }}
                         >
-                            <BeyondClassroomCard
-                                title="ARTS"
-                                subtitle="Built For Adventure"
-                                imageSrc="/image/home/bcr_arts.png"
-                            />
+                            <Link href="/activities/arts-culture">
+                                <BeyondClassroomCard
+                                    title="ARTS"
+                                    subtitle="Built For Adventure"
+                                    imageSrc="/image/home/bcr_arts.png"
+                                />
+                            </Link>
                         </div>
                     </div>
 
@@ -72,11 +76,13 @@ const BeyondTheClassroomSection = () => {
                                     filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                                 }}
                             >
-                                <BeyondClassroomCard
-                                    title="SPORTS"
-                                    subtitle="Built For Adventure"
-                                    imageSrc="/image/home/bcr_sports.png"
-                                />
+                                <Link href="/activities/sports">
+                                    <BeyondClassroomCard
+                                        title="SPORTS"
+                                        subtitle="Built For Adventure"
+                                        imageSrc="/image/home/bcr_sports.png"
+                                    />
+                                </Link>
                             </div>
                         </div>
 
@@ -87,12 +93,13 @@ const BeyondTheClassroomSection = () => {
                                 style={{
                                     filter: 'drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3))',
                                 }}
-                            >
-                                <BeyondClassroomCard
-                                    title="YOGA"
-                                    subtitle="Built For Adventure"
-                                    imageSrc="/image/home/bcr_yoga.png"
-                                />
+                            >    <Link href="/activities/yoga">
+                                    <BeyondClassroomCard
+                                        title="YOGA"
+                                        subtitle="Built For Adventure"
+                                        imageSrc="/image/home/bcr_yoga.png"
+                                    />
+                                </Link>
                             </div>
                         </div>
                     </div>

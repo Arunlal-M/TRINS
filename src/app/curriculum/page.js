@@ -15,7 +15,7 @@ export default function Curriculum() {
     if (typeof window !== 'undefined') {
       const urlParams = new URLSearchParams(window.location.search);
       const programParam = urlParams.get('program');
-      
+
       if (programParam && [
         'Early Year Program',
         'Primary Year Program',
@@ -77,7 +77,7 @@ export default function Curriculum() {
   return (
     <div className="w-screen mt-38 mainContainer">
       {/* Banner Section */}
-      <div className="relative w-full h-[70svh] magnet-section">
+      <div className="relative w-full h-[40svh] magnet-section">
         <Image
           src={bannerImages[activeSubProgram || activeProgram]}
           alt="Students in a classroom with CURRICULUM text overlay"
@@ -110,7 +110,7 @@ export default function Curriculum() {
       </div>
 
       {/* Button Navigation Section */}
-      <div className="w-full overflow-x-auto px-4 pb-4" style={{overflowY: "visible", marginTop: "-90px"}}>
+      <div className="w-full overflow-x-auto px-4 pb-4" style={{ overflowY: "visible", marginTop: "-90px" }}>
         <div className="flex flex-col md:flex-row gap-2 h-full justify-center left-1/2 mb-16 md:gap-4 min-w-max mt-[-0px] mx-auto transform">
           {programs.map((program) => (
             <div key={program} className="relative">
@@ -121,15 +121,13 @@ export default function Curriculum() {
                 isExpanded={activeProgram === program && activeSubProgram !== null}
                 onClick={() => handleProgramClick(program)}
               />
-              
+
               {activeProgram === program && subPrograms[program] && (
                 <div className="absolute left-0 right-0 mt-2 bg-white rounded-lg shadow-lg z-10 w-full">
                   {subPrograms[program].map((subProgram) => (
                     <button
                       key={subProgram}
-                      className={`w-full px-4 py-2 text-left hover:bg-gray-100 ${
-                        activeSubProgram === subProgram ? 'bg-[#FBE9C4]' : ''
-                      }`}
+                      className={`w-full px-4 py-2 text-left hover:bg-gray-100 ${activeSubProgram === subProgram ? 'bg-[#FBE9C4]' : ''}`}
                       onClick={() => handleSubProgramClick(subProgram)}
                       style={{ fontFamily: "Gideon Roman, serif" }}
                     >
@@ -227,12 +225,12 @@ export default function Curriculum() {
                   stage of our programme delivers the following:
                 </p>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>
                     Child's inquiry-led through play based teaching and
                     learning methodology
@@ -344,12 +342,12 @@ export default function Curriculum() {
                   stage of our programme delivers the following:
                 </p>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>Child's inquiry-led through play based teaching and
                     learning methodology</li>
                   <li>Physical and emotional health of the child</li>
@@ -365,13 +363,13 @@ export default function Curriculum() {
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}
-                > 
+                >
                   For more details visit:&nbsp;
                   <a
                     href="https://www.trinsearlylearningcentre.com"
                     target="_blank"
                     className="text-blue-600 hover:underline"
-                  > 
+                  >
                     www.trinsearlylearningcentre.com
                   </a>
                 </p>
@@ -416,7 +414,7 @@ export default function Curriculum() {
                     textAlign: "left",
                   }}
                 >
-                  
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -428,8 +426,8 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                 At the main campus, there is ample room for the wonderful world of play to develop. This forms effective leadership qualities in students, and sows the seeds towards establishing early patterns of goal setting, problem solving, making informed choices and taking on challenges.
-               </p>
+                  At the main campus, there is ample room for the wonderful world of play to develop. This forms effective leadership qualities in students, and sows the seeds towards establishing early patterns of goal setting, problem solving, making informed choices and taking on challenges.
+                </p>
                 <p
                   className="mb-6 ml-5"
                   style={{
@@ -441,9 +439,9 @@ export default function Curriculum() {
                   }}
                 >
 
-Children have an innate sense of wonderment that encompass all that they see around them. Their natural curiosity makes them excellent learners and this is beautifully integrated into the scheme of the Kindergarten curriculum. The co-curricular and academic goals at TRINS are enveloped in a mantle of unconditional love and support provided by a team of dedicated and talented teaching and supporting staff with many years of international teaching experience. All measures are taken to ensure that your child is provided with a safe and comfortable environment that is conducive to happy learning.
-               </p>
-               <p
+                  Children have an innate sense of wonderment that encompass all that they see around them. Their natural curiosity makes them excellent learners and this is beautifully integrated into the scheme of the Kindergarten curriculum. The co-curricular and academic goals at TRINS are enveloped in a mantle of unconditional love and support provided by a team of dedicated and talented teaching and supporting staff with many years of international teaching experience. All measures are taken to ensure that your child is provided with a safe and comfortable environment that is conducive to happy learning.
+                </p>
+                <p
                   className="mb-6 ml-5"
                   style={{
                     fontFamily: "Gideon Roman, serif",
@@ -454,10 +452,10 @@ Children have an innate sense of wonderment that encompass all that they see aro
                   }}
                 >
 
-The wide spectrum of learning experiences provided through dance, music ,art craft, sports and computer classes apart from Language, Mathematics , Science and Social Studies ensure that a multi-pronged platform is created to include all types of learners.
+                  The wide spectrum of learning experiences provided through dance, music ,art craft, sports and computer classes apart from Language, Mathematics , Science and Social Studies ensure that a multi-pronged platform is created to include all types of learners.
 
-               </p>
-               <p
+                </p>
+                <p
                   className="mb-6 ml-5"
                   style={{
                     fontFamily: "Gideon Roman, serif",
@@ -468,9 +466,9 @@ The wide spectrum of learning experiences provided through dance, music ,art cra
                   }}
                 >
 
-The motto of the school ‘Learning is for Life’ creates an atmosphere of enthusiasm and encouragement and provides opportunities that nurture each and every student’s talent and interest and allows them to bloom unrestrained. The philosophy of the school is founded on the belief that each child is unique and is a winner!
+                  The motto of the school ‘Learning is for Life’ creates an atmosphere of enthusiasm and encouragement and provides opportunities that nurture each and every student’s talent and interest and allows them to bloom unrestrained. The philosophy of the school is founded on the belief that each child is unique and is a winner!
 
-               </p>
+                </p>
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -482,7 +480,7 @@ The motto of the school ‘Learning is for Life’ creates an atmosphere of enth
                     textAlign: "left",
                   }}
                 >
-               
+
                 </h3>
                 {/* <ul className="list-disc ml-5 mt-2" style={{
                     fontFamily: "Gideon Roman, serif",
@@ -560,7 +558,7 @@ The motto of the school ‘Learning is for Life’ creates an atmosphere of enth
                     textAlign: "left",
                   }}
                 >
-                  
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -574,9 +572,9 @@ The motto of the school ‘Learning is for Life’ creates an atmosphere of enth
                 >
                   An inquiry based teaching and learning methodology that aims to develop an independent, confident and committed student.
 
-The whole school community, including parents, are viewed as partners in learning who can actively contribute to a holistic educational experience. This empowers the student to take control of their learning and boost their confidence and self-motivation.
+                  The whole school community, including parents, are viewed as partners in learning who can actively contribute to a holistic educational experience. This empowers the student to take control of their learning and boost their confidence and self-motivation.
 
-The programme is designed to equip the student for a successful life, focusing on five essential elements:
+                  The programme is designed to equip the student for a successful life, focusing on five essential elements:
 
                 </p>
                 <h3
@@ -590,7 +588,7 @@ The programme is designed to equip the student for a successful life, focusing o
                     textAlign: "left",
                   }}
                 >
-                  
+
                 </h3>
                 <p
                   className="ml-5"
@@ -602,7 +600,7 @@ The programme is designed to equip the student for a successful life, focusing o
                     letterSpacing: 0,
                   }}
                 >
-                 
+
                 </p>
                 <ul className="list-disc ml-5 mt-2">
                   <li>
@@ -610,17 +608,17 @@ The programme is designed to equip the student for a successful life, focusing o
 
                   </li>
                   <li>Concepts
-</li>
+                  </li>
                   <li>
-              Skills
-               </li>
-               <li>
-           Attitudes
+                    Skills
+                  </li>
+                  <li>
+                    Attitudes
 
-               </li>
-               <li>
-             Action
-               </li>
+                  </li>
+                  <li>
+                    Action
+                  </li>
                 </ul>
                 <p
                   className="ml-5"
@@ -634,7 +632,7 @@ The programme is designed to equip the student for a successful life, focusing o
                 >
                   At TRINS, the students are guided by six trans-disciplinary themes of global significance. This helps them to deepen their learning by developing their conceptual understanding, strengthening their knowledge and skills across and beyond their subject areas.
 
-                
+
                 </p>
               </div>
             </div>
@@ -679,7 +677,7 @@ The programme is designed to equip the student for a successful life, focusing o
                     textAlign: "left",
                   }}
                 >
-                
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -691,7 +689,7 @@ The programme is designed to equip the student for a successful life, focusing o
                     letterSpacing: 0,
                   }}
                 >
-                 From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (ICSE ) and the International (IGCSE) boards that are offered at TRINS.
+                  From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (ICSE ) and the International (IGCSE) boards that are offered at TRINS.
 
                 </p>
                 <h3
@@ -717,8 +715,8 @@ The programme is designed to equip the student for a successful life, focusing o
                     letterSpacing: 0,
                   }}
                 >
-                  
-The curriculum in Middle School comprises a wider range of subjects reflecting those required for the Grade 10 Board Examinations.
+
+                  The curriculum in Middle School comprises a wider range of subjects reflecting those required for the Grade 10 Board Examinations.
 
                 </p>
                 <ul className="list-disc ml-5 mt-2">
@@ -727,18 +725,18 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
 
                   </li>
                   <li>Mathematics
-</li>
+                  </li>
                   <li>
                     Humanities – History & Geography
 
                   </li>
                   <li>ICT</li>
-                 <li>English
-</li>
-                 <li>Second Language – French, Hindi, German
-</li>
+                  <li>English
+                  </li>
+                  <li>Second Language – French, Hindi, German
+                  </li>
                   <li>Practical Sessions – Physics, Chemistry and Biology laboratories where students learn through experiments.
-</li>
+                  </li>
                 </ul>
                 <p
                   className="ml-5"
@@ -750,7 +748,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     letterSpacing: 0,
                   }}
                 >
-                 The Middle School timetable accommodates a whole range of co-curricular activities in both athletics, art, music, swimming and several clubs.
+                  The Middle School timetable accommodates a whole range of co-curricular activities in both athletics, art, music, swimming and several clubs.
 
                 </p>
               </div>
@@ -827,12 +825,12 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                   COMMON FEATURES
                 </h3>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>Comprehensive subject offerings</li>
                   <li>Experienced and dedicated faculty</li>
                   <li>Regular assessments and feedback</li>
@@ -881,7 +879,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-          
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -930,20 +928,20 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                     textAlign: "left",
                   }}
                 >
-                 
+
                 </h3>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>GROUP 1: English, History & Geography and Second Languages (Hindi, Malayalam & French)</li>
                   <li>GROUP 2: Sciences & Mathematics</li>
                   <li>GROUP 3: Economics/Computer Applications</li>
                 </ul>
-              .
+                .
                 <p
                   className="mb-6 ml-5"
                   style={{
@@ -955,7 +953,7 @@ The curriculum in Middle School comprises a wider range of subjects reflecting t
                   }}
                 >
                   The final board exams are scheduled in March. The assessment in this curriculum includes an internal assessment component as well.
-Meaningful and rich assignments for accentuating learning experience are an integral part of the curriculum.
+                  Meaningful and rich assignments for accentuating learning experience are an integral part of the curriculum.
                 </p>
               </div>
             </div>
@@ -1000,7 +998,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     textAlign: "left",
                   }}
                 >
-                 
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -1026,7 +1024,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                 >
                   Modern-day problems need a modern-day solution. That is exactly where we step in. With our focus on holistic education, we aim to curate an environment of learning for life in all spheres.
                 </p>
-                
+
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -1063,7 +1061,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     textAlign: "left",
                   }}
                 >
-                 ICSE or Cambridge International Examination’s IGCSE curriculum for the next two years.
+                  ICSE or Cambridge International Examination’s IGCSE curriculum for the next two years.
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -1087,7 +1085,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     letterSpacing: 0,
                   }}
                 >
-                 This curriculum is Affiliated with the Cambridge Assessment International Education (www.cambridgeinternational.org)
+                  This curriculum is Affiliated with the Cambridge Assessment International Education (www.cambridgeinternational.org)
                 </p>
                 <p
                   className="mb-6 ml-5"
@@ -1188,12 +1186,12 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                   COMMON BENEFITS
                 </h3>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>Globally recognized qualifications</li>
                   <li>University counseling and placement support</li>
                   <li>Specialized subject faculty</li>
@@ -1242,7 +1240,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     textAlign: "left",
                   }}
                 >
-              
+
                 </h3>
                 <p
                   className="mb-6 ml-5"
@@ -1267,14 +1265,14 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     letterSpacing: 0,
                   }}
                 >
-                The DP core aims for the students to reflect on the nature of knowledge, complete independent research and undertake a project that often involves community service.
+                  The DP core aims for the students to reflect on the nature of knowledge, complete independent research and undertake a project that often involves community service.
                 </p>
-                 <p>The three elements of the DP core are:</p>
-                 <p>Theory of Knowledge (TOK): Reflection on the nature of knowledge and on how we know what we claim to know.</p>
-                 <p>The Extended Essay(EE): An independent, self-directed piece of research, finishing with a 4,000-word paper.</p>
-                 <p>Creativity, Activity, Service (CAS): A project focusing those three concepts.</p>
-                 <p
-                 className="mb-6 ml-5"
+                <p>The three elements of the DP core are:</p>
+                <p>Theory of Knowledge (TOK): Reflection on the nature of knowledge and on how we know what we claim to know.</p>
+                <p>The Extended Essay(EE): An independent, self-directed piece of research, finishing with a 4,000-word paper.</p>
+                <p>Creativity, Activity, Service (CAS): A project focusing those three concepts.</p>
+                <p
+                  className="mb-6 ml-5"
                   style={{
                     fontFamily: "Gideon Roman, serif",
                     fontWeight: 400,
@@ -1282,8 +1280,8 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}
-                  >
-                    The six subject groups are:</p>
+                >
+                  The six subject groups are:</p>
                 <h3
                   className="mb-3 text-left"
                   style={{
@@ -1298,12 +1296,12 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                   PROGRAM COMPONENTS
                 </h3>
                 <ul className="list-disc ml-5 mt-2" style={{
-                    fontFamily: "Gideon Roman, serif",
-                    fontWeight: 400,
-                    fontSize: "23.07px",
-                    lineHeight: "27.81px",
-                    letterSpacing: 0,
-                  }}>
+                  fontFamily: "Gideon Roman, serif",
+                  fontWeight: 400,
+                  fontSize: "23.07px",
+                  lineHeight: "27.81px",
+                  letterSpacing: 0,
+                }}>
                   <li>Studies in Language and Literature</li>
                   <li>Language Acquisition</li>
                   <li>Individuals and Societies</li>
@@ -1313,7 +1311,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                 </ul>
                 .
                 <p
-                 className="mb-6 ml-5"
+                  className="mb-6 ml-5"
                   style={{
                     fontFamily: "Gideon Roman, serif",
                     fontWeight: 400,
@@ -1321,8 +1319,8 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     lineHeight: "27.81px",
                     letterSpacing: 0,
                   }}
-                  >
-                    The DP is open to any student aged between 16 and 19.</p>
+                >
+                  The DP is open to any student aged between 16 and 19.</p>
               </div>
             </div>
           </div>
@@ -1366,7 +1364,7 @@ Meaningful and rich assignments for accentuating learning experience are an inte
                     textAlign: "left",
                   }}
                 >
-                
+
                 </h3>
                 <p
                   className="mb-6 ml-5"

@@ -2,7 +2,12 @@ import React from 'react';
 
 const CurriculumSection = () => {
     return (
-        <div className="w-full min-h-screen relative overflow-hidden bg-[#EAC985] py-16 md:py-24 flex flex-col justify-start">
+        <div className="curriculum-section w-full min-h-screen overflow-hidden bg-[#EAC985] py-16 md:py-24 flex flex-col justify-start"
+            style={{
+                position: 'relative',
+                zIndex: 0, // Increased z-index but still lower than fixed video
+            }}       
+            >
             {/* Main content - Title and description at the top */}
             <div className="container mx-auto px-4 relative z-20 flex flex-col items-center pt-8 md:pt-12">
                 <h2
@@ -22,20 +27,20 @@ const CurriculumSection = () => {
                 {/* Description text with specified styling */}
                 <div
                     className="mx-auto mt-4 mb-8"
-                    style={{
-                        width: '992px',
-                        maxWidth: '100%',
-                        fontFamily: 'Gideon Roman, serif',
-                        fontWeight: 400,
-                        fontSize: '22px',
-                        lineHeight: '1.6',
-                        letterSpacing: '0.02em',
-                        textAlign: 'center',
-                        padding: '0 1rem',
-                    }}
+                    // style={{
+                    //     width: '992px',
+                    //     maxWidth: '100%',
+                    //     fontFamily: 'Gideon Roman, serif',
+                    //     fontWeight: 400,
+                    //     fontSize: '22px',
+                    //     lineHeight: '1.6',
+                    //     letterSpacing: '0.02em',
+                    //     textAlign: 'center',
+                    //     padding: '0 1rem',
+                    // }}
                 >
-                    <p>
-                        I am fortunate to have been part of the creation of TRINS International 
+                    <p className='normal capitalize tracking-normal'>
+                        I am fortunate to have been part of the creation of Trivandrum International
                         School in 2003. From its inception, Mr George M
                     </p>
                 </div>
@@ -71,7 +76,6 @@ const CurriculumSection = () => {
                         CURRICULUM
                     </div>
                 </div>
-
                 {/* Container for content that will go on top of the background text */}
                 <div className="container mx-auto px-4 relative z-10 py-8 md:py-16 h-full flex flex-col">
                     {/* Image of children on sofa */}
@@ -84,7 +88,6 @@ const CurriculumSection = () => {
                     </div>
                 </div>
             </div>
-
             {/* Diamond buttons with connecting lines */}
             <div className="w-full mt-8 md:mt-16">
                 <div className="container mx-auto">

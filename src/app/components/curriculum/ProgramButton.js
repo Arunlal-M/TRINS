@@ -279,11 +279,11 @@ const ProgramButton = ({ programName, onClick, isActive, hasSubMenu, isExpanded,
             style={{
               fontFamily: 'Gideon Roman, serif',
               fontWeight: 400,
-              fontSize: '29.27px',
-              lineHeight: '35.27px',
+              fontSize: '26px',
+              lineHeight: '32px',
               letterSpacing: '0%',
               textAlign: 'center',
-              width: '90%',
+              width: '100%',
               wordBreak: 'break-word',
               hyphens: 'auto'
             }}

@@ -1,6 +1,6 @@
 "use client"; // Add this line to make it a client component
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname
 import Link from "next/link";
 import Image from "next/image";
@@ -8,9 +8,49 @@ import Image from "next/image";
 const Navbar = () => {
   const pathname = usePathname(); // Get the current pathname
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  // Check if the current path is the home page or root
+  const [showOurSchoolDropdown, setShowOurSchoolDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+  const [closing, setClosing] = useState(false);
   const isHomePage = pathname === "/" || pathname === "/home";
+
+  // Our School dropdown links
+  const ourSchoolLinks = [
+    { name: "About Us", href: "/about-us" },
+    { name: "Campus", href: "/campus" },
+    { name: "Management", href: "/management" },
+    { name: "Alumni", href: "/alumni" },
+    { name: "Accreditations", href: "/accreditations" },
+    { name: "Achievements", href: "/achievements" },
+    { name: "Testimonials", href: "/testimonials" },
+    { name: "Events", href: "/events" },
+  ];
+
+  function useIsSmallScreen() {
+    const [isSmall, setIsSmall] = useState(false);
+    useEffect(() => {
+      const check = () => setIsSmall(window.innerWidth < 640);
+      check();
+      window.addEventListener("resize", check);
+      return () => window.removeEventListener("resize", check);
+    }, []);
+    return isSmall;
+  }
+
+  const isSmall = useIsSmallScreen();
+
+  // Close dropdown after delay if mouse leaves
+  useEffect(() => {
+    if (closing) {
+      const timer = setTimeout(() => {
+        if (showOurSchoolDropdown) {
+          setShowOurSchoolDropdown(false);
+          setClosing(false);
+        }
+      }, 300); // 300ms delay before closing
+      return () => clearTimeout(timer);
+    }
+  }, [closing, showOurSchoolDropdown]);
+
 
   return (
     <>
@@ -33,33 +73,14 @@ const Navbar = () => {
         }
       `}</style>
       <nav
-        className={`absolute top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${isHomePage ? "bg-transparent" : "bg-transparent"
+        className={`sticky  top-0 left-0 w-screen max-w-full h-[100px] z-[1010] pointer-events-auto ${isHomePage ? "bg-transparent" : "bg-transparent"
           }`}
       >
-
-        {/* Left side with logo and school name */}
-        {/* <div
-          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
-          style={{ backdropFilter: "blur(1px)" }}
-        >
-          <Image
-            src="/image/Logo.png" // Update with your actual logo path
-            alt="Trivandrum International School Logo"
-            width={300}
-            height={300}
-            className="object-contain ml-[-90px] mt-[20px]"
-          />
-          <h1 className={` font-gideon text-xl md:text-4xl font-normal ml-[-50px] mt-[-20px] ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-black hover:text-gray-600"
-                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}>
-            Trivandrum International School
-          </h1>
-        </div> */}
-
         <div
-          className="relative top-12 transform -translate-y-12 flex items-center z-10 bg-black/1"
-          style={{ backdropFilter: "blur(1px)" }}
+          className="relative top-12 transform -translate-y-12 flex items-center z-10"
+          style={{
+            backgroundColor: isHomePage ? "rgba(7, 80, 55, 0)" : "rgba(255, 255, 255, 1)"
+          }}
         >
 
           <Link
@@ -68,9 +89,9 @@ const Navbar = () => {
             <Image
               src={isHomePage ? '/image/logo-h-white.png' : '/image/logo-h-black.png'}
               alt="Trivandrum International School Logo"
-              width={400}
-              height={400}
-              className={`object-contain ml-[20px] mt-[20px]`}
+              width={isSmall ? 300 : 400}
+              height={isSmall ? 300 : 400}
+              className={`object-contain ml-[20px] my-[5px] pb-1`}
             />
           </Link>
         </div>
@@ -93,6 +114,8 @@ const Navbar = () => {
             />
           </button>
         </div>
+
+
         {/* Mobile menu overlay */}
         {mobileOpen && (
           <div className="fixed inset-0 bg-black/80 z-[1015] flex flex-col items-center justify-center gap-8 animate-fade-in">
@@ -138,13 +161,7 @@ const Navbar = () => {
             >
               EVENTS
             </Link>
-            {/* <Link
-              href="/food-menu"
-              className="text-white text-lg font-gideon uppercase"
-              onClick={() => setMobileOpen(false)}
-            >
-              FOOD MENU
-            </Link> */}
+
             <Link
               href="/blogs"
               className="text-white text-lg font-gideon uppercase"
@@ -166,50 +183,28 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
-              href="#"
-              aria-label="Search"
-              className="flex items-center justify-center"
-              onClick={() => setMobileOpen(false)}
-            >
-              <img
-                src={
-                  isHomePage
-                    ? "/image/navbar/Magnifier-white.svg"
-                    : "/image/navbar/Magnifier-black.svg"
-                }
-                alt="Search"
-                className="w-8 h-8"
-              />
-            </Link>
           </div>
         )}
+
+
         {/* Desktop nav (hidden below 950px) */}
         <div className="navbar-desktop">
           {isHomePage && (
             <div className="absolute w-screen h-[220px] bg-gradient-to-b from-black/80 via-black/50 to-transparent pointer-events-none z-0 top-0 left-0" />
           )}
-          <div className="absolute z-10 flex items-center justify-end gap-8 pr-8 w-full max-w-[600px] top-[35px] right-8">
+
+          <div className="absolute z-10 flex items-center justify-end gap-9 pr-8 w-full max-w-[600px] top-[35px] right-16">
             <Link
-              key="EVENTS"
-              href="/events"
+              key="BOARDING"
+              href="/boarding"
               className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
                 ? "text-gray-100 hover:text-[#fff]"
                 : "text-black hover:text-gray-600"
                 } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              Events
+              Boarding
             </Link>
-            {/* <Link
-              key="FOOD MENU"
-              href="/food-menu"
-              className={`h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
-                ? "text-gray-100 hover:text-[#fff]"
-                : "text-black hover:text-gray-600"
-                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
-            >
-              Food Menu
-            </Link> */}
+
             <Link
               key="BLOGS"
               href="/blogs"
@@ -241,34 +236,73 @@ const Navbar = () => {
             >
               &nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;Us&nbsp;&nbsp;
             </Link>
-
             <Link
-              href="#"
-              aria-label="Search"
-              className={`flex items-center justify-center`}
-            >
-              <img
-                src={
-                  isHomePage
-                    ? "/image/navbar/Magnifier-white.svg"
-                    : "/image/navbar/Magnifier-black.svg"
-                }
-                alt="Search"
-                className={`w-[27px] h-[27px] object-contain`}
-              />
-            </Link>
-          </div>
-          <div className="absolute w-[800px] h-[18px] top-[110px] right-[-80] flex  items-center pr-[34.39px] pl-[34.39px] z-20 whitespace-nowrap overflow-hidden">
-            <Link
-              key="OUR SCHOOL"
-              href="/"
-              className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-normal text-[22.00px] leading-none  ${isHomePage
+              key="ABOUT US"
+              href="/about-us"
+              className={`w-[69px] h-[19px] flex items-center justify-center font-gideon font-normal text-[18.00px] leading-none  ${isHomePage
                 ? "text-gray-100 hover:text-[#fff]"
                 : "text-black hover:text-gray-600"
-                } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+                } no-underline transition-all duration-300 hover:scale-110 hover:outline-none`}
             >
-              Our School
+              &nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;Us&nbsp;&nbsp;
             </Link>
+
+          </div>
+
+          <div className="absolute top-[90px] right-[60px] flex flex-row items-center gap-x-2 pr-2 pl-2 z-20 whitespace-nowrap">
+            {/* Our School dropdown */}
+            <div
+              onMouseEnter={() => {
+                setShowOurSchoolDropdown(true);
+                setClosing(false);
+              }}
+              onMouseLeave={() => setClosing(true)}
+              ref={dropdownRef}
+            >
+              <button
+                className={`w-[148px] h-[26px] flex items-center justify-center font-gideon font-thin text-[19.00px] leading-none  ${isHomePage
+                  ? "text-gray-100 hover:text-[#fff]"
+                  : "text-gray-800 hover:text-gray-600"
+                  } no-underline whitespace-nowrap transition-all duration-300 hover:scale-110 hover:outline-none`}
+                onClick={() => setShowOurSchoolDropdown(!showOurSchoolDropdown)}
+              >
+                Our School
+              </button>
+
+              {/* Dropdown menu */}
+              {showOurSchoolDropdown && (
+                <div
+                  className={`absolute top-full left-0 mt-2 w-48 rounded-md shadow-lg z-50 ${isHomePage
+                    ? "bg-black/80 backdrop-blur-sm"
+                    : "bg-white/80 backdrop-blur-sm"
+                    } transition-opacity duration-300 ease-in-out ${closing ? "opacity-0" : "opacity-100"
+                    }`}
+                  onMouseEnter={() => {
+                    setShowOurSchoolDropdown(true);
+                    setClosing(false);
+                  }}
+                  onMouseLeave={() => setClosing(true)}
+                >
+                  <div className="py-1">
+                    {ourSchoolLinks.map((link) => (
+                      <Link
+                        key={link.name}
+                        href={link.href}
+                        className={`block px-4 py-2 text-sm ${isHomePage
+                          ? "text-gray-200 hover:bg-black/60 hover:text-white"
+                          : "text-gray-700 hover:bg-gray-100"
+                          }`}
+                        onClick={() => setShowOurSchoolDropdown(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+
             <Link
               key="ADMISSION"
               href="/admission-process"

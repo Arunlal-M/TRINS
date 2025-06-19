@@ -1,11 +1,22 @@
 'use client';
 
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const splashRef = useRef(null);
+  const animationRef = useRef(null);
+
+  const skipAnimation = () => {
+    if (animationRef.current) {
+      animationRef.current.kill();
+    }
+    setIsVisible(false);
+    document.body.style.overflowY = 'unset';
+  };
+
   useLayoutEffect(() => {
     // Disable vertical scrolling when splash screen is visible
     document.body.style.overflowY = 'hidden';
@@ -17,6 +28,8 @@ const SplashScreen = () => {
         document.body.style.overflowY = 'unset';
       },
     });
+
+    animationRef.current = tl;
 
     const logoElement = '.splash-screen .logo-splash';
     const leftBGElement = '.splash-screen .left-bg-element';
@@ -37,8 +50,9 @@ const SplashScreen = () => {
 
     // Animation sequence
     tl.to(logoElement, { yPercent: 0, autoAlpha: 1, duration: 1.5, ease: 'power2.out' })
-      .to(titleElement, { autoAlpha: 1, duration: 1.5 }, '<') // for your reference @rohit-46 < means start at the same time
+      .to(titleElement, { autoAlpha: 1, duration: 1.5 }, '<')
       .to(subtitleElement, { yPercent: 0, autoAlpha: 1, duration: 1.5, ease: 'power2.out' }, '<')
+      .to(downArrowElement, { autoAlpha: 1, duration: 1.5, ease: 'power2.out' }, '<') // Arrow appears with text
       .to(bgElement, { opacity: 0.025, duration: 1.5, ease: 'power2.in' }, '<')
       .to(
         leftBGElement,
@@ -65,14 +79,23 @@ const SplashScreen = () => {
         '<'
       )
       .to({}, { duration: 2 })
-      .to([logoElement, titleElement, subtitleElement], {
+      .to([logoElement, titleElement, subtitleElement, downArrowElement], {
         yPercent: '-=10',
         duration: 1,
         ease: 'power2.inOut',
       })
-      .to(downArrowElement, { autoAlpha: 1, duration: 0.5, ease: 'power2.in' }, '<')
-      .to('.splash-screen', { opacity: 0, duration: 1.5, ease: 'power1.in' }); // Cleanup function to ensure vertical scrolling is re-enabled if component unmounts
+      .to('.splash-screen', { opacity: 0, duration: 1.5, ease: 'power1.in' });
+
+    // Add click event listener
+    const splashElement = splashRef.current;
+    splashElement.addEventListener('click', skipAnimation);
+
+    // Cleanup function
     return () => {
+      if (animationRef.current) {
+        animationRef.current.kill();
+      }
+      splashElement.removeEventListener('click', skipAnimation);
       document.body.style.overflowY = 'unset';
     };
   }, []);
@@ -80,7 +103,10 @@ const SplashScreen = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="splash-screen fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#074D36] text-white">
+    <div 
+      ref={splashRef}
+      className="splash-screen fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#074D36] text-white cursor-pointer"
+    >
       {/* full-screen subtle background */}
       <Image
         src="/image/home/splash/splash-full-bg.png"
@@ -103,7 +129,7 @@ const SplashScreen = () => {
           top: '-333.48px',
           left: '-100px',
           transform: 'rotate(150deg)',
-          opacity: 0.05, // lower opacity for subtle effect
+          opacity: 0.05,
         }}
         unoptimized
       />
@@ -124,47 +150,52 @@ const SplashScreen = () => {
         }}
         unoptimized
       />
-      <Image
-        src="/image/Logo.png"
-        alt="Logo"
-        width={800}
-        height={800}
-        priority
-        className="opacity-0 logo-splash"
-      />
-      <p
-        className="splash-title opacity-0"
-        style={{
-          fontFamily: 'Gideon Roman',
-          fontWeight: 400,
-          fontSize: '70.69px',
-          lineHeight: '78.87px',
-          letterSpacing: '0%',
-          textAlign: 'center',
-          textTransform: 'uppercase',
-          color: '#FFFFFF',
-          width: '1025.65px',
-          height: '163.45px',
-        }}
-      >
-        Trivandrum International School
-      </p><br/>
-      <p
-        className="splash-subtitle opacity-0"
-        style={{
-          fontFamily: 'Glass Antiqua',
-          // fontWeight: 100,
-          fontSize: '28.53px',
-          lineHeight: '40.76px',
-          letterSpacing: '20%',
-          textAlign: 'center',
-          // textTransform: 'uppercase',
-          color: '#FFFFFF',
-        }}
-      >
-        Molding a new generation Of Leaders
-      </p>
-      {/* <div className="splash-down-arrow absolute mt-4 stick bottom-0 left-1/2 transform -translate-x-1/2 opacity-0">
+      <div className="flex flex-col items-center justify-center">
+        <Image
+          src="/image/Logo.png"
+          alt="Logo"
+          width={800}
+          height={800}
+          priority
+          className="opacity-0 logo-splash mt-8 mb-4"
+        />
+        <p
+          className="splash-title opacity-0"
+          style={{
+            fontFamily: 'Gideon Roman',
+            fontWeight: 400,
+            fontSize: '70.69px',
+            lineHeight: '78.87px',
+            letterSpacing: '0%',
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            color: '#FFFFFF',
+            width: '1025.65px',
+            height: '163.45px',
+            marginTop: '-60px',
+          }}
+        >
+          Trivandrum International School
+        </p>
+        <p
+          className="splash-subtitle opacity-0 pt-5"
+          style={{
+            fontFamily: 'Gideon Roman',
+            fontWeight: 100,
+            fontSize: '28.69px',
+            lineHeight: '38.87px',
+            letterSpacing: '0%',
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            color: '#FFFFFF',
+            marginTop: '-5px',
+          }}
+        >
+          Molding a new generation Of Leaders
+        </p>
+      </div>
+      {/* Down arrow element - now appears with the text */}
+      <div className="splash-down-arrow fixed bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 pointer-events-auto">
         <Image
           src="/gif/Arrow.gif"
           alt="Downward arrow"
@@ -173,7 +204,7 @@ const SplashScreen = () => {
           className="rotate-[270deg]"
           unoptimized
         />
-      </div> */}
+      </div>
     </div>
   );
 };

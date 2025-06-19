@@ -27,7 +27,6 @@
 //         ? Math.max(video.parentElement.offsetHeight * 0.7, window.innerHeight * 0.55)
 //         : window.innerHeight * 0.55;
 
-
 //       video.setAttribute("data-original-width", minW);
 //       video.setAttribute("data-original-height", minH);
 
@@ -356,7 +355,7 @@
 
 //         <div className="displayMob my-16">
 //           <video
-//                 src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
+//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -388,7 +387,7 @@
 //           >
 //             {isClient && (
 //               <video
-//                 src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
+//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -428,6 +427,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 const OurCampusSection = () => {
   const [isClient, setIsClient] = useState(false);
@@ -454,7 +454,6 @@ const OurCampusSection = () => {
       // Get container dimensions
       const containerWidth = videoContainer.offsetWidth;
       const containerHeight = videoContainer.offsetHeight;
-
       // Set video dimensions relative to container
       minW = containerWidth * 0.65;
       minH = Math.min(containerHeight * 0.7, window.innerHeight * 0.7);
@@ -748,17 +747,19 @@ const OurCampusSection = () => {
       className="relative w-full flex flex-col items-center justify-center min-h-screen h-screen overflow-hidden magnet-section bg-gradient-to-br from-[#085038] to-[#02BA89]"
     >
       <div className="relative flex flex-col items-center justify-center w-full max-w-[1920px] z-10 px-4 mt-0 pt-4 gap-0 md:gap-0 h-full">
-        <h2
-          ref={campusTitleRef}
-          className="text-[#F5DE9C] font-serif font-[400] text-[3.5vw] md:text-[56px] lg:text-[64px] leading-tight md:leading-[88px] uppercase tracking-normal text-center mb-[-24px] mt-10 md:mt-8 z-50"
-          style={{ fontFamily: "Gideon Roman, serif" }}
-        >
-          OUR CAMPUS
-        </h2>
+        <Link href={"/campus"} >
+          <h2
+            ref={campusTitleRef}
+            className="text-[#F5DE9C] font-serif font-[400] text-[3.5vw] md:text-[56px] lg:text-[64px] leading-tight md:leading-[88px] uppercase tracking-normal text-center mb-[-24px] mt-10 md:mt-8 z-50"
+            style={{ fontFamily: "Gideon Roman, serif" }}
+          >
+            OUR CAMPUS
+          </h2>
+        </Link>
 
         <div className="displayMob my-16">
           <video
-            src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
+            src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
             autoPlay
             loop
             muted
@@ -788,7 +789,7 @@ const OurCampusSection = () => {
           >
             {isClient && (
               <video
-                src="https://trins-media.s3.ap-southeast-2.amazonaws.com/public/video/ourCampus.mp4"
+                src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
                 autoPlay
                 loop
                 muted
@@ -802,7 +803,7 @@ const OurCampusSection = () => {
 
         <p
           ref={campusDescRef}
-          className="font-[Gideon_Roman] font-normal text-[24px] leading-[44px] text-center text-white mt-[-20px] mb-0 px-4 max-w-7/10 mx-auto capitalize tracking-normal"
+          className="normal capitalize tracking-normal md:max-w-7/10 "
           style={{
             letterSpacing: 0,
             fontFamily: "Gideon Roman, serif",
@@ -812,7 +813,7 @@ const OurCampusSection = () => {
             background: "transparent",
           }}
         >
-          Trivandrum International School (TRINS) is set in a serene, 20-acre eco-friendly campus atop a hill on the outskirts of Trivandrum, the capital city of the State of Kerala, India. 
+          Trivandrum International School (TRINS) is set in a serene, 20-acre eco-friendly campus atop a hill on the outskirts of Trivandrum, the capital city of the State of Kerala, India.
         </p>
       </div>
     </div>
