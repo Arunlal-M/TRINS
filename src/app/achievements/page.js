@@ -47,7 +47,7 @@ export default function Achievements() {
         }}
       >
         <Image
-          src="/image/achievements/cover.jpg"
+          src="/image/achievements/acheivements.webp"
           alt="Achievements Cover"
           fill
           style={{

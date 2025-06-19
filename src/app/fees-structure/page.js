@@ -49,7 +49,7 @@ export default function FeesStructure() {
         }}
       >
         <Image
-          src="/image/fees/cover.jpg"
+          src="/image/fees/feestructure.webp"
           alt="Fees Structure Cover"
           fill
           style={{

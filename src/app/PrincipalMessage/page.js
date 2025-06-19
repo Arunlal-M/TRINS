@@ -196,7 +196,7 @@ export default function Blogs() {
                     {/* Photo above message */}
                     <div className="principal-photo-container flex flex-col items-center mb-8">
                         <img
-                            src="/image/Principal/richard-hillebrand.jpg"
+                            src="/image/Principal/richard-hillebrand.webp"
                             alt="Principal Richard Hillebrand"
                             className="principal-photo"
                             
@@ -246,7 +246,7 @@ export default function Blogs() {
                                     <p className="text-lg text-gray-600">Principal, Trivandrum International School</p>
                                 </div>
                                 <img
-                                    src="/image/Principal/richard-hillebrand.jpg"
+                                    src="/image/Principal/richard-hillebrand.webp"
                                     alt="Principal Richard Hillebrand"
                                     className="signature-photo"
                                 />

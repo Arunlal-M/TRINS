@@ -40,7 +40,7 @@ export default function Management() {
         }}
       >
         <Image
-          src="/image/management/cover.jpg"
+          src="/image/management/management.webp"
           alt="Management Cover"
           fill
           style={{
