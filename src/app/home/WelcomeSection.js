@@ -61,11 +61,11 @@ const WelcomeSection = () => {
       </div>
       <div
         ref={groupRef}
-        className="flex flex-col items-center justify-center mt-8 md:mt-12 z-20 max-h-[60vh] flex-grow"
+        className="flex flex-col items-center justify-center mt-2 md:mt-0 z-20 max-h-[65vh] flex-grow"
       >
         <h2
           ref={headingRef}
-          className="text-[#F5DE9C] text-5xl md:text-6xl font-serif font-normal text-center mb-6 font-cormorant"
+          className="text-[#F5DE9C] text-5xl md:text-5xl font-serif font-normal text-center mb-2 font-cormorant"
         >
           TRIVANDRUM
           <br />
@@ -73,11 +73,12 @@ const WelcomeSection = () => {
         </h2>
         <p
           ref={descRef}
-          className="text-white text-center font-[400] text-[27.33px] leading-[52.85px] font-[Gideon_Roman] max-w-7xl mb-2 px-4 tracking-normal"
+          className=" normal tracking-normal"
         >
-          TRINS aims to empower young learners to become leaders with a lifelong passion for learning and caring.
+          Trivandrum International School (TRINS) is committed to nurturing young minds into confident, compassionate, and responsible leaders of tomorrow.
+          Through a holistic and globally-minded education, TRINS inspires students to develop critical thinking, creativity, and a genuine love for lifelong learning.
         </p>
-        <div className="flex flex-col mb-24 items-center">
+        <div className="flex flex-col mt-4 mb-24 items-center">
           {" "}
           {/* Added items-center */}
           <ReadMoreButton href="/curriculum" /> {/* Use the new component */}

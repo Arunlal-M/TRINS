@@ -115,8 +115,8 @@ export default function Campus() {
                 <Image
                     src={bannerImages[activeSubSection || activeSection]}
                     alt="TRINS Campus"
-                    fill={true}
-                    style={{ objectFit: "cover" }}
+                    layout="fill"
+                    objectFit="cover"
                     quality={100}
                     priority
                     className={`-z-10 transition-opacity duration-500 ease-in-out ${bannerFade ? 'opacity-0' : 'opacity-100'}`}
@@ -124,7 +124,7 @@ export default function Campus() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <h1
-                        className="mt-[-80] text-white text-7xl md:text-8xl lg:text-9xl font-normal uppercase"
+                        className="text-white text-7xl md:text-8xl lg:text-9xl font-normal uppercase"
                         style={{
                             fontFamily: "Gideon Roman, serif",
                             letterSpacing: "0.05em",
@@ -144,9 +144,9 @@ export default function Campus() {
             </div>
 
             {/* Navigation Section */}
-      <div className="w-full h-[40svh] overflow-x-auto px-4 pb-4" style={{overflowY: "visible", marginTop: "-90px"}}>
-        <div className="flex flex-col md:flex-row gap-2 h-full justify-center left-1/2 mb-16 md:gap-4 min-w-max mt-[-0px] mx-auto transform">
-          {sections.map((section) => (
+            <div className="w-full h-[40svh] overflow-x-auto px-4 pb-4" style={{ overflowY: "visible", marginTop: "-90px" }}>
+                <div className="flex flex-col md:flex-row gap-2 h-full justify-center left-1/2 mb-16 md:gap-4 min-w-max mt-[-0px] mx-auto transform">
+                    {sections.map((section) => (
                         <div key={section} className="relative">
                             <ProgramButton
                                 programName={section}

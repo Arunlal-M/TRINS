@@ -10,7 +10,7 @@ export default function ActivitiesCard({ title }) {
         draggable={false}
       />
       <img
-        src="/image/activities/activitiesCardBottomGradient.png"
+        src="/image/activities/activitiesCardBottomGradient.webp"
         alt="Card Gradient"
         className="absolute bottom-0 left-0 w-full h-1/2 object-cover z-10 pointer-events-none"
         draggable={false}
