@@ -7,22 +7,22 @@ export default function AdmissionProcess() {
     <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.jpg"}
+          image={"/image/admission-process/admission-process.webp"}
           text="Admission Process"
           active
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.jpg"
+          image="/image/admission-process/eligibility.webp"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.jpg"
+          image="/image/admission-process/admission-form.webp"
           text="Admission Form"
           href="/admission-form"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.jpg"
+          image="/image/admission-process/admission-contact.webp"
           text="Admission Contact"
           href="/admission-contact"
         />
@@ -33,7 +33,7 @@ export default function AdmissionProcess() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer h-96 overflow-hidden"> {/* Adjust image height */}
               <img
-                src="/image/admission-process/Copy of 13.jpg"
+                src="/image/admission-process/Copy of 13.webp"
                 alt="Admission Process Main"
                 style={{ position: 'relative', top: '-130px' }}
               />
@@ -57,7 +57,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-1.jpg"
+                src="/image/admission-process/step-1.webp"
                 alt="Step One"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -117,7 +117,7 @@ export default function AdmissionProcess() {
             </div>
             <div className="w-1/2 flex justify-start items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-2.jpg"
+                src="/image/admission-process/step-2.webp"
                 alt="Step Two"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -134,7 +134,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative stepImage">
               <img
-                src="/image/admission-process/step-3.jpg"
+                src="/image/admission-process/step-3.webp"
                 alt="Step Three"
                 className="rounded-lg shadow-lg object-cover"
                 style={{ width: "600px", height: "auto", position: "relative" }}
@@ -187,7 +187,7 @@ export default function AdmissionProcess() {
             </div>
             <div className="w-1/2 flex justify-start items-center relative stepImage">
               <img
-                src="/image/admission-process/step-4.jpg"
+                src="/image/admission-process/step-4.webp"
                 alt="Step Four"
                 className="rounded-lg shadow-lg object-cover"
                 style={{

@@ -18,7 +18,7 @@ export default function AboutUs() {
         }}
       >
         <Image
-          src="/image/about-us/AboutUs.webp"
+          src="/image/about-us/AboutUS.webp"
           alt="About Us Cover"
           fill
           style={{

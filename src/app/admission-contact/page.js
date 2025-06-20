@@ -6,22 +6,22 @@ export default function AdmissionContact() {
     <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.jpg"}
+          image={"/image/admission-process/admission-process.webp"}
           text="Admission Process"
           href="/admission-process"
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.jpg"
+          image="/image/admission-process/eligibility.webp"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.jpg"
+          image="/image/admission-process/admission-form.webp"
           text="Admission Form"
           href="/admission-form"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.jpg"
+          image="/image/admission-process/admission-contact.webp"
           text="Admission Contact"
           active
         />
@@ -33,7 +33,7 @@ export default function AdmissionContact() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer h-96 overflow-hidden"> {/* Adjust image height */}
               <img
-                src="/image/admission-process/admission-contact2.jpg"
+                src="/image/admission-process/admission-contact2.webp"
                 alt="Admission Contact Main"
                 style={{ position: 'relative', top: '-130px' }}
 
