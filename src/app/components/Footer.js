@@ -42,15 +42,16 @@ const Footer = () => {
       links: [
         { name: "News", href: "/news" },
         { name: "Calendar", href: "/events" },
-        { name: "Alumni", href: "/alumni" },
         { name: "Gallery", href: "/gallery" },
+        { name: "About Us", href: "/about-us" },
+
 
       ],
     },
     {
-      title: "",
+      title: "General",
       links: [
-        { name: "Admissions", href: "/application-form" },
+        { name: "Admissions", href: "/admission-process" },
         { name: "Work With Us", href: "/careers" },
         { name: "News Letters", href: "/newsletter" },
         { name: "Policies & Downloads", href: "/school-policies" },
@@ -61,13 +62,13 @@ const Footer = () => {
       links: [
         { name: "Orientations", href: "/orientations" },
         { name: "Stories", href: "/blogs" },
-        { name: "Lunch Menu", href: "/food-menu" },
+        { name: "Alumni", href: "/alumni" },
       ],
     },
     {
       title: "Parents",
       links: [
-        { name: "Term Dates", href: "/admission-process" },
+        { name: "Scholarships", href: "/admission-process" },
         { name: "FAQs", href: "/faqs" },
         { name: "Fees", href: "/fees-structure" },
       ],
@@ -77,7 +78,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#075037] text-white py-8 md:py-12 px-4 md:px-8 relative overflow-hidden">
       {/* Background Designs - Hidden on mobile */}
-      <div className=" md:block absolute top-0 left-0 z-0">
+      <div className=" md:block absolute -mt-20 top-0 left-0 z-0">
         <Image
           src="/image/footer/bg_design_top_left.png"
           alt=""

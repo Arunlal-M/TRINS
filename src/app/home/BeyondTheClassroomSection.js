@@ -40,6 +40,7 @@ const BeyondTheClassroomSection = () => {
 
                     {/* Heading and arrow container */}
                     <div className="relative mb-28">
+                        <Link href="/activities">
                         {/* Beyond the Classroom heading */}
                         <h2
                             className="font-normal uppercase text-white"
@@ -65,6 +66,7 @@ const BeyondTheClassroomSection = () => {
                                 unoptimized
                             />
                         </div>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-12 gap-4 relative">

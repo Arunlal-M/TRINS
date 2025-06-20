@@ -125,7 +125,7 @@
 //                     <p>On re-joining Trivandrum International School in 2019 as Director of Academics and Principal, I was delighted to be immersed again in the vast range of extracurricular activities that our students undertake, right here in India.</p>
 //                     <p>Music and drama have been a strength of the School from its early days, but so has a commitment to social service in Trivandrum.</p>
 //                     <p>I would welcome you to move beyond visiting our website and to come and visit the School. It will help you get a closer look at the opportunities we create for our students at one of the best international schools. You also get the chance to see our students engage in a key task: learning for life.</p>
-//                     <p className="noteSignature">- Richard Hillebrand</p>
+//                     <p className="noteSignature">- Gourab Das Sharma</p>
 //                 </div>
 
 //             </div>
@@ -197,11 +197,11 @@ export default function Blogs() {
                     <div className="principal-photo-container flex flex-col items-center mb-8">
                         <img
                             src="/image/Principal/richard-hillebrand.webp"
-                            alt="Principal Richard Hillebrand"
+                            alt="Principal Gourab Das Sharma"
                             className="principal-photo"
 
                         /><br />
-                        <p className="text-xl font-semibold italic">Richard Hillebrand</p>
+                        <p className="text-xl font-semibold italic">Gourab Das Sharma</p>
                     </div>
 
                     {/* Message Content */}
@@ -242,12 +242,12 @@ export default function Blogs() {
                             {/* Replace the current signature section with this */}
                             <div className="signature-section">
                                 <div>
-                                    <p className="text-xl font-semibold italic">- Richard Hillebrand</p>
+                                    <p className="text-xl font-semibold italic">- Gourab Das Sharma</p>
                                     <p className="text-lg text-gray-600">Principal, Trivandrum International School</p>
                                 </div>
                                 <img
                                     src="/image/Principal/richard-hillebrand.webp"
-                                    alt="Principal Richard Hillebrand"
+                                    alt="Principal Gourab Das Sharma"
                                     className="signature-photo"
                                 />
                             </div>

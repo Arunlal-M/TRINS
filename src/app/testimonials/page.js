@@ -116,7 +116,7 @@ export default function Testimonials() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 30%",
             backgroundColor: "#074B35",
           }}
           priority

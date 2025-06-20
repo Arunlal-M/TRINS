@@ -31,7 +31,7 @@ export default function ArtsCulture() {
   ];
 
   return (
-    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -57,7 +57,7 @@ export default function ArtsCulture() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
             zIndex: 2,
             display: "flex",

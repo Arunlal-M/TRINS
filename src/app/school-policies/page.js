@@ -97,21 +97,56 @@ export default function Policies() {
 
 
                         <div className="bg-[#f0f7f4] rounded-lg p-6">
-                            <h3 className="text-2xl font-bold mb-4 text-[#085038]">Policy Resources</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <ul className="space-y-2">
-                                        {["Complete policy handbook (PDF)", "Parent guide to school policies",
-                                            "Policy update archive", "Frequently asked questions",
-                                            "Contact for policy questions"].map((item, i) => (
+                            <div className="bg-[#f0f7f4] rounded-lg p-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <h3 className="text-2xl font-bold mb-4 text-[#085038]">Policy Documents</h3>
+                                        <ul className="space-y-2">
+                                            {[
+                                                {
+                                                    text: "Admission Policy 2022-23",
+                                                    href: "/pdf/policies/Copy-of-ADMISSION-POLICY-2022-23.pdf"
+                                                },
+                                                {
+                                                    text: "Inclusive Education Policy 2022-23",
+                                                    href: "/pdf/policies/Copy-of-Inclusive-Education-Policy-Final-2022-23.docx-.pdf"
+                                                },
+                                                {
+                                                    text: "PYP Assessment Policy",
+                                                    href: "/pdf/policies/Copy-of-PYP-Assessment-Policy-2021-22.pdf"
+                                                },
+                                                {
+                                                    text: "Parent Student Complaints Policy",
+                                                    href: "/pdf/policies/Copy-of-Parent-Student-Complaints-Policy.docx.pdf"
+                                                },
+                                                {
+                                                    text: "Language Policy",
+                                                    href: "/pdf/policies/Copy-of-Language_policy_TRINS.pdf"
+                                                }
+                                            ].map((item, i) => (
                                                 <li key={i} className="flex items-start">
                                                     <span className="text-[#085038] text-lg mr-2">•</span>
-                                                    <span>{item}</span>
+                                                    <a
+                                                        href={item.href}
+                                                        className="hover:text-[#085038] hover:underline transition-colors"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                    >
+                                                        {item.text}
+                                                    </a>
                                                 </li>
                                             ))}
-                                    </ul>
+                                        </ul>
+                                    </div>
+                                    <div className="relative h-64 rounded-lg overflow-hidden">
+                                        <Image
+                                            src="/image/orientations/ore.webp"
+                                            alt="Policy Documents"
+                                            fill
+                                            style={{ objectFit: "cover" }}
+                                        />
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

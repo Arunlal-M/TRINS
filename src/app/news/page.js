@@ -57,7 +57,7 @@ export default function News() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -67,7 +67,7 @@ export default function News() {
             textShadow: "0 4px 32px rgba(0,0,0,0.18)",
             inset: 0,
           }}>
-          News
+          NEWS & UPDATES
         </h1>
       </div>
 

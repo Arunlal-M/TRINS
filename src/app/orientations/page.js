@@ -99,10 +99,10 @@ export default function Orientations() {
                         </p>
                         <p className="text-lg mb-8">Again, on entering Grade 11 students have a choice of one of two programmes, both international curriculums. Students study either three or four Cambridge International A-levels, or six subjects if following the International Baccalaureate Diploma Programme. The orientation evening will explain the two programmes; the videos you can find on this page proivde a brief introduction to the subjects available. At this stage, students are often making choices with a particular university course in mind. Other students will not have a definite course decided upon – that is quite usual. Working with the university counsellors, students are able to make positive selections.
                         </p>
-                        <p className="noteSignature text-2 ">- Richard Hillebrand </p><br/>
+                        <p className="noteSignature text-2 ">- Gourab Das Sharma </p><br />
 
                         <p className="font-bold">Director of Academics and Principal.
-                        </p><br/><br/>
+                        </p><br /><br />
 
                         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                             {orientationPrograms.map((program, index) => (
@@ -133,12 +133,12 @@ export default function Orientations() {
                         </div> */}
 
                         <div className="bg-[#f0f7f4] rounded-lg p-6">
-                            <h3 className="text-2xl font-bold mb-4 text-[#085038]">Orientation Resources</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center"> {/* Added items-center here */}
                                 <div>
+                                    <h3 className="text-2xl font-bold mb-4 text-[#085038]">Orientation Resources</h3>
                                     <ul className="space-y-2">
                                         {["Welcome packets", "Campus map & directory", "Academic planning guide",
-                                            "Technology setup instructions", "FAQ for new families"].map((item, i) => (
+                                            "FAQ for new families"].map((item, i) => (
                                                 <li key={i} className="flex items-start">
                                                     <span className="text-[#085038] text-lg mr-2">•</span>
                                                     <span>{item}</span>
@@ -174,16 +174,7 @@ export default function Orientations() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="flex-1">
-                                <h3 className="text-2xl font-bold mb-4">Register Now</h3>
-                                <p className="mb-4">
-                                    Secure your spot at our upcoming orientation sessions.
-                                    Registration is required for all participants.
-                                </p>
-                                <button className="bg-white text-[#085038] px-6 py-2 rounded-lg hover:bg-[#e6f2ed] transition-colors">
-                                    Register for Orientation
-                                </button>
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -58,13 +58,13 @@ const CurriculumSection = () => {
     },
     {
       number: '03',
-      title: 'Middle School',
+      title: 'Middle School Program',
       ageRange: '11 to 13 Years',
       image: '/image/home/03.webp',
     },
     {
       number: '04',
-      title: 'Secondary School',
+      title: 'Secondary School Program',
       ageRange: '14 to 16 Years',
       image: '/image/home/04.webp',
     },

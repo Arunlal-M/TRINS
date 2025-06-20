@@ -29,7 +29,7 @@ const AccreditationSection = () => {
             style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
           />
         </div><br />
-        <ReadMoreButton href="/accreditations" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
+        <ReadMoreButton text="View More" href="/accreditations" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
 
       </div>
     </div>

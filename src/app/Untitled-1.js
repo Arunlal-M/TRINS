@@ -51,7 +51,7 @@
                 opacity: 0.7,
             }}
         >
-            Policies
+            PRINCIPAL'S MESSAGE
         </h1>
         <p className="text-white mt-2 subTitle"
         >

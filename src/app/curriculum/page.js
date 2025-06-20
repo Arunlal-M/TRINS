@@ -1427,7 +1427,7 @@ export default function Curriculum() {
       {/* Photo Gallery Section */}
       <div className="bg-[#E3C274] p-4 rounded-lg shadow-2xl">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-24 md:mx-24">
-          {Array.from({ length: 6 }).map((_, idx) => (
+          {Array.from({ length: 3 }).map((_, idx) => (
             <div className="rounded-lg shadow-lg" key={idx}>
               <Image
                 src={`/image/curriculum/phSet${idx + 1}.png`}
