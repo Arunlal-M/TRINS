@@ -34,12 +34,12 @@ export default function Celebrations() {
     <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
-          position: "relative",
-          width: "100%",
-          height: 300,
-          margin: "0 auto",
-          overflow: "hidden",
-        }}>
+        position: "relative",
+        width: "100%",
+        height: 300,
+        margin: "0 auto",
+        overflow: "hidden",
+      }}>
         <Image
           src="/image/activities/celebration-cover.webp"
           alt="Celebrations Cover"
@@ -50,24 +50,30 @@ export default function Celebrations() {
             backgroundColor: "#074B35",
           }}
         />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
+        />
         <h1 style={{
-            fontFamily: "Gideon Roman",
-            fontWeight: 400,
-            fontSize: "120px",
-            lineHeight: "1",
-            letterSpacing: "24px",
-            color: "#FFFFFF",
-            height: 300,
-            position: "absolute",
-            zIndex: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
-            inset: 0,
-          }}>
-          Celebrations
+          fontFamily: "Gideon Roman",
+          fontWeight: 400,
+          fontSize: "120px",
+          lineHeight: "1",
+          letterSpacing: "24px",
+          color: "#FFFFFF",
+          height: 300,
+          position: "absolute",
+          zIndex: 20,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+          inset: 0,
+        }}>
+          CELEBRATION
         </h1>
       </div>
 
@@ -77,11 +83,11 @@ export default function Celebrations() {
           <div className="p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#085038]">Celebrating Our Community</h2>
             <p className="text-lg mb-8">
-              Throughout the year, we come together to celebrate achievements, traditions, 
-              and the vibrant spirit of our school community. These events create lasting 
+              Throughout the year, we come together to celebrate achievements, traditions,
+              and the vibrant spirit of our school community. These events create lasting
               memories and strengthen our bonds.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {events.map((event, index) => (
                 <div key={index} className="border border-[#e0e0e0] rounded-lg overflow-hidden hover:shadow-md transition-shadow">

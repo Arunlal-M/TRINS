@@ -34,12 +34,12 @@ export default function Sports() {
     <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
-          position: "relative",
-          width: "100%",
-          height: 300,
-          margin: "0 auto",
-          overflow: "hidden",
-        }}>
+        position: "relative",
+        width: "100%",
+        height: 300,
+        margin: "0 auto",
+        overflow: "hidden",
+      }}>
         <Image
           src="/image/activities/SPORTS.webp"
           alt="Sports Cover"
@@ -50,23 +50,29 @@ export default function Sports() {
             backgroundColor: "#074B35",
           }}
         />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
+        />
         <h1 style={{
-            fontFamily: "Gideon Roman",
-            fontWeight: 400,
-            fontSize: "120px",
-            lineHeight: "1",
-            letterSpacing: "24px",
-            color: "#FFFFFF",
-            height: 300,
-            position: "absolute",
-            zIndex: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
-            inset: 0,
-          }}>
+          fontFamily: "Gideon Roman",
+          fontWeight: 400,
+          fontSize: "120px",
+          lineHeight: "1",
+          letterSpacing: "24px",
+          color: "#FFFFFF",
+          height: 300,
+          position: "absolute",
+          zIndex: 20,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+          inset: 0,
+        }}>
           Sports
         </h1>
       </div>
@@ -77,10 +83,10 @@ export default function Sports() {
           <div className="p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#085038]">Our Sports Programs</h2>
             <p className="text-lg mb-8">
-              We believe in the power of sports to build character, discipline, and teamwork. 
+              We believe in the power of sports to build character, discipline, and teamwork.
               Our comprehensive athletics program caters to all skill levels from recreational to competitive.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {sportsPrograms.map((program, index) => (
                 <div key={index} className="border border-[#e0e0e0] rounded-lg overflow-hidden hover:shadow-md transition-shadow">
@@ -114,13 +120,13 @@ export default function Sports() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <ul className="space-y-2">
-                    {["Olympic-size swimming pool", "Full-size gymnasium", "Synthetic track field", 
+                    {["Olympic-size swimming pool", "Full-size gymnasium", "Synthetic track field",
                       "Tennis courts", "Dance studio", "Fitness center"].map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-[#085038] text-lg mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
+                        <li key={i} className="flex items-start">
+                          <span className="text-[#085038] text-lg mr-2">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
                   </ul>
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
@@ -154,7 +160,7 @@ export default function Sports() {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-4">Join Our Teams</h3>
                 <p className="mb-4">
-                  Tryouts are held at the beginning of each season. All students are encouraged 
+                  Tryouts are held at the beginning of each season. All students are encouraged
                   to participate regardless of experience level.
                 </p>
                 <button className="bg-white text-[#085038] px-6 py-2 rounded-lg hover:bg-[#e6f2ed] transition-colors">

@@ -113,17 +113,17 @@ export default function Activities() {
 
           <Link href="/activities/outbound-learning">
             <ActivitiesCard title="OUTBOUND LEARNING"
-             imageSrc="/image/activities/" />
+             imageSrc="/image/activities/OUTBOUND LEARNING.webp" />
           </Link>
 
           <Link href="/activities/wellbeing-social-service">
             <ActivitiesCard title="SOCIAL SERVICE"
-             imageSrc="/image/activities/" />
+             imageSrc="/image/activities/community.webp" />
           </Link>
 
           <Link href="/activities/clubs-activities">
             <ActivitiesCard title="IN-HOUSE ACTIVITIES"
-             imageSrc="/image/activities/" />
+             imageSrc="/image/activities/IN-HOUSE ACTIVITIES.webp" />
           </Link>
 
           <Link
@@ -131,7 +131,7 @@ export default function Activities() {
             className="md:col-span-3 md:justify-self-center"
           >
             <ActivitiesCard title="CELEBRATION"
-             imageSrc="/image/activities/" />
+             imageSrc="/image/activities/celebration-cover.webp" />
           </Link>
 
         </div>

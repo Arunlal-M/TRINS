@@ -34,12 +34,12 @@ export default function OutboundLearning() {
     <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
-          position: "relative",
-          width: "100%",
-          height: 300,
-          margin: "0 auto",
-          overflow: "hidden",
-        }}>
+        position: "relative",
+        width: "100%",
+        height: 300,
+        margin: "0 auto",
+        overflow: "hidden",
+      }}>
         <Image
           src="/image/activities/OUTBOUND LEARNING.webp"
           alt="Outbound Learning Cover"
@@ -50,24 +50,30 @@ export default function OutboundLearning() {
             backgroundColor: "#074B35",
           }}
         />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
+        />
         <h1 style={{
-            fontFamily: "Gideon Roman",
-            fontWeight: 400,
-            fontSize: "120px",
-            lineHeight: "1",
-            letterSpacing: "24px",
-            color: "#FFFFFF",
-            height: 300,
-            position: "absolute",
-            zIndex: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
-            inset: 0,
-          }}>
-          Outbound Learning
+          fontFamily: "Gideon Roman",
+          fontWeight: 400,
+          fontSize: "120px",
+          lineHeight: "1",
+          letterSpacing: "24px",
+          color: "#FFFFFF",
+          height: 300,
+          position: "absolute",
+          zIndex: 20,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+          inset: 0,
+        }}>
+          OUTBOUND LEARNING
         </h1>
       </div>
 
@@ -77,11 +83,11 @@ export default function OutboundLearning() {
           <div className="p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#085038]">Learning Beyond Classroom Walls</h2>
             <p className="text-lg mb-8">
-              Our outbound learning programs take education into the real world, providing 
-              transformative experiences that develop skills, broaden perspectives, and 
+              Our outbound learning programs take education into the real world, providing
+              transformative experiences that develop skills, broaden perspectives, and
               create lifelong memories.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {programs.map((program, index) => (
                 <div key={index} className="border border-[#e0e0e0] rounded-lg overflow-hidden hover:shadow-md transition-shadow">
@@ -116,25 +122,25 @@ export default function OutboundLearning() {
                 <div>
                   <h4 className="text-xl font-semibold mb-3 text-[#085038]">Our Safety Standards</h4>
                   <ul className="space-y-2">
-                    {["Certified instructors", "1:8 staff-student ratio", "24/7 medical support", 
+                    {["Certified instructors", "1:8 staff-student ratio", "24/7 medical support",
                       "Comprehensive risk assessments", "Emergency response plans", "Parent communication protocols"].map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-[#085038] text-lg mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
+                        <li key={i} className="flex items-start">
+                          <span className="text-[#085038] text-lg mr-2">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-xl font-semibold mb-3 text-[#085038]">Pre-Trip Preparation</h4>
                   <ul className="space-y-2">
-                    {["Orientation sessions", "Packing lists", "Cultural briefings", 
+                    {["Orientation sessions", "Packing lists", "Cultural briefings",
                       "Skill-building workshops", "Health checks", "Parent information meetings"].map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-[#085038] text-lg mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
+                        <li key={i} className="flex items-start">
+                          <span className="text-[#085038] text-lg mr-2">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
                   </ul>
                 </div>
               </div>
@@ -177,7 +183,7 @@ export default function OutboundLearning() {
                   />
                 </div>
                 <p className="mb-4">
-                  Students document their learning journeys through photos, journals, and 
+                  Students document their learning journeys through photos, journals, and
                   presentations. Read about their transformative experiences.
                 </p>
                 <button className="border border-white text-white px-6 py-2 rounded-lg hover:bg-white hover:text-[#085038] transition-colors">

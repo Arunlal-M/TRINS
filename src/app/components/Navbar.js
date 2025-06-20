@@ -130,7 +130,6 @@ const Navbar = () => {
               className="absolute top-6 right-6 text-white text-3xl"
               onClick={() => setMobileOpen(false)}
             >
-              ×
             </button>
 
             {/* Our School dropdown in mobile */}
@@ -224,7 +223,7 @@ const Navbar = () => {
             <div className="absolute w-screen h-[220px] bg-gradient-to-b from-black/80 via-black/50 to-transparent pointer-events-none z-0 top-0 left-0" />
           )}
 
-          <div className="absolute z-10 flex items-center justify-end gap-10 pr-8 w-full max-w-[600px] top-[35px] right-16">
+          <div className="absolute z-10 flex items-center justify-end gap-10 pr-8 w-full max-w-[600px] top-[35px] right-20">
             <Link
               key="BOARDING"
               href="/boarding"

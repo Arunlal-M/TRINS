@@ -34,39 +34,45 @@ export default function ClubsActivities() {
     <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
-          position: "relative",
-          width: "100%",
-          height: 300,
-          margin: "0 auto",
-          overflow: "hidden",
-        }}>
+        position: "relative",
+        width: "100%",
+        height: 300,
+        margin: "0 auto",
+        overflow: "hidden",
+      }}>
         <Image
-          src="/image/activities/IN-HOUSE ACTIVITIES1.jpg"
+          src="/image/activities/IN-HOUSE ACTIVITIES.webp"
           alt="Clubs & Activities Cover"
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 45%",
             backgroundColor: "#074B35",
           }}
         />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
+          }}
+        />
         <h1 style={{
-            fontFamily: "Gideon Roman",
-            fontWeight: 400,
-            fontSize: "120px",
-            lineHeight: "1",
-            letterSpacing: "24px",
-            color: "#FFFFFF",
-            height: 300,
-            position: "absolute",
-            zIndex: 2,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
-            inset: 0,
-          }}>
+          fontFamily: "Gideon Roman",
+          fontWeight: 400,
+          fontSize: "120px",
+          lineHeight: "1",
+          letterSpacing: "24px",
+          color: "#FFFFFF",
+          height: 300,
+          position: "absolute",
+          zIndex: 20,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+          inset: 0,
+        }}>
           Clubs & Activities
         </h1>
       </div>
@@ -77,10 +83,10 @@ export default function ClubsActivities() {
           <div className="p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#085038]">Explore Your Passions</h2>
             <p className="text-lg mb-8">
-              With over 50 clubs and activities, there's something for every interest. 
+              With over 50 clubs and activities, there's something for every interest.
               Students are encouraged to join existing clubs or start new ones with faculty support.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {clubCategories.map((category, index) => (
                 <div key={index} className="border border-[#e0e0e0] rounded-lg overflow-hidden hover:shadow-md transition-shadow">
@@ -142,7 +148,7 @@ export default function ClubsActivities() {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-4">Start a New Club</h3>
                 <p className="mb-4">
-                  Have an idea for a new club? We provide resources and faculty advisors 
+                  Have an idea for a new club? We provide resources and faculty advisors
                   to help students establish new organizations that reflect their interests.
                 </p>
                 <button className="bg-white text-[#085038] px-6 py-2 rounded-lg hover:bg-[#e6f2ed] transition-colors">
@@ -152,7 +158,7 @@ export default function ClubsActivities() {
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-4">Club Fair</h3>
                 <p className="mb-2">
-                  Our annual Club Fair happens each September, where all clubs showcase 
+                  Our annual Club Fair happens each September, where all clubs showcase
                   their activities and recruit new members.
                 </p>
                 <div className="text-[#a3d9c4] font-medium mb-4">Next Fair: September 5, 2025</div>
