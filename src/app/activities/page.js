@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Activities() {
   return (
     <div
-      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       <div
@@ -18,7 +18,7 @@ export default function Activities() {
         }}
       >
         <Image
-          src="/image/activities/cover.webp"
+          src="/image/activities/cover.jpg"
           alt="About Us Cover"
           fill
           style={{
@@ -97,41 +97,33 @@ export default function Activities() {
           className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 last gap-10 w-full my-16"
         >
           <Link href="/activities/arts-culture">
-            <ActivitiesCard title="ARTS & CULTURAL"
-              imageSrc="/image/activities/ARTS.webp"
-            />
+            <ActivitiesCard title="ARTS & CULTURAL" />
           </Link>
 
           <Link href="/activities/sports">
-            <ActivitiesCard title="SPORTS"
-             imageSrc="/image/activities/SPORTS.webp" />
+            <ActivitiesCard title="SPORTS" />
           </Link>
           <Link href="/activities/yoga">
-            <ActivitiesCard title="YOGA"
-             imageSrc="/image/activities/bcr_yoga.webp" />
+            <ActivitiesCard title="YOGA" />
           </Link>
 
           <Link href="/activities/outbound-learning">
-            <ActivitiesCard title="OUTBOUND LEARNING"
-             imageSrc="/image/activities/" />
+            <ActivitiesCard title="OUTBOUND LEARNING" />
           </Link>
 
           <Link href="/activities/wellbeing-social-service">
-            <ActivitiesCard title="SOCIAL SERVICE"
-             imageSrc="/image/activities/" />
+            <ActivitiesCard title="SOCIAL SERVICE" />
           </Link>
 
           <Link href="/activities/clubs-activities">
-            <ActivitiesCard title="IN-HOUSE ACTIVITIES"
-             imageSrc="/image/activities/" />
+            <ActivitiesCard title="IN-HOUSE ACTIVITIES" />
           </Link>
 
           <Link
             href="/activities/celebrations"
             className="md:col-span-3 md:justify-self-center"
           >
-            <ActivitiesCard title="CELEBRATION"
-             imageSrc="/image/activities/" />
+            <ActivitiesCard title="CELEBRATION" />
           </Link>
 
         </div>

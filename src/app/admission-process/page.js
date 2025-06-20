@@ -4,45 +4,46 @@ import "./page.css";
 
 export default function AdmissionProcess() {
   return (
-    <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
+    <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.webp"}
+          image={"/image/admission-process/admission-process.jpg"}
           text="Admission Process"
-          active
+           active
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.webp"
+          image="/image/admission-process/eligibility.jpg"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.webp"
+          image="/image/admission-process/admission-form.jpg"
           text="Admission Form"
           href="/admission-form"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.webp"
+          image="/image/admission-process/admission-contact.jpg"
           text="Admission Contact"
           href="/admission-contact"
         />
       </div>
       {/* Title SubSection */}
-      <div className="w-full flex flex-row items-stretch mt-4">
-        <div className="w-full bannerSectionContainer bg-[#075037] h-96"> {/* Reduced height */}
+      <div className="w-full flex flex-row items-stretch mt-8">
+        <div className="w-full bannerSectionContainer bg-[#075037]">
           <div className="contentWidthAdjust h-full w-full">
-            <div className="imgContainer h-96 overflow-hidden"> {/* Adjust image height */}
+            <div className="imgContainer">
               <img
-                src="/image/admission-process/Copy of 13.webp"
+                src="/image/admission-process/Copy of 13.jpg"
                 alt="Admission Process Main"
-                style={{ position: 'relative', top: '-130px' }}
               />
             </div>
             <div className="contentContainer">
-              <h1 className="text-white leading-title font-normal mb-2">
+              <h1 className="text-white leading-title font-normal mb-2"
+              >
                 ADMISSION <br /> PROCESS
               </h1>
-              <p className="text-white mt-2 subTitle">
+              <p className="text-white mt-2 subTitle"
+              >
                 Begin your child's journey
               </p>
             </div>
@@ -57,7 +58,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-1.webp"
+                src="/image/admission-process/step-1.jpg"
                 alt="Step One"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -105,19 +106,19 @@ export default function AdmissionProcess() {
               >
                 Complete the application form and submit the required documents:
 
-                Past two years’ academic and co-curricular records.
+Past two years’ academic and co-curricular records.
 
-                Copy of birth certificate or passport.
+Copy of birth certificate or passport.
 
-                Any other relevant documentation.
+Any other relevant documentation.
 
-                Please ensure the application meets the age eligibility criteria.
+Please ensure the application meets the age eligibility criteria.
 
               </p>
             </div>
             <div className="w-1/2 flex justify-start items-center relative overflow-visible stepImage">
               <img
-                src="/image/admission-process/step-2.webp"
+                src="/image/admission-process/step-2.jpg"
                 alt="Step Two"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -134,7 +135,7 @@ export default function AdmissionProcess() {
           <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
             <div className="w-1/2 flex justify-end items-center relative stepImage">
               <img
-                src="/image/admission-process/step-3.webp"
+                src="/image/admission-process/step-3.jpg"
                 alt="Step Three"
                 className="rounded-lg shadow-lg object-cover"
                 style={{ width: "600px", height: "auto", position: "relative" }}
@@ -154,10 +155,10 @@ export default function AdmissionProcess() {
               >
                 Your child will take a Proficiency Assessment and participate in a Personal Interview. The assessment includes English, Math, and Science (duration varies by grade). Early Years applicants will have a more informal interaction with the curriculum coordinator.
 
-                Grade	Duration
-                Grades 1 – 3	30 minutes
-                Grades 4 – 5	45 – 60 minutes
-                Grades 6 – 12	2 hours
+Grade	Duration
+Grades 1 – 3	30 minutes
+Grades 4 – 5	45 – 60 minutes
+Grades 6 – 12	2 hours
 
               </p>
             </div>
@@ -187,7 +188,7 @@ export default function AdmissionProcess() {
             </div>
             <div className="w-1/2 flex justify-start items-center relative stepImage">
               <img
-                src="/image/admission-process/step-4.webp"
+                src="/image/admission-process/step-4.jpg"
                 alt="Step Four"
                 className="rounded-lg shadow-lg object-cover"
                 style={{
@@ -199,7 +200,7 @@ export default function AdmissionProcess() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-full mb-15 mt-32 bottomButtonContainer">
+        <div className="flex flex-col items-center w-full mb-16 mt-32 bottomButtonContainer">
           <a
             href="/application-form"
             className="bg-[#075037] text-white text-2xl px-12 py-4 rounded-full shadow-lg hover:bg-[#0a6a4a] transition-colors duration-200 flex items-center gap-2"

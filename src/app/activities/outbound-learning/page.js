@@ -6,19 +6,19 @@ export default function OutboundLearning() {
     {
       type: "Field Trips",
       description: "Local excursions that connect classroom learning to real-world experiences",
-      image: "/image/activities/field.jpg",
+      image: "/image/outbound/field.jpg",
       examples: ["Museum visits", "Historical sites", "Science centers", "Art galleries", "Local businesses"]
     },
     {
       type: "Adventure Camps",
       description: "Outdoor education programs focusing on teamwork, leadership, and environmental awareness",
-      image: "/image/activities/adventure.jpg",
+      image: "/image/outbound/adventure.jpg",
       examples: ["Rock climbing", "Canoeing", "Hiking expeditions", "Survival skills", "Ecology studies"]
     },
     {
       type: "International Exchange",
       description: "Global learning opportunities through partnerships with schools worldwide",
-      image: "/image/activities/international.jpg",
+      image: "/image/outbound/international.jpg",
       examples: ["Cultural immersion", "Language study", "Service learning", "Homestays", "Global conferences"]
     }
   ];
@@ -31,7 +31,7 @@ export default function OutboundLearning() {
   ];
 
   return (
-    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function OutboundLearning() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/activities/OUTBOUND LEARNING.webp"
+          src="/image/outbound/cover.jpg"
           alt="Outbound Learning Cover"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function OutboundLearning() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 300,
+            height: 260,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -170,7 +170,7 @@ export default function OutboundLearning() {
                 <h3 className="text-2xl font-bold mb-4">Trip Reflections</h3>
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/activities/reflection.jpg"
+                    src="/image/outbound/reflection.jpg"
                     alt="Student Reflection"
                     fill
                     style={{ objectFit: "cover" }}

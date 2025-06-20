@@ -6,19 +6,19 @@ export default function ArtsCulture() {
     {
       category: "Visual Arts",
       description: "From traditional techniques to digital media, our visual arts program nurtures creative expression",
-      image: "/image/activities/visual.jpg",
+      image: "/image/arts/visual.jpg",
       offerings: ["Painting", "Sculpture", "Photography", "Digital Art", "Ceramics"]
     },
     {
       category: "Performing Arts",
       description: "Opportunities to shine on stage and develop performance skills",
-      image: "/image/activities/performing.jpg",
+      image: "/image/arts/performing.jpg",
       offerings: ["Theater", "Dance", "Music Ensembles", "Orchestra", "Choir"]
     },
     {
       category: "Cultural Studies",
       description: "Exploring world cultures through art, music, and traditions",
-      image: "/image/activities/cultural.jpg",
+      image: "/image/arts/cultural.jpg",
       offerings: ["World Music", "Folk Arts", "Cultural Festivals", "Language Arts", "History of Art"]
     }
   ];
@@ -31,7 +31,7 @@ export default function ArtsCulture() {
   ];
 
   return (
-    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function ArtsCulture() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/activities/ARTS.webp"
+          src="/image/arts/cover.jpg"
           alt="Arts & Culture Cover"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function ArtsCulture() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 300,
+            height: 260,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -125,7 +125,7 @@ export default function ArtsCulture() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/activities/facilities.jpg"
+                    src="/image/arts/facilities.jpg"
                     alt="Arts Facilities"
                     fill
                     style={{ objectFit: "cover" }}

@@ -35,7 +35,7 @@ export default function FeesStructure() {
 
   return (
     <div
-      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}
@@ -49,7 +49,7 @@ export default function FeesStructure() {
         }}
       >
         <Image
-          src="/image/fees/feestructure.webp"
+          src="/image/fees/cover.jpg"
           alt="Fees Structure Cover"
           fill
           style={{

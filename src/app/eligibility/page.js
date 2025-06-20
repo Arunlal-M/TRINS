@@ -4,40 +4,38 @@ import AdmissionCard from "../components/AdmissionCard";
 
 export default function Eligibility() {
   return (
-    <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
+    <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.webp"}
+          image={"/image/admission-process/admission-process.jpg"}
           text="Admission Process"
           href="/admission-process"
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.webp"
+          image="/image/admission-process/eligibility.jpg"
           text="Eligibility"
           active
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.webp"
+          image="/image/admission-process/admission-form.jpg"
           text="Admission Form"
           href="/admission-form"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.webp"
+          image="/image/admission-process/admission-contact.jpg"
           text="Admission Contact"
           href="/admission-contact"
         />
       </div>
-
+      
       {/* Eligibility Content */}
-      <div className="w-full flex flex-row items-stretch mt-4">
-        <div className="w-full bannerSectionContainer bg-[#075037] h-96">
+      <div className="w-full flex flex-row items-stretch mt-8">
+        <div className="w-full bannerSectionContainer bg-[#075037]">
           <div className="contentWidthAdjust h-full w-full">
-            <div className="imgContainer h-96 overflow-hidden">
+            <div className="imgContainer">
               <img
-                src="/image/admission-process/eligibility2.webp"
+                src="/image/admission-process/eligibility2.jpg"
                 alt="Eligibility Main"
-                style={{ position: 'relative', top: '-130px' }}
-
               />
             </div>
             <div className="contentContainer">
@@ -65,7 +63,7 @@ export default function Eligibility() {
               {/* Add more age requirements as needed */}
             </ul>
           </div>
-
+          
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4">Documentation</h3>
             <p>Required documents for admission:</p>

@@ -74,20 +74,20 @@ export default function Campus() {
     };
 
     const bannerImages = {
-        'Campus Tour': '/image/campus/campus Banner.webp',
-        'Facilities': '/image/campus/facilities.webp',
-        'Library': '/image/campus/library.webp',
-        'Science Labs': '/image/campus/science-labs.webp',
-        'Physics Lab': '/image/campus/physics-lab.webp',
-        'Chemistry Lab': '/image/campus/chemistry-labs.webp',
-        'Biology Lab': '/image/campus/biology-lab.webp',
-        'Computer Lab': '/image/campus/itlab.webp',
-        'Sports Facilities': '/image/campus/sports.webp',
-        'Indoor Sports': '/image/campus/indoor-sports.webp',
-        'Outdoor Sports': '/image/campus/outdoor-sports.webp',
-        'Aquatics': '/image/campus/aquatics.webp',
-        'Dining': '/image/campus/dining.webp',
-        'Technology': '/image/campus/technology.webp'
+        'Campus Tour': '/image/campus/campus-tour-banner.jpg',
+        'Facilities': '/image/campus/facilities-banner.jpg',
+        'Library': '/image/campus/library-banner.jpg',
+        'Science Labs': '/image/campus/science-labs-banner.jpg',
+        'Physics Lab': '/image/campus/physics-lab.jpg',
+        'Chemistry Lab': '/image/campus/chemistry-lab.jpg',
+        'Biology Lab': '/image/campus/biology-lab.jpg',
+        'Computer Lab': '/image/campus/computer-lab.jpg',
+        'Sports Facilities': '/image/campus/sports-facilities-banner.jpg',
+        'Indoor Sports': '/image/campus/indoor-sports.jpg',
+        'Outdoor Sports': '/image/campus/outdoor-sports.jpg',
+        'Aquatics': '/image/campus/aquatics.jpg',
+        'Dining': '/image/campus/dining-banner.jpg',
+        'Technology': '/image/campus/technology-banner.jpg'
     };
 
     const handleSectionClick = (sectionName) => {
@@ -109,7 +109,7 @@ export default function Campus() {
     };
 
     return (
-        <div className="w-screen mt-11 mainContainer">
+        <div className="w-screen mt-38 mainContainer">
             {/* Banner Section */}
             <div className="relative w-full h-[40svh] magnet-section">
                 <Image
@@ -186,7 +186,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/campus Banner.webp"
+                                    src="/image/campus/campus-tour.jpg"
                                     alt="TRINS Campus Tour"
                                     width={700}
                                     height={450}
@@ -232,7 +232,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/facilities.webp"
+                                    src="/image/campus/facilities.jpg"
                                     alt="TRINS Facilities"
                                     width={700}
                                     height={450}
@@ -274,7 +274,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/library.webp"
+                                    src="/image/campus/library.jpg"
                                     alt="TRINS Library"
                                     width={700}
                                     height={450}
@@ -315,7 +315,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/science-labs.webp"
+                                    src="/image/campus/science-labs.jpg"
                                     alt="TRINS Science Labs"
                                     width={700}
                                     height={450}
@@ -355,7 +355,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/physics-lab.webp"
+                                    src="/image/campus/physics-lab.jpg"
                                     alt="Physics Laboratory"
                                     width={700}
                                     height={450}
@@ -395,7 +395,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/chemistry-labs.webp"
+                                    src="/image/campus/chemistry-lab.jpg"
                                     alt="Chemistry Laboratory"
                                     width={700}
                                     height={450}
@@ -435,7 +435,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/biology-lab.webp"
+                                    src="/image/campus/biology-lab.jpg"
                                     alt="Biology Laboratory"
                                     width={700}
                                     height={450}
@@ -475,7 +475,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/itlab.webp"
+                                    src="/image/campus/computer-lab.jpg"
                                     alt="Computer Laboratory"
                                     width={700}
                                     height={450}
@@ -516,7 +516,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/sports.webp"
+                                    src="/image/campus/sports-facilities.jpg"
                                     alt="TRINS Sports Facilities"
                                     width={700}
                                     height={450}
@@ -557,7 +557,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/indoor-sports.webp"
+                                    src="/image/campus/indoor-sports.jpg"
                                     alt="Indoor Sports Facilities"
                                     width={700}
                                     height={450}
@@ -598,7 +598,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/outdoor-sports.webp"
+                                    src="/image/campus/outdoor-sports.jpg"
                                     alt="Outdoor Sports Facilities"
                                     width={700}
                                     height={450}
@@ -640,7 +640,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/aquatics.webp"
+                                    src="/image/campus/aquatics.jpg"
                                     alt="Aquatic Center"
                                     width={700}
                                     height={450}
@@ -682,7 +682,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/dining.webp"
+                                    src="/image/campus/dining.jpg"
                                     alt="TRINS Dining Hall"
                                     width={700}
                                     height={450}
@@ -723,7 +723,7 @@ export default function Campus() {
                         <div className="md:flex md:items-start md:space-x-8 text-left">
                             <div className="md:w-1/2 mb-8 md:mb-0">
                                 <Image
-                                    src="/image/campus/technology.webp"
+                                    src="/image/campus/technology.jpg"
                                     alt="Campus Technology"
                                     width={700}
                                     height={450}

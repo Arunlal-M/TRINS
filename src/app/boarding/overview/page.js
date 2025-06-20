@@ -3,26 +3,26 @@ import "../page.css";
 
 export default function BoardingOverview() {
     return (
-        <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
+        <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
             <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 boardingContainer">
                 <AdmissionCard
-                    image={"/image/boarding/boarding-overview.webp"}
+                    image={"/image/boarding/boarding-overview.jpg"}
                     text="Overview"
                     href="/boarding/overview"
                     active
                 />
                 <AdmissionCard
-                    image="/image/boarding/accomodation.webp"
+                    image="/image/boarding/boarding-accomodation.jpg"
                     text="Accomodation"
                     href="/boarding/accomodation"
                 />
                 <AdmissionCard
-                    image="/image/boarding/food.webp"
+                    image="/image/boarding/food.png"
                     text="Nutrition"
                     href="/boarding/nutrition"
                 />
                 <AdmissionCard
-                    image="/image/boarding/leisure.webp"
+                    image="/image/boarding/boarding-leisure.jpg"
                     text="Leisure"
                     href="/boarding/leisure"
                 />
@@ -38,7 +38,7 @@ export default function BoardingOverview() {
                     overflow: "hidden",
                 }}>
                 <img
-                    src="/image/boarding/boarding-overview.webp"
+                    src="/image/food-menu/cover.png"
                     alt="Food Menu Cover"
                     style={{
                         width: "100%",

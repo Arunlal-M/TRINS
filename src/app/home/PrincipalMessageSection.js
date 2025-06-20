@@ -101,7 +101,7 @@ const PrincipalMessageSection = () => {
                 should not just have an outstanding campus, but also a curriculum that makes it a
                 distinct international school.
               </p>
-              <p className="noteSignature">- Gourab Das Sharma</p>
+              <p className="noteSignature">- Richard Hillebrand</p>
               <ReadMoreButton className="ml-2 angle" href="/PrincipalMessage" bgColor="bg-[#075037] text-white" hoverColor="hover:bg-[#f5de9c]  hover:text-black" />{' '}
             </div>
           </div>

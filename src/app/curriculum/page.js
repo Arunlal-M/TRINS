@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import ProgramButton from "../components/curriculum/ProgramButton";
 import "./Curriculum.css";
-import Link from 'next/link';
 
 export default function Curriculum() {
   const [activeProgram, setActiveProgram] = useState("Early Year Program");
@@ -44,17 +43,17 @@ export default function Curriculum() {
   };
 
   const bannerImages = {
-    'Early Year Program': '/image/curriculum/DSC08444.webp',
-    'EARLY LEARNING CENTER': '/image/curriculum/DSC08444.webp',
-    'KINDERGARTEN': '/image/curriculum/DSC08444.webp',
-    'Primary Year Program': '/image/curriculum/DSC06956.webp',
-    'Middle School': '/image/curriculum/DSC06980.webp',
-    'Secondary School': '/image/curriculum/trins-020.webp',
-    'ICSE': '/image/curriculum/ICSEBAN.webp',
-    'IGCSE': '/image/curriculum/IGCSEBAN.webp',
-    'Senior Secondary School': '/image/curriculum/senior.webp',
-    'IBDP': '/image/curriculum/IBDPBAN.webp',
-    'A LEVELS': '/image/curriculum/ALEVELSBAN.webp',
+    'Early Year Program': '/image/curriculum/DSC08444.jpg',
+    'EARLY LEARNING CENTER': '/image/curriculum/DSC08444.jpg',
+    'KINDERGARTEN': '/image/curriculum/DSC08444.jpg',
+    'Primary Year Program': '/image/curriculum/DSC06956.jpg',
+    'Middle School': '/image/curriculum/DSC06980.jpg',
+    'Secondary School': '/image/curriculum/trins-020.jpg',
+    'ICSE': '/image/curriculum/ICSEBAN.jpg',
+    'IGCSE': '/image/curriculum/IGCSEBAN.jpg',
+    'Senior Secondary School': '/image/curriculum/senior.jpg',
+    'IBDP': '/image/curriculum/IBDPBAN.jpg',
+    'A LEVELS': '/image/curriculum/ALEVELSBAN.jpg',
   };
 
   const handleProgramClick = (programName) => {
@@ -76,7 +75,7 @@ export default function Curriculum() {
   };
 
   return (
-    <div className="w-screen mt-11 mainContainer">
+    <div className="w-screen mt-38 mainContainer">
       {/* Banner Section */}
       <div className="relative w-full h-[40svh] magnet-section">
         <Image
@@ -163,7 +162,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.webp" // Path is already correct
+                  src="/image/curriculum/DSC08431.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -280,7 +279,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC08431.webp"
+                  src="/image/curriculum/DSC08431.jpg"
                   alt="Early Learning Center students"
                   width={700}
                   height={450}
@@ -396,7 +395,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/KINDERGARTEN.webp"
+                  src="/image/curriculum/KINDERGARTEN.jpg"
                   alt="Kindergarten students learning"
                   width={700}
                   height={450}
@@ -540,7 +539,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC06877.webp" // Path is already correct
+                  src="/image/curriculum/DSC06877.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -659,7 +658,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/DSC07007.webp" // Path is already correct
+                  src="/image/curriculum/DSC07007.jpg" // Path is already correct
                   alt="Early Year Program students learning"
                   width={700} // Intrinsic width of the image or desired display width
                   height={450} // Intrinsic height or desired display height
@@ -690,7 +689,7 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (<Link style={{ color: 'blue', textDecoration: 'underline' }} href="/curriculum/icse">ICSE</Link> ) and the International (IGCSE) boards that are offered at TRINS.
+                  From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (ICSE ) and the International (IGCSE) boards that are offered at TRINS.
 
                 </p>
                 <h3
@@ -776,7 +775,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/trins-020.webp"
+                  src="/image/curriculum/trins-020.jpg"
                   alt="Secondary School students"
                   width={700}
                   height={450}
@@ -861,7 +860,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/ICSE.webp"
+                  src="/image/curriculum/ICSE.jpg"
                   alt="ICSE students learning"
                   width={700}
                   height={450}
@@ -980,7 +979,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/IGCSE.webp"
+                  src="/image/curriculum/IGCSE.jpg"
                   alt="IGCSE students learning"
                   width={700}
                   height={450}
@@ -1137,7 +1136,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/trins-001.webp"
+                  src="/image/curriculum/trins-001.jpg"
                   alt="Senior Secondary School students"
                   width={700}
                   height={450}
@@ -1222,7 +1221,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/IBDP.webp"
+                  src="/image/curriculum/IBDP.jpg"
                   alt="IBDP students learning"
                   width={700}
                   height={450}
@@ -1346,7 +1345,7 @@ export default function Curriculum() {
             <div className="md:flex md:items-start md:space-x-8 text-left">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
-                  src="/image/curriculum/Alevels.webp"
+                  src="/image/curriculum/Alevels.jpg"
                   alt="A LEVELS students learning"
                   width={700}
                   height={450}
@@ -1427,7 +1426,7 @@ export default function Curriculum() {
       {/* Photo Gallery Section */}
       <div className="bg-[#E3C274] p-4 rounded-lg shadow-2xl">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-24 md:mx-24">
-          {Array.from({ length: 3 }).map((_, idx) => (
+          {Array.from({ length: 6 }).map((_, idx) => (
             <div className="rounded-lg shadow-lg" key={idx}>
               <Image
                 src={`/image/curriculum/phSet${idx + 1}.png`}

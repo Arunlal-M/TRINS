@@ -62,7 +62,7 @@ export default function Accreditations() {
 
   return (
     <div
-      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}

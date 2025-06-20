@@ -6,19 +6,19 @@ export default function WellbeingSocialService() {
     {
       area: "Student Well-being",
       description: "Programs to support mental, emotional, and physical health of our students",
-      image: "/image/activities/student.jpg",
+      image: "/image/wellbeing/student.jpg",
       programs: ["Counseling Services", "Mindfulness Programs", "Health Education", "Peer Support"]
     },
     {
       area: "Community Service",
       description: "Opportunities to give back and make a difference in local and global communities",
-      image: "/image/activities/SOCIAL SERVICE1.jpg",
+      image: "/image/wellbeing/community.jpg",
       programs: ["Food Drives", "Elderly Visits", "Environmental Cleanups", "Charity Fundraisers"]
     },
     {
       area: "Social Responsibility",
       description: "Initiatives that develop awareness and action on important social issues",
-      image: "/image/activities/SOCIAL SERVICE.webp",
+      image: "/image/wellbeing/social.jpg",
       programs: ["Diversity Workshops", "Sustainability Projects", "Human Rights Education", "Social Justice Forums"]
     }
   ];
@@ -31,7 +31,7 @@ export default function WellbeingSocialService() {
   ];
 
   return (
-    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,12 +41,12 @@ export default function WellbeingSocialService() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/activities/community.webp"
+          src="/image/wellbeing/cover.jpg"
           alt="Well-being & Social Service Cover"
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center 35%",
+            objectPosition: "center",
             backgroundColor: "#074B35",
           }}
         />
@@ -57,7 +57,7 @@ export default function WellbeingSocialService() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 300,
+            height: 260,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -67,7 +67,7 @@ export default function WellbeingSocialService() {
             textShadow: "0 4px 32px rgba(0,0,0,0.18)",
             inset: 0,
           }}>
-         Social Service
+          Well-being & Social Service
         </h1>
       </div>
 
@@ -126,7 +126,7 @@ export default function WellbeingSocialService() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/activities/socialservice3.jpg"
+                    src="/image/wellbeing/support.jpg"
                     alt="Support Services"
                     fill
                     style={{ objectFit: "cover" }}

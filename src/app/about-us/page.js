@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <div
-      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}
@@ -18,7 +18,7 @@ export default function AboutUs() {
         }}
       >
         <Image
-          src="/image/about-us/AboutUS.webp"
+          src="/image/about-us/AboutUs.webp"
           alt="About Us Cover"
           fill
           style={{
@@ -87,10 +87,10 @@ export default function AboutUs() {
 
           <div className="relative h-96 w-full my-12 rounded-lg overflow-hidden">
             <Image
-              src="/image/about-us/campusaboutus.webp"
+              src="/image/about-us/campus.jpg"
               alt="School Campus"
               fill
-              style={{ objectFit: "fill" }}
+              style={{ objectFit: "cover" }}
             />
           </div>
 

@@ -71,7 +71,7 @@ const DiamondButton = ({
   const isSingleLineTitle = title.length < 14;
 
   return (
-    <div className="diamond-container max-w-[300px] md:max-w-[350px]">
+    <div className="diamond-container">
       <div className="relative flex items-center justify-center">
         {/* Only show line before diamond if not the first diamond */}
         {!isFirst && <div className="connecting-line left"></div>}

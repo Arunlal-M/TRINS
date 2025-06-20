@@ -355,7 +355,7 @@
 
 //         <div className="displayMob my-16">
 //           <video
-//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCam.mp4"
+//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -387,7 +387,7 @@
 //           >
 //             {isClient && (
 //               <video
-//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCam.mp4"
+//                 src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
 //                 autoPlay
 //                 loop
 //                 muted
@@ -759,7 +759,7 @@ const OurCampusSection = () => {
 
         <div className="displayMob my-16">
           <video
-            src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCam.mp4"
+            src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
             autoPlay
             loop
             muted
@@ -789,7 +789,7 @@ const OurCampusSection = () => {
           >
             {isClient && (
               <video
-                src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCam.mp4"
+                src="https://trins-media-s3.s3.ap-southeast-2.amazonaws.com/video/OurCampus.mp4"
                 autoPlay
                 loop
                 muted

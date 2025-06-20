@@ -73,7 +73,7 @@ const WelcomeSection = () => {
         </h2>
         <p
           ref={descRef}
-          className=" normal tracking-normal md:max-w-7/10"
+          className=" normal tracking-normal"
         >
           Trivandrum International School (TRINS) is committed to nurturing young minds into confident, compassionate, and responsible leaders of tomorrow.
           Through a holistic and globally-minded education, TRINS inspires students to develop critical thinking, creativity, and a genuine love for lifelong learning.
