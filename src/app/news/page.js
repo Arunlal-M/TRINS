@@ -31,7 +31,7 @@ export default function News() {
   ];
 
   return (
-    <div className="mt- w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className=" w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function News() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/news/cover.jpg"
+          src="/image/news/news-cover.webp"
           alt="News Cover"
           fill
           style={{
@@ -84,14 +84,7 @@ export default function News() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {newsCategories.map((category, index) => (
                 <div key={index} className="border border-[#e0e0e0] rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="relative h-48">
-                    <Image
-                      src={category.image}
-                      alt={category.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
+
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#085038]">{category.name}</h3>
                     <p className="mb-4">{category.description}</p>
@@ -109,34 +102,7 @@ export default function News() {
               ))}
             </div>
 
-            <div className="bg-[#f0f7f4] rounded-lg p-6">
-              <h3 className="text-2xl font-bold mb-4 text-[#085038]">Media Gallery</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <p className="mb-4">
-                    Browse our collection of photos and videos from recent school events, 
-                    classroom activities, and special programs.
-                  </p>
-                  <ul className="space-y-2">
-                    {["2025 Graduation", "Science Fair Exhibition", "Sports Championship", 
-                      "Arts Festival", "Community Service Day"].map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-[#085038] text-lg mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="relative h-64 rounded-lg overflow-hidden">
-                  <Image
-                    src="/image/news/gallery.jpg"
-                    alt="News Gallery"
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-              </div>
-            </div>
+
           </div>
 
           <div className="bg-[#085038] text-white p-8">

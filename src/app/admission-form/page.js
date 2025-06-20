@@ -87,7 +87,7 @@ export default function AdmissionForm() {
 
           {/* Boarders Form Card */}
           <AdmissionCard
-            image="/image/admission-process/Health.webp"
+            image="/image/admission-process/Health Form2.webp"
             text="Health Boarders"
             href="/admission-form/health-boarders"
           />

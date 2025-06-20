@@ -6,19 +6,19 @@ export default function Sports() {
     {
       name: "Competitive Athletics",
       description: "Our school competes in regional and national leagues across multiple sports with dedicated coaching staff",
-      image: "/image/sports/competitive.jpg",
+      image: "/image/activities/competitive.jpg",
       offerings: ["Basketball", "Soccer", "Swimming", "Track & Field", "Volleyball"]
     },
     {
       name: "Physical Education",
       description: "Structured PE curriculum focusing on fitness, skills development, and sportsmanship",
-      image: "/image/sports/pe.jpg",
+      image: "/image/activities/pe.jpg",
       offerings: ["Fitness Training", "Team Sports", "Individual Sports", "Health Education"]
     },
     {
       name: "Recreational Sports",
       description: "Non-competitive opportunities for students to stay active and have fun",
-      image: "/image/sports/recreational.jpg",
+      image: "/image/activities/recreational.webp",
       offerings: ["Yoga", "Martial Arts", "Dance", "Ultimate Frisbee", "Rock Climbing"]
     }
   ];
@@ -31,7 +31,7 @@ export default function Sports() {
   ];
 
   return (
-    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function Sports() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/sports/cover.jpg"
+          src="/image/activities/SPORTS.webp"
           alt="Sports Cover"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function Sports() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -125,7 +125,7 @@ export default function Sports() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/sports/facilities.jpg"
+                    src="/image/activities/facilities2.jpg"
                     alt="Sports Facilities"
                     fill
                     style={{ objectFit: "cover" }}
