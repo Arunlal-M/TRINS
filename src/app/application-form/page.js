@@ -708,23 +708,23 @@ export default function ApplicationForm() {
     <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
       <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 admissionContainer">
         <AdmissionCard
-          image={"/image/admission-process/admission-process.jpg"}
+          image={"/image/admission-process/admission-process.webp"}
           text="Admission Process"
           href="/admission-process"
         />
         <AdmissionCard
-          image="/image/admission-process/eligibility.jpg"
+          image="/image/admission-process/eligibility.webp"
           text="Eligibility"
           href="/eligibility"
         />
         <AdmissionCard
-          image="/image/admission-process/admission-form.jpg"
+          image="/image/admission-process/admission-form.webp"
           text="Admission Form"
           href="/admission-form"
 
         />
         <AdmissionCard
-          image="/image/admission-process/admission-contact.jpg"
+          image="/image/admission-process/admission-contact.webp"
           text="Admission Contact"
           href="/admission-contact"
         />
@@ -735,7 +735,7 @@ export default function ApplicationForm() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/admission-process/admission-form2.jpg"
+                src="/image/admission-process/admission-form2.webp"
                 alt="Admission Process Main"
               />
             </div>
@@ -752,6 +752,23 @@ export default function ApplicationForm() {
           </div>
         </div>
       </div>
+
+<div className="mt-16 px-4 admissionContainer">
+  <a
+    href="/pdf/forms/admission-form1.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-blue-700 transition"
+    style={{ textDecoration: "none" }}
+  >
+    <img
+      src="/image/download.svg"
+      alt="Download"
+      style={{ width: 24, height: 24, transform: "scale(0.85)" }}
+    />
+    Download Admission Form
+  </a>
+</div>
 
 
       {/* <div className="mt-64 w-4/5 mx-auto mainContainer"> */}

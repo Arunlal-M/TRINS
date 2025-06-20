@@ -6,19 +6,19 @@ export default function ClubsActivities() {
     {
       category: "Academic",
       description: "Clubs that extend classroom learning and explore intellectual pursuits",
-      image: "/image/clubs/academic.jpg",
+      image: "/image/activities/academic.jpg",
       clubs: ["Debate Team", "Math Olympiad", "Science Club", "Robotics", "Model UN"]
     },
     {
       category: "Arts & Creativity",
       description: "Opportunities for artistic expression and creative development",
-      image: "/image/clubs/arts.jpg",
+      image: "/image/activities/arts.jpg",
       clubs: ["Drama Club", "Photography Club", "Creative Writing", "Digital Arts", "Pottery Club"]
     },
     {
       category: "Special Interest",
       description: "Groups formed around shared hobbies and unique interests",
-      image: "/image/clubs/special.jpg",
+      image: "/image/activities/special.jpg",
       clubs: ["Chess Club", "Anime Club", "Eco Warriors", "Coding Club", "Entrepreneurship Society"]
     }
   ];
@@ -31,7 +31,7 @@ export default function ClubsActivities() {
   ];
 
   return (
-    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function ClubsActivities() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/clubs/cover.jpg"
+          src="/image/activities/IN-HOUSE ACTIVITIES1.jpg"
           alt="Clubs & Activities Cover"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function ClubsActivities() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -127,7 +127,7 @@ export default function ClubsActivities() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/clubs/highlights.jpg"
+                    src="/image/activities/club.jpg"
                     alt="Club Highlights"
                     fill
                     style={{ objectFit: "cover" }}

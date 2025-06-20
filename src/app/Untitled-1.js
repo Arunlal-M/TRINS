@@ -1,5 +1,5 @@
 <div
-    className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
+    className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
     style={{ minHeight: 320 }}
 >
     {/* Cover Section */}
@@ -13,8 +13,8 @@
         }}
     >
         <Image
-            src="/image/activities/cover.jpg"
-            alt="About Us Cover"
+          src="/image/careers/cover.jpg"
+          alt="Careers Cover"
             fill
             style={{
                 objectFit: "cover",
@@ -51,7 +51,36 @@
                 opacity: 0.7,
             }}
         >
-            About Us
+            PRINCIPAL'S MESSAGE
         </h1>
+        <p className="text-white mt-2 subTitle"
+        >
+            Providing comprehensive education that promotes critical thinking, creativity, and application-based learning
+        </p>
+    </div>
+</div>
+
+
+{/* Title SubSection */ }
+<div className="w-full flex flex-row items-stretch mt-8">
+    <div className="w-full bannerSectionContainer bg-[#075037]">
+        <div className="contentWidthAdjust h-full w-full">
+            <div className="imgContainer">
+                <img
+                    src="/image/admission-process/Copy of 13.jpg"
+                    alt="Admission Process Main"
+                />
+            </div>
+            <div className="contentContainer">
+                <h1 className="text-white leading-title font-normal mb-2"
+                >
+                    ADMISSION <br /> PROCESS
+                </h1>
+                <p className="text-white mt-2 subTitle"
+                >
+                    Begin your child's journey
+                </p>
+            </div>
+        </div>
     </div>
 </div>

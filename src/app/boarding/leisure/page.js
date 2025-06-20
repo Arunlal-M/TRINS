@@ -3,25 +3,25 @@ import "../page.css";
 
 export default function BoardingLeisure() {
     return (
-        <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
+        <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
             <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 boardingContainer">
                 <AdmissionCard
-                    image={"/image/boarding/boarding-overview.jpg"}
+                    image={"/image/boarding/boarding-overview.webp"}
                     text="Overview"
                     href="/boarding/overview"
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-accomodation.jpg"
+                    image="/image/boarding/accomodation.webp"
                     text="Accomodation"
                     href="/boarding/accomodation"
                 />
                 <AdmissionCard
-                    image="/image/boarding/food.png"
+                    image="/image/boarding/food.webp"
                     text="Nutrition"
                     href="/boarding/nutrition"
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-leisure.jpg"
+                    image="/image/boarding/leisure.webp"
                     text="Leisure"
                     active
                     href="/boarding/leisure"
@@ -37,7 +37,7 @@ export default function BoardingLeisure() {
                     overflow: "hidden",
                 }}>
                 <img
-                    src="/image/food-menu/cover.png"
+                    src="/image/boarding/leisure.webp"
                     alt="Food Menu Cover"
                     style={{
                         width: "100%",
@@ -52,7 +52,7 @@ export default function BoardingLeisure() {
                     }}
                 />
                 {/* <img
-                    src="/image/food-menu/coverOverGradient.png"
+                    src="/image/food-menu/coverOverGradient.webp"
                     alt="Food Menu Gradient Overlay"
                     className="absolute inset-0 w-full h-full object-cover z-10"
                 /> */}
