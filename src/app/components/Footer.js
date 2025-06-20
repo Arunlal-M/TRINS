@@ -24,13 +24,13 @@ const ApplyIcon = () => (
 );
 
 const FeesIcon = () => (
-    <Image
-      src="/image/footer/fee.svg"
-      alt="Fees"
-      width={48}
-      height={48}
-      className="group-hover:filter group-hover:brightness-0 group-hover:invert"
-    />
+  <Image
+    src="/image/footer/fee.svg"
+    alt="Fees"
+    width={48}
+    height={48}
+    className="group-hover:filter group-hover:brightness-0 group-hover:invert"
+  />
 );
 
 const Footer = () => {
@@ -40,25 +40,26 @@ const Footer = () => {
     {
       title: "Key Link",
       links: [
-        { name: "News", href: "/blogs" },
+        { name: "News", href: "/news" },
         { name: "Calendar", href: "/events" },
-        { name: "Alumni", href: "/activities" },
-        { name: "Admissions", href: "/application-form" },
+        { name: "Alumni", href: "/alumni" },
+        { name: "Gallery", href: "/gallery" },
+
       ],
     },
     {
       title: "",
       links: [
-        { name: "Gallery", href: "/gallery" },
+        { name: "Admissions", href: "/application-form" },
         { name: "Work With Us", href: "/careers" },
-        { name: "Support", href: "/contact" },
-        { name: "Affiliates", href: "/" },
+        { name: "News Letters", href: "/newsletter" },
+        { name: "Policies & Downloads", href: "/school-policies" },
       ],
     },
     {
       title: "Students",
       links: [
-        { name: "Log-In", href: "/" },
+        { name: "Orientations", href: "/orientations" },
         { name: "Stories", href: "/blogs" },
         { name: "Lunch Menu", href: "/food-menu" },
       ],
@@ -67,8 +68,8 @@ const Footer = () => {
       title: "Parents",
       links: [
         { name: "Term Dates", href: "/admission-process" },
-        { name: "Uniform", href: "/" },
-        { name: "Fees", href: "/" },
+        { name: "FAQs", href: "/faqs" },
+        { name: "Fees", href: "/fees-structure" },
       ],
     },
   ];
@@ -77,58 +78,58 @@ const Footer = () => {
     <footer className="bg-[#075037] text-white py-8 md:py-12 px-4 md:px-8 relative overflow-hidden">
       {/* Background Designs - Hidden on mobile */}
       <div className=" md:block absolute top-0 left-0 z-0">
-        <Image 
-          src="/image/footer/bg_design_top_left.png" 
-          alt="" 
-          width={500} 
-          height={500} 
+        <Image
+          src="/image/footer/bg_design_top_left.png"
+          alt=""
+          width={500}
+          height={500}
         />
       </div>
       <div className=" md:block absolute top-0 right-0 z-0">
-        <Image 
-          src="/image/footer/bg_design_top_right.png" 
-          alt="" 
-          width={500} 
-          height={500} 
+        <Image
+          src="/image/footer/bg_design_top_right.png"
+          alt=""
+          width={500}
+          height={500}
         />
       </div>
       <div className=" md:block absolute bottom-0 right-0 z-0">
-        <Image 
-          src="/image/footer/bg_design_bottom_right.png" 
-          alt="" 
-          width={500} 
-          height={500} 
+        <Image
+          src="/image/footer/bg_design_bottom_right.png"
+          alt=""
+          width={500}
+          height={500}
         />
       </div>
 
       <div className="container mx-auto relative z-10">
         {/* Action Buttons - Always horizontal with consistent gaps */}
-<div className="flex flex-row justify-center items-center gap-12 sm:gap-16 md:gap-70 mb-8 mt-8 md:mt-24">
-  <RoundedActionButton
-    text="Inquire"
-    icon={<InquireIcon />}
-    href="/contact"
-    className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
-    iconContainerClassName="mb-1 md:mb-2"
-    textClassName="text-xs sm:text-sm md:text-base font-semibold"
-  />
-  <RoundedActionButton
-    text="Apply"
-    icon={<ApplyIcon />}
-    href="/application-form"
-    className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
-    iconContainerClassName="mb-1 md:mb-2"
-    textClassName="text-xs sm:text-sm md:text-base font-semibold"
-  />
-  <RoundedActionButton
-    text="Fees"
-    icon={<FeesIcon />}
-    href="/fees-structure"
-    className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
-    iconContainerClassName="mb-1 md:mb-2"
-    textClassName="text-xs sm:text-sm md:text-base font-semibold"
-  />
-</div><hr className="border-t border-t-[#0a6d4d] mb-8 md:mb-12" />
+        <div className="flex flex-row justify-center items-center gap-12 sm:gap-16 md:gap-70 mb-8 mt-8 md:mt-24">
+          <RoundedActionButton
+            text="Inquire"
+            icon={<InquireIcon />}
+            href="/contact"
+            className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
+            iconContainerClassName="mb-1 md:mb-2"
+            textClassName="text-xs sm:text-sm md:text-base font-semibold"
+          />
+          <RoundedActionButton
+            text="Apply"
+            icon={<ApplyIcon />}
+            href="/application-form"
+            className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
+            iconContainerClassName="mb-1 md:mb-2"
+            textClassName="text-xs sm:text-sm md:text-base font-semibold"
+          />
+          <RoundedActionButton
+            text="Fees"
+            icon={<FeesIcon />}
+            href="/fees-structure"
+            className="w-25 h-25 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 shadow-lg hover:shadow-xl"
+            iconContainerClassName="mb-1 md:mb-2"
+            textClassName="text-xs sm:text-sm md:text-base font-semibold"
+          />
+        </div><hr className="border-t border-t-[#0a6d4d] mb-8 md:mb-12" />
 
 
         {/* Main Footer Content - Responsive grid */}
@@ -156,7 +157,7 @@ const Footer = () => {
             <div className="mt-4 text-center md:text-left">
               <p className="text-lg md:text-xl mb-1">
                 Trivandrum International School,<br />
-                Edackode P.O, Korani,<br /> 
+                Edackode P.O, Korani,<br />
                 Trivandrum - 695 104,<br />
                 Kerala, INDIA
               </p>

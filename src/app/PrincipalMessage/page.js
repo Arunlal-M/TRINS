@@ -63,7 +63,7 @@
 //                 }}
 //             >
 //                 <img
-//                     src="/image/blogs/cover.png"
+//                     src="/image/blogs/cover.webp"
 //                     alt="Blogs Cover"
 //                     style={{
 //                         width: "100%",
@@ -199,8 +199,8 @@ export default function Blogs() {
                             src="/image/Principal/richard-hillebrand.webp"
                             alt="Principal Richard Hillebrand"
                             className="principal-photo"
-                            
-                        /><br/>
+
+                        /><br />
                         <p className="text-xl font-semibold italic">Richard Hillebrand</p>
                     </div>
 

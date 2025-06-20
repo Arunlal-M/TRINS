@@ -753,6 +753,23 @@ export default function ApplicationForm() {
         </div>
       </div>
 
+<div className="mt-16 px-4 admissionContainer">
+  <a
+    href="/pdf/forms/admission-form1.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-blue-700 transition"
+    style={{ textDecoration: "none" }}
+  >
+    <img
+      src="/image/download.svg"
+      alt="Download"
+      style={{ width: 24, height: 24, transform: "scale(0.85)" }}
+    />
+    Download Admission Form
+  </a>
+</div>
+
 
       {/* <div className="mt-64 w-4/5 mx-auto mainContainer"> */}
       <h1

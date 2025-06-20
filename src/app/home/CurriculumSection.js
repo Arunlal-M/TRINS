@@ -48,31 +48,31 @@ const CurriculumSection = () => {
       number: '01',
       title: 'Early Year Program',
       ageRange: '3 to 5 Years',
-      image: '/image/home/curriculum_1.webp',
+      image: '/image/home/01.webp',
     },
     {
       number: '02',
       title: 'Primary Year Program',
       ageRange: '6 to 10 Years',
-      image: '/image/home/curriculum_2.webp',
+      image: '/image/home/02.webp',
     },
     {
       number: '03',
       title: 'Middle School',
       ageRange: '11 to 13 Years',
-      image: '/image/home/curriculum_3.webp',
+      image: '/image/home/03.webp',
     },
     {
       number: '04',
       title: 'Secondary School',
       ageRange: '14 to 16 Years',
-      image: '/image/home/curriculum_4.webp',
+      image: '/image/home/04.webp',
     },
     {
       number: '05',
       title: 'Senior Secondary School',
       ageRange: '17 to 18 Years',
-      image: '/image/home/curriculum_5.webp',
+      image: '/image/home/05.webp',
     },
   ];
 
@@ -116,7 +116,7 @@ const CurriculumSection = () => {
         </div>
       </div>{' '}
       {/* Content container with CURRICULUM background */}
-      <div className="w-full relative">
+      <div className="w-full relative -mt-8">
         {/* Background CURRICULUM text */}{' '}
         <div
           className="absolute inset-0 pointer-events-none select-none overflow-hidden"
@@ -187,7 +187,7 @@ const CurriculumSection = () => {
                   position: 'relative',
                   bottom: '5px',
                   opacity: imageVisible ? 1 : 0,
-                  transform: imageVisible ? 'scale(1)' : 'scale(1.15)', // Shrink into position
+                  transform: imageVisible ? 'scale(1)' : 'scale(1.25)', // Shrink into position
                   transition:
                     'transform 0.6s ease-out, opacity 0.5s ease-in-out, height 0.5s ease-in-out', // Added height transition
                 }}

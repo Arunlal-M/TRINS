@@ -52,6 +52,23 @@ export default function ApplicationForm() {
         </div>
       </div>
 
+      <div className="mt-16 px-4 admissionContainer">
+        <a
+          href="/pdf/forms/transport-form.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 bg-green-900 text-white rounded hover:bg-green-500 transition"
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src="/image/download.svg"
+            alt="Download"
+            style={{ width: 24, height: 24, transform: "scale(0.85)" }}
+          />
+          Download Transport Form
+        </a>
+      </div>
+
       <h1
         className="text-left"
         style={{

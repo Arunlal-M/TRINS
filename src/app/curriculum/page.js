@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import ProgramButton from "../components/curriculum/ProgramButton";
 import "./Curriculum.css";
+import Link from 'next/link';
 
 export default function Curriculum() {
   const [activeProgram, setActiveProgram] = useState("Early Year Program");
@@ -75,7 +76,7 @@ export default function Curriculum() {
   };
 
   return (
-    <div className="w-screen mt-38 mainContainer">
+    <div className="w-screen mt-11 mainContainer">
       {/* Banner Section */}
       <div className="relative w-full h-[40svh] magnet-section">
         <Image
@@ -689,7 +690,7 @@ export default function Curriculum() {
                     letterSpacing: 0,
                   }}
                 >
-                  From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (ICSE ) and the International (IGCSE) boards that are offered at TRINS.
+                  From the Middle School, the curriculum takes on a broader facet. It focuses on a subject-based curriculum using meaningful and rich assignments for accentuating learning experience. Middle School continues with the international teaching practices that are child-centric and activity based but expands to accommodate more scientific inquiry and explorations. It is an integrated curriculum that prepares the students to meet the requirements of the Indian (<Link style={{ color: 'blue', textDecoration: 'underline' }} href="/curriculum/icse">ICSE</Link> ) and the International (IGCSE) boards that are offered at TRINS.
 
                 </p>
                 <h3
