@@ -111,12 +111,12 @@ export default function Testimonials() {
         }}
       >
         <Image
-          src="/image/activities/outbound.webp"
+          src="/image/activities/hdd.webp"
           alt="Testimonials Cover"
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center 30%",
+            objectPosition: "center 50%",
             backgroundColor: "#074B35",
           }}
           priority
@@ -135,9 +135,9 @@ export default function Testimonials() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
-            zIndex: 2,
+            zIndex: 20,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
