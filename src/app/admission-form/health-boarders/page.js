@@ -35,7 +35,7 @@ export default function ApplicationForm() {
           <div className="contentWidthAdjust h-full w-full">
             <div className="imgContainer">
               <img
-                src="/image/admission-process/Health.webp"
+                src="/image/admission-process/Health Form2.webp"
                 alt="Health Form for Boarders"
               />
             </div>

@@ -6,19 +6,19 @@ export default function Yoga() {
     {
       name: "Hatha Yoga",
       description: "Traditional yoga focusing on physical postures and breathing techniques",
-      image: "/image/yoga/hatha.jpg",
+      image: "/image/activities/hatha.jpg",
       offerings: ["Beginner friendly", "Focus on alignment", "Breath control", "60 minutes"]
     },
     {
       name: "Vinyasa Flow",
       description: "Dynamic style linking movement with breath in fluid sequences",
-      image: "/image/yoga/vinyasa.jpg",
+      image: "/image/activities/vinyasa.png",
       offerings: ["Intermediate level", "Cardiovascular benefits", "Creative sequencing", "75 minutes"]
     },
     {
       name: "Restorative Yoga",
       description: "Gentle practice using props to support deep relaxation",
-      image: "/image/yoga/restorative.jpg",
+      image: "/image/activities/restorative.webp",
       offerings: ["All levels", "Stress reduction", "Deep stretching", "90 minutes"]
     }
   ];
@@ -31,7 +31,7 @@ export default function Yoga() {
   ];
 
   return (
-    <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
+    <div className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer" style={{ minHeight: 320 }}>
       {/* Cover Section */}
       <div style={{
           position: "relative",
@@ -41,7 +41,7 @@ export default function Yoga() {
           overflow: "hidden",
         }}>
         <Image
-          src="/image/yoga/cover.jpg"
+          src="/image/activities/Inhouse.webp"
           alt="Yoga Cover"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function Yoga() {
             lineHeight: "1",
             letterSpacing: "24px",
             color: "#FFFFFF",
-            height: 260,
+            height: 300,
             position: "absolute",
             zIndex: 2,
             display: "flex",
@@ -125,7 +125,7 @@ export default function Yoga() {
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/image/yoga/studio.jpg"
+                    src="/image/activities/recreational.webp"
                     alt="Yoga Studio"
                     fill
                     style={{ objectFit: "cover" }}

@@ -18,7 +18,7 @@ export default function Activities() {
         }}
       >
         <Image
-          src="/image/activities/cover.jpg"
+          src="/image/activities/cover.webp"
           alt="About Us Cover"
           fill
           style={{
