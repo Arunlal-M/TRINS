@@ -13,12 +13,12 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
 
   // Gallery images data
   const galleryImages = [
-    { id: 1, src: "/image/home/gallery-1.jpg", alt: "School campus view" },
-    { id: 2, src: "/image/home/gallery-2.jpg", alt: "School activities" },
-    { id: 3, src: "/image/home/gallery-3.jpg", alt: "Students in classroom" },
-    { id: 4, src: "/image/home/gallery-4.jpg", alt: "School facilities" },
-    { id: 5, src: "/image/home/gallery-5.jpg", alt: "Outdoor activities" },
-    { id: 6, src: "/image/home/gallery-6.jpg", alt: "School event" },
+    { id: 1, src: "/image/home/gallery-1.webp", alt: "School campus view" },
+    { id: 2, src: "/image/home/gallery-2.webp", alt: "School activities" },
+    { id: 3, src: "/image/home/gallery-3.webp", alt: "Students in classroom" },
+    { id: 4, src: "/image/home/gallery-4.webp", alt: "School facilities" },
+    { id: 5, src: "/image/home/gallery-5.webp", alt: "Outdoor activities" },
+    { id: 6, src: "/image/home/gallery-6.webp", alt: "School event" },
   ];
 
   useEffect(() => {
@@ -114,7 +114,7 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
   return (
     <div
       ref={galleryRef}
-      className="w-full min-h-screen relative z-20 overflow-hidden py-16 md:py-20 bg-transparent"
+      className="w-full min-h-screen relative z-20 overflow-hidden py-6 md:py-2 bg-transparent"
     >
       <div className="container mx-auto px-4 pt-20">
         {/* Gallery heading */}
@@ -195,7 +195,7 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
         </div>
       </div>
       {/* Add Read More Button centered below the gallery */}
-      <div className="flex justify-center mt-8 md:mt-12">
+      <div className="flex justify-center my-8 md:mt-12">
         {button ? button : <ReadMoreButton text="View More" href="/gallery" />}
       </div>
     </div>

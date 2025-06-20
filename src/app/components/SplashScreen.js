@@ -195,7 +195,7 @@ const SplashScreen = () => {
         </p>
       </div>
       {/* Down arrow element - now appears with the text */}
-      <div className="splash-down-arrow fixed bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 pointer-events-auto">
+      {/* <div className="splash-down-arrow fixed bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 pointer-events-auto">
         <Image
           src="/gif/Arrow.gif"
           alt="Downward arrow"
@@ -204,7 +204,7 @@ const SplashScreen = () => {
           className="rotate-[270deg]"
           unoptimized
         />
-      </div>
+      </div> */}
     </div>
   );
 };

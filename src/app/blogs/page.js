@@ -19,21 +19,21 @@ export default function Blogs() {
         "Emotional resilience is a vital skill for children to develop as they navigate the ups and downs of growing up. Learn how to foster resilience in your child for a brighter, more confident future...",
     },
     {
-      image: "/image/blogs/fostering.jpg",
+      image: "/image/blogs/fostering.webp",
       title: "Fostering Creativity in Young Minds",
       date: "March 26, 2025",
       excerpt:
         "Creativity is not just about art—it's about problem-solving, innovation, and thinking outside the box. Discover ways to nurture creativity in your child every day...",
     },
     {
-      image: "/image/blogs/DSC07325.jpg",
+      image: "/image/blogs/DSC07325.webp",
       title: "The Role of Outdoor Play in a Child’s Development",
       date: "March 26, 2025",
       excerpt:
         "Outdoor play holds a unique place in a child’s development. In today’s fast-changing world, where screen time often dominates leisure hours, encouraging children to step outside and engage with nature becomes all the more significant. Outdoor play is not merely a leisure activity but a powerful medium that nurtures physical, cognitive, social, and emotional growth.",
     },
     {
-      image: "/image/blogs/Nurturing Social Skills in Early Childhood.jpg",
+      image: "/image/blogs/Nurturing Social Skills in Early Childhood.webp",
       title: "Nurturing Social Skills in Early Childhood",
       date: "March 26, 2025",
       excerpt:
@@ -50,7 +50,7 @@ export default function Blogs() {
 
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       <div
@@ -63,7 +63,7 @@ export default function Blogs() {
         }}
       >
         <img
-          src="/image/blogs/cover.png"
+          src="/image/blogs/cover.webp"
           alt="Blogs Cover"
           style={{
             width: "100%",
@@ -114,10 +114,9 @@ export default function Blogs() {
             key={i}
             onClick={() => setPage(i + 1)}
             className={`w-12 h-12 rounded-full border text-xl flex items-center justify-center transition-all duration-150
-              ${
-                page === i + 1
-                  ? "bg-[#085038] text-white border-[#085038] shadow-md"
-                  : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
+              ${page === i + 1
+                ? "bg-[#085038] text-white border-[#085038] shadow-md"
+                : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
               }`}
             style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
           >

@@ -109,7 +109,7 @@ export default function Campus() {
     };
 
     return (
-        <div className="w-screen mt-38 mainContainer">
+        <div className="w-screen mt-11 mainContainer">
             {/* Banner Section */}
             <div className="relative w-full h-[40svh] magnet-section">
                 <Image

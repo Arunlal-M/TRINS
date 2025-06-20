@@ -4,26 +4,26 @@ import "./page.css";
 
 export default function Boarding() {
     return (
-        <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
+        <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
             <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 boardingContainer">
                 <AdmissionCard
-                    image={"/image/boarding/boarding-overview.jpg"}
+                    image={"/image/boarding/boarding-overview.webp"}
                     text="Overview"
                     href="/boarding/overview"
 
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-accomodation.jpg"
+                    image="/image/boarding/accomodation.webp"
                     text="Accomodation"
                     href="/boarding/accomodation"
                 />
                 <AdmissionCard
-                    image="/image/boarding/food.png"
+                    image="/image/boarding/food.webp"
                     text="Nutrition"
                     href="/boarding/nutrition"
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-leisure.jpg"
+                    image="/image/boarding/leisure.webp"
                     text="Leisure"
                     href="/boarding/leisure"
                 />
@@ -35,7 +35,7 @@ export default function Boarding() {
                     <div className="contentWidthAdjust h-full w-full">
                         <div className="imgContainer">
                             <img
-                                src="/image/boarding/boarding-main.jpg"
+                                src="/image/boarding/boarding-options.webp"
                                 alt="Boarding Main"
                             />
                         </div>
@@ -66,14 +66,14 @@ export default function Boarding() {
             </div>
 
             {/* Facilities Section */}
-            <div className="w-full flex flex-col items-center relative stepContainer">
+            <div className="w-full flex flex-col -mt-34 items-center relative stepContainer">
                 {/* Home Environment Section */}
                 <div className="position-relative">
                     <ConnectorLine />
                     <div className="w-full max-w-6xl flex flex-row items-center justify-center mt-80 position-relative stepContentContainer">
                         <div className="w-1/2 flex justify-end items-center relative overflow-visible stepImage">
                             <img
-                                src="/image/boarding/home-environment.jpg"
+                                src="/image/boarding/benv.webp"
                                 alt="Home Environment"
                                 className="rounded-lg shadow-lg object-cover"
                                 style={{
@@ -114,7 +114,7 @@ export default function Boarding() {
                         </div>
                         <div className="w-1/2 flex justify-start items-center relative overflow-visible stepImage">
                             <img
-                                src="/image/boarding/academic-support.jpg"
+                                src="/image/boarding/acadsupp.webp"
                                 alt="Academic Support"
                                 className="rounded-lg shadow-lg object-cover"
                                 style={{ width: "600px", height: "auto", position: "relative" }}
@@ -124,7 +124,7 @@ export default function Boarding() {
                 </div>
 
                 {/* Contact Button */}
-                <div className="flex flex-col items-center w-full mb-16 mt-32 bottomButtonContainer">
+                <div className="flex flex-col items-center w-full mb-6 mt-32 bottomButtonContainer">
                     <a
                         href="/contact"
                         className="bg-[#075037] text-white text-2xl px-12 py-4 rounded-full shadow-lg hover:bg-[#0a6a4a] transition-colors duration-200 flex items-center gap-2"

@@ -63,7 +63,7 @@
 //                 }}
 //             >
 //                 <img
-//                     src="/image/blogs/cover.png"
+//                     src="/image/blogs/cover.webp"
 //                     alt="Blogs Cover"
 //                     style={{
 //                         width: "100%",
@@ -196,11 +196,11 @@ export default function Blogs() {
                     {/* Photo above message */}
                     <div className="principal-photo-container flex flex-col items-center mb-8">
                         <img
-                            src="/image/Principal/richard-hillebrand.jpg"
+                            src="/image/Principal/richard-hillebrand.webp"
                             alt="Principal Richard Hillebrand"
                             className="principal-photo"
-                            
-                        /><br/>
+
+                        /><br />
                         <p className="text-xl font-semibold italic">Richard Hillebrand</p>
                     </div>
 
@@ -246,7 +246,7 @@ export default function Blogs() {
                                     <p className="text-lg text-gray-600">Principal, Trivandrum International School</p>
                                 </div>
                                 <img
-                                    src="/image/Principal/richard-hillebrand.jpg"
+                                    src="/image/Principal/richard-hillebrand.webp"
                                     alt="Principal Richard Hillebrand"
                                     className="signature-photo"
                                 />

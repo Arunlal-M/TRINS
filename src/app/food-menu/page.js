@@ -3,12 +3,12 @@
 //     <div className="mt-64 mainContainer">
 //       <div className="relative w-full h-[500px] flex items-center justify-center">
 //         <img
-//           src="/image/food-menu/cover.png"
+//           src="/image/food-menu/cover.webp"
 //           alt="Food Menu Cover"
 //           className="absolute inset-0 w-full h-full object-cover z-0"
 //         />
 //         <img
-//           src="/image/food-menu/coverOverGradient.png"
+//           src="/image/food-menu/coverOverGradient.webp"
 //           alt="Food Menu Gradient Overlay"
 //           className="absolute inset-0 w-full h-full object-cover z-10"
 //         />
@@ -71,12 +71,12 @@ export default function FoodMenu() {
     <div className="mt-64 mainContainer">
       <div className="relative w-full h-[500px] flex items-center justify-center">
         <img
-          src="/image/food-menu/cover.png"
+          src="/image/food-menu/cover.webp"
           alt="Food Menu Cover"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <img
-          src="/image/food-menu/coverOverGradient.png"
+          src="/image/food-menu/coverOverGradient.webp"
           alt="Food Menu Gradient Overlay"
           className="absolute inset-0 w-full h-full object-cover z-10"
         />

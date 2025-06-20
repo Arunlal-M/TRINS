@@ -33,7 +33,7 @@ export default function Achievements() {
 
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}
@@ -47,13 +47,20 @@ export default function Achievements() {
         }}
       >
         <Image
-          src="/image/achievements/cover.jpg"
+          src="/image/achievements/acheivements.webp"
           alt="Achievements Cover"
           fill
           style={{
             objectFit: "cover",
             objectPosition: "center",
             backgroundColor: "#074B35",
+          }}
+          priority
+        />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
           }}
         />
         <h1
@@ -66,12 +73,12 @@ export default function Achievements() {
             color: "#FFFFFF",
             height: 260,
             position: "absolute",
-            zIndex: 2,
+            zIndex: 20,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
+            textShadow: "0 4px 32px rgba(0,0,0,0.9)",
             inset: 0,
           }}
         >
@@ -83,8 +90,8 @@ export default function Achievements() {
       <div className="w-full max-w-6xl mt-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
           {stats.map((stat, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-[#085038] text-white text-center py-8 rounded-lg shadow-lg"
             >
               <div className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</div>
@@ -100,11 +107,11 @@ export default function Achievements() {
           <h2 className="text-3xl font-bold p-8 pb-0 text-[#085038]">
             Recent Achievements
           </h2>
-          
+
           <div className="divide-y">
             {achievements.map((achievement, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="p-8 flex flex-col md:flex-row gap-6"
               >
                 <div className="relative w-full md:w-1/3 h-56 rounded-lg overflow-hidden">
@@ -129,11 +136,11 @@ export default function Achievements() {
               </div>
             ))}
           </div>
-          
+
           <div className="bg-[#f0f7f4] p-8">
             <h3 className="text-xl font-bold mb-4 text-[#085038]">Alumni Success</h3>
             <p className="mb-4">
-              Our graduates have gone on to excel at top universities and make 
+              Our graduates have gone on to excel at top universities and make
               significant contributions in diverse fields:
             </p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
