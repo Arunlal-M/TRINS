@@ -76,7 +76,7 @@ export default function Testimonials() {
       role: "Guest",
       image: "/image/testimonials/alumni3.jpg"
     },
-    
+
     {
       quote: "I write with regard to my son Sanjay Jacob who is in Grade 11, IDBP. We have high regard for the school's initiative in creating an encouraging environment for the students. The opportunity Sanjay got to partake in the theatre play TRINS BROADWAY at Tagore theatre has boosted his confidence tremendously. Such ongoing efforts from your side are greatly appreciated.",
       author: "Shanthi Jacob",
@@ -87,17 +87,17 @@ export default function Testimonials() {
 
   const [activeCategory, setActiveCategory] = useState("all");
 
-  const filteredTestimonials = activeCategory === "all" 
-    ? testimonials 
-    : testimonials.filter(t => 
-        (activeCategory === "parents" && t.role.includes("Parent")) ||
-        (activeCategory === "alumni" && t.role.includes("Alumni")) ||
-        (activeCategory === "educators" && (t.role.includes("Professor") || t.role.includes("Teacher")))
-      );
+  const filteredTestimonials = activeCategory === "all"
+    ? testimonials
+    : testimonials.filter(t =>
+      (activeCategory === "parents" && t.role.includes("Parent")) ||
+      (activeCategory === "alumni" && t.role.includes("Alumni")) ||
+      (activeCategory === "educators" && (t.role.includes("Professor") || t.role.includes("Teacher")))
+    );
 
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       {/* Cover Section */}
@@ -111,13 +111,20 @@ export default function Testimonials() {
         }}
       >
         <Image
-          src="/image/testimonials/cover.jpg"
+          src="/image/activities/outbound.webp"
           alt="Testimonials Cover"
           fill
           style={{
             objectFit: "cover",
             objectPosition: "center",
             backgroundColor: "#074B35",
+          }}
+          priority
+        />
+        <div
+          className="absolute inset-0 w-full h-full z-10"
+          style={{
+            background: "linear-gradient(180deg, rgba(0,0,0,0.5) 100%)"
           }}
         />
         <h1
@@ -150,7 +157,7 @@ export default function Testimonials() {
             <h2 className="text-3xl font-bold mb-6 text-[#085038]">
               Voices From Our Community
             </h2>
-            
+
             {/* Filter Buttons */}
             <div className="flex flex-wrap gap-3 mb-8">
               {[
@@ -163,22 +170,21 @@ export default function Testimonials() {
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
                   className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors
-                    ${
-                      activeCategory === category.id
-                        ? "bg-[#085038] text-white border-[#085038]"
-                        : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
+                    ${activeCategory === category.id
+                      ? "bg-[#085038] text-white border-[#085038]"
+                      : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
                     }`}
                 >
                   {category.label}
                 </button>
               ))}
             </div>
-            
+
             {/* Testimonials Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredTestimonials.map((testimonial, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="border border-[#e0e0e0] rounded-lg p-6 hover:shadow-md transition-shadow h-full flex flex-col"
                 >
                   <div className="flex-grow">

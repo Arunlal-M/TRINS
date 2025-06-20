@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Activities() {
   return (
     <div
-      className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       <div

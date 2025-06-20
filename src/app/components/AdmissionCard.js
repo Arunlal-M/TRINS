@@ -134,7 +134,7 @@ export default function AdmissionCard({ image, text, highlight = false, href }) 
   
   // Card dimensions
   const cardWidth = 270; // Fixed width for all cards
-  const cardHeight = 250;
+  const cardHeight = 220;
   const overlayHeight = hovered || highlight ? cardHeight : Math.round(cardHeight * 0.3);
 
   // Card content

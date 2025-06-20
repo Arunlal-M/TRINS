@@ -50,7 +50,22 @@ export default function ApplicationForm() {
           </div>
         </div>
       </div>
-
+      <div className="mt-16 px-4 admissionContainer">
+        <a
+          href="/pdf/forms/health-form.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2 bg-green-900 text-white rounded hover:bg-green-500 transition"
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src="/image/download.svg"
+            alt="Download"
+            style={{ width: 24, height: 24, transform: "scale(0.85)" }}
+          />
+          Download Route
+        </a>
+      </div>
       <h1
         className="text-left"
         style={{
@@ -76,9 +91,9 @@ export default function ApplicationForm() {
             <label className="block mb-2" style={{ fontFamily: "Gideon Roman, serif" }}>
               Admission No: ______ TIS / ______ / 20__
             </label>
-            <input 
-              type="text" 
-              className="w-48 rounded-4xl px-6 py-4 border h-16 border-gray-300 text-center" 
+            <input
+              type="text"
+              className="w-48 rounded-4xl px-6 py-4 border h-16 border-gray-300 text-center"
               placeholder="TIS /   / 20__"
             />
           </div>
@@ -211,9 +226,9 @@ export default function ApplicationForm() {
             <label className="block mb-2" style={{ fontFamily: "Gideon Roman, serif" }}>
               Admission No: ______ TIS / ______ / 20__
             </label>
-            <input 
-              type="text" 
-              className="w-48 rounded-4xl px-6 py-4 border h-16 border-gray-300 text-center" 
+            <input
+              type="text"
+              className="w-48 rounded-4xl px-6 py-4 border h-16 border-gray-300 text-center"
               placeholder="TIS /   / 20__"
             />
           </div>

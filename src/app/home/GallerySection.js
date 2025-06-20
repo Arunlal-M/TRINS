@@ -114,7 +114,7 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
   return (
     <div
       ref={galleryRef}
-      className="w-full min-h-screen relative z-20 overflow-hidden py-16 md:py-20 bg-transparent"
+      className="w-full min-h-screen relative z-20 overflow-hidden py-6 md:py-2 bg-transparent"
     >
       <div className="container mx-auto px-4 pt-20">
         {/* Gallery heading */}
@@ -195,7 +195,7 @@ const GallerySection = ({ showGalleryTitle = true, button = null }) => {
         </div>
       </div>
       {/* Add Read More Button centered below the gallery */}
-      <div className="flex justify-center mt-8 md:mt-12">
+      <div className="flex justify-center my-8 md:mt-12">
         {button ? button : <ReadMoreButton text="View More" href="/gallery" />}
       </div>
     </div>

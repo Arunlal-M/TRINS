@@ -3,33 +3,33 @@ import "../page.css";
 
 export default function BoardingAccomodation() {
     return (
-        <div className="w-full mt-64 flex flex-col items-center justify-center relative mainContainer">
+        <div className="w-full mt-38 flex flex-col items-center justify-center relative mainContainer">
             <div className="w-full max-w-[1400px] flex flex-row items-stretch justify-center gap-8 mt-16 mb-8 px-4 boardingContainer">
                 <AdmissionCard
-                    image={"/image/boarding/boarding-overview.jpg"}
+                    image={"/image/boarding/boarding-overview.webp"}
                     text="Overview"
                     href="/boarding/overview"
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-accomodation.jpg"
+                    image="/image/boarding/accomodation.webp"
                     text="Accomodation"
                     active
                     href="/boarding/accomodation"
                 />
                 <AdmissionCard
-                    image="/image/boarding/food.png"
+                    image="/image/boarding/food.webp"
                     text="Nutrition"
                     href="/boarding/nutrition"
                 />
                 <AdmissionCard
-                    image="/image/boarding/boarding-leisure.jpg"
+                    image="/image/boarding/leisure.webp"
                     text="Leisure"
                     href="/boarding/leisure"
                 />
             </div>
 
             {/* Title SubSection */}
-            <div className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+            <div className="mt-38 w-full flex flex-col items-center justify-center relative mainContainer"
                 style={{
                     position: "relative",
                     width: "100%",
@@ -38,7 +38,7 @@ export default function BoardingAccomodation() {
                     overflow: "hidden",
                 }}>
                 <img
-                    src="/image/food-menu/cover.png"
+                    src="/image/boarding/accomodation.webp"
                     alt="Food Menu Cover"
                     style={{
                         width: "100%",
@@ -105,7 +105,7 @@ export default function BoardingAccomodation() {
                         },
                         {
                             title: "Common Areas",
-                            content: "Shared lounges with TV, games, and recreational facilities for socializing and relaxation.",
+                            content: "Shared lounges with games, and recreational facilities for socializing and relaxation.",
                             image: "/image/boarding/common-area.jpg"
                         },
                         {
@@ -115,7 +115,7 @@ export default function BoardingAccomodation() {
                         }
                     ].map((item, index) => (
                         <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
+                            {/* <img src={item.image} alt={item.title} className="w-full h-48 object-cover" /> */}
                             <div className="p-6">
                                 <h3 className="text-xl text-[#075037] mb-3" style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}>
                                     {item.title}
@@ -127,6 +127,33 @@ export default function BoardingAccomodation() {
                         </div>
                     ))}
                 </div>
+
+                <div className="bg-[#f0f7f4] rounded-lg p-6">
+                    <h3 className="text-2xl font-bold mb-4 text-[#085038]">Accomodation</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <img src="/image/boarding/room.webp" alt="Careers Cover" className="w-full m-4 pb-4 h-48 object-cover" />
+                            <ul className="space-y-2">
+                                {["Spacious Air Conditioned rooms",
+                                    "3-4 students per room",
+                                    "En suite washroom facility",
+
+                                    "Well ventilated rooms with ample natural light",
+                                    "Secure wardrobes for each student",
+                                    "Bed and study desk for each student",
+                                    "Regular cleaning and maintenance",
+                                    "Hot water facility in all rooms"].map((item, i) => (
+                                        <li key={i} className="flex items-start">
+                                            <span className="text-[#085038] text-lg mr-2">•</span>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     );

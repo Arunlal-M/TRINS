@@ -50,7 +50,7 @@ export default function Blogs() {
 
   return (
     <div
-      className="mt-64 w-full flex flex-col items-center justify-center relative mainContainer"
+      className="mt-11 w-full flex flex-col items-center justify-center relative mainContainer"
       style={{ minHeight: 320 }}
     >
       <div
@@ -63,7 +63,7 @@ export default function Blogs() {
         }}
       >
         <img
-          src="/image/blogs/cover.png"
+          src="/image/blogs/cover.webp"
           alt="Blogs Cover"
           style={{
             width: "100%",
@@ -114,10 +114,9 @@ export default function Blogs() {
             key={i}
             onClick={() => setPage(i + 1)}
             className={`w-12 h-12 rounded-full border text-xl flex items-center justify-center transition-all duration-150
-              ${
-                page === i + 1
-                  ? "bg-[#085038] text-white border-[#085038] shadow-md"
-                  : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
+              ${page === i + 1
+                ? "bg-[#085038] text-white border-[#085038] shadow-md"
+                : "bg-white text-[#085038] border-[#085038] hover:bg-[#e6f2ed]"
               }`}
             style={{ fontFamily: "Gideon Roman, serif", fontWeight: 400 }}
           >
