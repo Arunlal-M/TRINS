@@ -96,25 +96,22 @@ export default function Accreditations() {
           style={{
             fontFamily: "Gideon Roman",
             fontWeight: 400,
-            fontSize: "clamp(32px, 8vw, 120px)",
+            fontSize: "120px",
             lineHeight: "1",
-            letterSpacing: "clamp(2px, 2vw, 4px)",
-            textTransform: "uppercase",
+            letterSpacing: "24px",
             color: "#FFFFFF",
+            height: 300,
             position: "absolute",
             zIndex: 20,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            textShadow: "0 4px 32px rgba(0, 0, 0, 0.5)",
+            textShadow: "0 4px 32px rgba(0,0,0,0.18)",
             inset: 0,
-            padding: "0 16px",
-            wordBreak: "break-word",
-            opacity: 0.7,
           }}
         >
-          Accreditations
+          ACCREDITATIONS
         </h1>
       </div>
 
